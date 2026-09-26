@@ -1,0 +1,32 @@
+{
+  "accepted_inputs": {
+    "phase12a_build_id": "9a3b56f77d15b7f32c86e848fb5e399284680e0790a97ce542e92f20be4b5bc5",
+    "phase12b_preregistration_hash": "2e99d105d6a23538dafcaa4d6c17ba71b008c2e30fee63bec2cb50706a6aee2f"
+  },
+  "build_id": "96e614a5638f221b1c340e4f9201e792b5c01e1394eac682ef7b53480aa0f2fb",
+  "decision": "CONDITIONAL PROSPECTIVE CANDIDATE",
+  "development_end": "2026-09-17",
+  "development_start": "2020-05-04",
+  "output_sha256": {
+    "development/v2_cost_sensitivity.csv": "8f52447419ce5d57bfd4efb9514355f88261a72a72692d5baf8c6661394865ac",
+    "development/v2_drawdown_episodes.csv": "b3085434caf76a0f5bf2f8eabb81a2883fc7950bf6b8a86be35990942b191de3",
+    "development/v2_equity_curve.csv": "c079805773ecc3a6bd87c6aac0d6c23ecf3b139723c9a3a037adbcb2eedebfe8",
+    "development/v2_metrics.csv": "4c3c29cef66ee094cd95323358b56cedeebe600beb58290c0bd2e403b028b406",
+    "development/v2_monthly_returns.csv": "f92074afbf6451d96c3fd4bf839d0dc9abc4946203263927e601b63fbd129e7f",
+    "development/v2_operational_events.csv": "de67cb94b49578969b29a175f4b69b13e39ae0f2a11dc0d674894e5c5ac292cd",
+    "development/v2_positions.csv": "bc1db3133b8ee3ff726799a92620e31c16bfe2ed760b69d9aad51364e0fb23b7",
+    "development/v2_rebalances.csv": "3b921b57d4d8fff2ebe35ecfbfcce618b041642eb3bb2b1f198af4bc389691b2",
+    "development/v2_sector_contribution.csv": "f39f37eb4b5e5e0f23fdf51bfa064c09e4eb0665399415f2e0c0248db5f8e476",
+    "development/v2_selection_stability.csv": "4f10d8a499e7e72ae9018dd48f11c9c861dff2c88de74d2bd677b4c91cc2f04a",
+    "development/v2_stock_contribution.csv": "c2806cda8524cb364dd8a2c887f43decc7209ea15fbb68c03d1807434918fc7e",
+    "development/v2_trades.csv": "f71357dce67b52de56dfd9f2f418a8bc2b95943071d0edba9bc97bb15d8ac567",
+    "development/v2_turnover_attribution.csv": "453ab75a1bbd76a143079cbf32a1e5e7c1ba201e1edc22cf85b67fe9761f5591",
+    "development/v2_v1_comparison.csv": "64157e43fbd6f8ec04b7a470bfb39e0867cf224b38aabb325d4229ff07108684",
+    "development/v2_yearly_returns.csv": "15ac1e724cf90630242dc85d39a44238561bea0338c83a3ddd2d78c053110a5b",
+    "phase12c_sector_momentum_strategy_v2.md": "5d2a62bb5d2909b4f1346c9df668f0d34a0daffc4e63c94443d73766ca0c4645",
+    "phase12c_v2_acceptance.json": "1f988565b9c6550951aa2b6b90c2de01fd93f3c1d79dac2b608f6e0b27cf0a85"
+  },
+  "performance_data_end": "2026-09-17",
+  "post_boundary_performance_inspected": false,
+  "strategy_version": "V2"
+}

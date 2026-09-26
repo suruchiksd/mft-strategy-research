@@ -1,0 +1,3 @@
+item,research,b2,same
+buy_unit_cost,open*(1+5/10000)*(1+20/10000),open*(1+5/10000)*(1+20/10000),True
+first_divergence_missing_open,raw_provider fallback row,previous Portfolio mark / retained position,False

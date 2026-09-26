@@ -1,0 +1,72 @@
+schema_version: 1
+research_scope: independent predictive Factor-3 research; no portfolio, trading rules, or factor combination
+phase8_foundation: data/derived/volume_momentum_foundation.parquet
+phase8_registry: reports/volume_momentum/foundation/candidate_factor_registry.csv
+phase8_manifest: reports/volume_momentum/foundation/phase8_build_manifest.json
+phase8_required_build_id: 422d5459c295f5d6fce9f3648487528c1b4f71e56956ef19c7e7809d3cb05e5e
+phase5_manifest: reports/csrs/point_in_time/phase5_build_manifest.json
+phase6_manifest: reports/sector_momentum/foundation/phase6_build_manifest.json
+phase7_manifest: reports/sector_momentum/research/phase7_build_manifest.json
+historical_identity: reports/csrs/point_in_time/historical_symbol_identity.csv
+corporate_action_ledger: data/derived/corporate_action_ledger.parquet
+factor_panel_output: data/derived/volume_momentum_factor_panel.parquet
+report_dir: reports/volume_momentum/research
+final_report: reports/phase9_volume_momentum_research.md
+candidate_ids: [VM01, VM02, VM03, VM04, VM05, VM06, VM07]
+candidate_roles:
+  VM01: CONTROL_PRICE
+  VM02: CONTROL_PRICE
+  VM03: CONTROL_VOLUME
+  VM04: CONTROL_VOLUME
+  VM05: INTERACTION
+  VM06: INTERACTION
+  VM07: INTERACTION
+interaction_controls:
+  VM05: [VM01, VM03]
+  VM06: [VM02, VM03]
+  VM07: [VM02, VM04]
+primary_universe: BASIC_LIQUID
+sensitivity_universe: MODERATE_LIQUID
+future_horizons: [1, 2, 3, 5, 10, 20]
+minimum_decile_cross_section: 20
+corporate_action_coverage_start: "2020-01-09"
+corporate_action_coverage_end: "2026-07-17"
+corporate_action_blocking_impacts: [MATERIAL_UNRESOLVED_EVENT, UNKNOWN_OR_AMBIGUOUS, LIKELY_ALREADY_ADJUSTED_CONVENTIONAL_ACTION]
+corporate_action_proximity_sessions: 5
+fixed_periods:
+  - {name: DEVELOPMENT, start: "2020-01-01", end: "2022-12-31"}
+  - {name: VALIDATION, start: "2023-01-01", end: "2024-12-31"}
+  - {name: HOLDOUT, start: "2025-01-01", end: "2026-07-17"}
+evaluation_years: [2020, 2021, 2022, 2023, 2024, 2025, 2026]
+expanding_evaluation_years: [2021, 2022, 2023, 2024, 2025, 2026]
+uncertainty:
+  method: circular_moving_block_bootstrap_daily_statistics
+  replications: 2000
+  confidence_level: 0.95
+  seed: 20260916
+  block_length_rule: max_10_or_twice_future_horizon
+multiple_testing:
+  alpha: 0.05
+  primary_family: 42_candidate_outcome_rank_ic_hypotheses
+  incremental_family: 18_interaction_outcome_incremental_rank_ic_hypotheses
+  methods: [BENJAMINI_HOCHBERG, HOLM]
+classification_rules:
+  robust:
+    minimum_directional_primary_pairs: 5
+    minimum_directional_holdout_pairs: 5
+    minimum_directional_nonoverlap_pairs: 5
+    minimum_directional_confidence_intervals: 3
+    minimum_directional_bh_rejections: 2
+    minimum_directional_year_fraction: 0.70
+    minimum_directional_sensitivity_pairs: 5
+  promising:
+    minimum_directional_primary_pairs: 4
+    minimum_directional_holdout_pairs: 3
+    minimum_directional_nonoverlap_pairs: 4
+    minimum_directional_year_fraction: 0.55
+  interaction_incremental:
+    robust_minimum_positive_pairs: 4
+    robust_minimum_positive_holdout_pairs: 4
+    robust_minimum_positive_confidence_intervals: 3
+    promising_minimum_positive_pairs: 3
+    promising_minimum_positive_holdout_pairs: 3

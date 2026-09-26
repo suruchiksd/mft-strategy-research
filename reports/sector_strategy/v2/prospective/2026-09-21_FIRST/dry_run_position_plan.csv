@@ -1,0 +1,10 @@
+symbol,selection_status,actual_holding_before,required_action,quote_source,series,open,reason
+JKPAPER,KEEP,False,BUY,normalized_daily,EQ,432.0,actual Portfolio is empty; KEEP describes signal continuity
+KALYANKJIL,KEEP,False,BUY,normalized_daily,EQ,587.0,actual Portfolio is empty; KEEP describes signal continuity
+RELIANCE,KEEP,False,BUY,normalized_daily,EQ,1234.1,actual Portfolio is empty; KEEP describes signal continuity
+TITAN,KEEP,False,BUY,normalized_daily,EQ,4816.5,actual Portfolio is empty; KEEP describes signal continuity
+ONGC,KEEP,False,BUY,normalized_daily,EQ,232.8,actual Portfolio is empty; KEEP describes signal continuity
+TBZ,KEEP,False,BUY,normalized_daily,EQ,600.0,actual Portfolio is empty; KEEP describes signal continuity
+WSTCSTPAPR,KEEP,False,BUY,normalized_daily,EQ,777.0,actual Portfolio is empty; KEEP describes signal continuity
+KPL,KEEP,False,BUY,normalized_daily,EQ,3478.9,actual Portfolio is empty; KEEP describes signal continuity
+MRPL,KEEP,False,BUY,normalized_daily,EQ,167.45,actual Portfolio is empty; KEEP describes signal continuity

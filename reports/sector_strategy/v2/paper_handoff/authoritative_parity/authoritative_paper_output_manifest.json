@@ -1,0 +1,26 @@
+{
+  "source": "authoritative_runner_existing_outputs",
+  "files": {
+    "historical_engine_orders.csv": {
+      "sha256": "907ad3a85759a9d8a69e08b559228d404e5dd6b6cabbe13739f2807268ee77fa",
+      "bytes": 144071
+    },
+    "historical_engine_snapshots.csv": {
+      "sha256": "7def172076fe46ad1e87678930c28e6287e0cd116de1fd44817892129ecd42bf",
+      "bytes": 306808
+    },
+    "historical_risk_parity.csv": {
+      "sha256": "a7498d1e850d3ce9fe5d16379ae5e78bcfbd4c0de20a6d3e489da869da548ed4",
+      "bytes": 140435
+    },
+    "execution_quote_resolution_audit.csv": {
+      "sha256": "69c26ee6e335ed829ac97f9d19e7c50c25fbf6a38d54d819871a9b55f3d2b0df",
+      "bytes": 710625
+    },
+    "historical_target_to_order_parity.csv": {
+      "sha256": "238310884e0cbbbe06dec0b2c1a4774c4e45a9404dcc8f0cd989c9ec92fc8549",
+      "bytes": 4431
+    }
+  },
+  "reference_loaded_after_paper_outputs": true
+}

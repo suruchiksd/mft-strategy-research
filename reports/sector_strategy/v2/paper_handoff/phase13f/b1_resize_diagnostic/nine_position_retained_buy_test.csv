@@ -1,0 +1,2 @@
+open_positions,existing_key,request_key,request_side,risk_result,finding
+9,NSE:CIPLA,NSE:CIPLA,BUY,accepted_as_existing_instrument,RiskManager key membership is compatible; cap check applies only when current_quantity==0

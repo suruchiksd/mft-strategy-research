@@ -1,0 +1,2 @@
+rebalance_id,symbol,starting_quantity,quote_source,series,execution_open,actual_sell_quantity,ending_quantity,tatacomm_buy_quantity
+SMV2-0030,HATHWAY,1262,raw_provider,BE,46.55,1262,0,95

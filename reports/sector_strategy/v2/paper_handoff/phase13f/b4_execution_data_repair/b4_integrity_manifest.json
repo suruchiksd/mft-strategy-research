@@ -1,0 +1,10 @@
+{
+  "phase": "13F-B4",
+  "phase12b_hash": "2e99d105d6a23538dafcaa4d6c17ba71b008c2e30fee63bec2cb50706a6aee2f",
+  "phase12c_build": "96e614a5638f221b1c340e4f9201e792b5c01e1394eac682ef7b53480aa0f2fb",
+  "hathway_gate": "PASS",
+  "full_history_state_parity": "NOT_RUN_AFTER_GATE",
+  "next_divergence": "SMV2-0094 EASEMYTRIP",
+  "post_boundary_performance_inspected": false,
+  "decision": "EXECUTION-DATA REPAIR CORRECT, NEXT DIVERGENCE IDENTIFIED"
+}

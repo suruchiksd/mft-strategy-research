@@ -1,0 +1,41 @@
+phase: 10D
+status: POST_OUTCOME_METHODOLOGY_AMENDMENT
+amendment_created_at_utc: '2026-09-16T15:29:56Z'
+observed_sample_start: '2026-07-20'
+observed_sample_end: '2026-09-11'
+new_confirmation_signal_start_exclusive: '2026-09-11'
+original_preregistration_sha256: fb0976eeea5dc524f4bb9a22dad98b6b0ec6fc42507dcc90f9d5f16d52da6995
+corporate_action_extension_build_id: 8ad77b280031a1f9d99f6ce85a2078e6f6457a3ffdc39a9a0c6e9857225abc13
+candidates: [REV05, REV20]
+candidate_formulas:
+  REV05: -1 * price_return_5
+  REV20: -1 * price_return_20
+primary_universe: BASIC_LIQUID
+sensitivity_universe: MODERATE_LIQUID
+future_horizons: [1, 2, 3, 5, 10, 20]
+directional_requirements:
+  positive_primary_horizons: 4
+  positive_moderate_horizons: 4
+  positive_nonoverlap_horizons: 4
+  average_basic_positive: true
+  average_moderate_positive: true
+  no_supporting_horizon_leave_one_date_sign_flip: true
+sample_thresholds:
+  evaluable_minimum_dates_every_horizon: 20
+  supported_minimum_dates_every_horizon: 60
+frozen_methodology:
+  ranking: SAME_DATE_SIGNAL_VALID_BEFORE_OUTCOME_AVAILABILITY
+  bootstrap: CIRCULAR_BLOCK_2000_FIXED_SEED_BLOCK_MAX_10_2H
+  nonoverlap: ALL_H_SESSION_OFFSETS
+  leave_one_date: REMOVE_EXACTLY_ONE_SIGNAL_DATE
+inputs:
+  preregistration_manifest: reports/reversal/preregistration/phase10_preregistration_manifest.json
+  candidate_registry: reports/reversal/preregistration/reversal_candidate_registry.csv
+  blocker_report: reports/phase10b_reversal_confirmation_blocker.md
+  extension_manifest: reports/reversal/corporate_action_extension/phase10_ca_extension_manifest.json
+outputs:
+  report_dir: reports/reversal/amendment
+  report: reports/reversal/amendment/phase10_classification_amendment.md
+  candidate_table: reports/reversal/amendment/phase10_complete_classification_table.csv
+  overall_table: reports/reversal/amendment/phase10_overall_decision_table.csv
+  manifest: reports/reversal/amendment/phase10_amendment_manifest.json

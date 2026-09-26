@@ -1,0 +1,4 @@
+source_file,source_row,issue,symbol,detail
+/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/chemicals_CM.csv,148,BLANK_RECORD,,ignored
+/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/construction_supplies_CS.csv,,DUPLICATE_SYMBOL,BOROLTD,2 rows; preserved in audit
+/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/sugar_SU.csv,,DUPLICATE_SYMBOL,DHAMPURSUG,2 rows; preserved in audit

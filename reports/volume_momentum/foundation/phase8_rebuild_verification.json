@@ -1,0 +1,6 @@
+{
+  "build_id": "422d5459c295f5d6fce9f3648487528c1b4f71e56956ef19c7e7809d3cb05e5e",
+  "byte_identical": true,
+  "command": ".venv/bin/python scripts/build_phase8_volume_momentum_foundation.py --verify-rebuild",
+  "output_count": 14
+}

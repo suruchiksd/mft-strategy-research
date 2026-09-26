@@ -1,0 +1,3 @@
+formula,equation
+research,"pretrade_equity=cash+sum(q*current_execution_open_or_mark); target_value=pretrade_equity/target_n; desired=floor(target_value/(open*(1+5/10000)*(1+20/10000))); buy=min(desired,floor(cash/(open*(1+5/10000)*(1+20/10000))))"
+repaired_adapter,"target_value=Portfolio.equity/target_n using prior marks; desired=floor(target_value/(open*(1+5/10000)*(1+20/10000))); buy=min(desired,floor(cash/(open*(1+5/10000)*(1+20/10000)))); retained resize branch absent"

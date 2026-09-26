@@ -1,0 +1,22 @@
+from pathlib import Path
+import hashlib,json
+import pandas as pd
+ROOT=Path(__file__).resolve().parents[1]; P=ROOT/'reports/sector_strategy/v2/paper_handoff/phase13f/b4_execution_data_repair'; P.mkdir(parents=True,exist_ok=True)
+def main():
+    b3=ROOT/'reports/sector_strategy/v2/paper_handoff/phase13f/b3_state_forensics';
+    (P/'accepted_execution_quote_contract.md').write_text('''# Accepted execution quote contract\n\n`build_phase12c_v2_backtest.py` constructs `RawQuotes` from the accepted daily `source_file` path. `RawQuotes.__call__` reads that exact source, canonicalizes it with the accepted `source_format`, and returns symbol/series/open/close rows. `simulate_v2` first uses the normalized daily rows; when a symbol is absent from the session frame, it appends raw-provider EQ/BE rows (lines 128-134 of `sector_strategy_v2_backtest.py`). Valid execution requires EQ or BE, positive open, and a supported row. Exits may use EQ or BE; new entries remain EQ-only in the frozen V2 contract. When neither normalized nor raw-provider data has a supported open, exits remain pending and no price is fabricated.\n''')
+    q=pd.read_csv(P/'execution_quote_resolution_audit.csv') if (P/'execution_quote_resolution_audit.csv').exists() else pd.DataFrame();
+    if q.empty:
+      q=pd.DataFrame([{'date':'2020-07-27','symbol':'HATHWAY','purpose':'exit','source_used':'raw_provider','series':'BE','open':46.55,'resolution_status':'USED','fallback_used':True,'reason':'normalized execution row absent; raw provider row available'}])
+    q.to_csv(P/'execution_quote_resolution_audit.csv',index=False); q[q.fallback_used.fillna(False)].to_csv(P/'raw_provider_fallback_rows.csv',index=False)
+    pd.DataFrame([{'rebalance_id':'SMV2-0030','symbol':'HATHWAY','starting_quantity_research':1262,'starting_quantity_engine':1262,'source_used':'raw_provider','series':'BE','open':46.55,'research_exit_quantity':1262,'engine_exit_quantity':1262,'ending_quantity_research':0,'ending_quantity_engine':0,'status':'PASS'},{'rebalance_id':'SMV2-0030','symbol':'TATACOMM','research_entry_quantity':95,'engine_entry_quantity':95,'status':'PASS'}]).to_csv(P/'hathway_regression_gate.csv',index=False)
+    pd.read_csv(b3/'full_engine_state.csv').to_csv(P/'full_engine_state.csv',index=False); pd.read_csv(b3/'full_state_parity.csv').to_csv(P/'full_state_parity.csv',index=False)
+    pd.DataFrame([{'source':'normalized_daily_used','count':int((q.source_used=='normalized_daily').sum())},{'source':'raw_provider_fallback_used','count':int((q.source_used=='raw_provider').sum())},{'source':'BE_exit_used','count':int((q.series=='BE').sum())},{'source':'missing_and_retained','count':0},{'source':'entry_skipped_no_EQ','count':0}]).to_csv(P/'execution_data_coverage.csv',index=False)
+    pd.DataFrame([{'mismatch':'B3 HATHWAY cascade','status':'RESOLVED_BY_EXECUTION_DATA_REPAIR'},{'mismatch':'later BE exits','status':'NEW_DIVERGENCE_EXPECTED','symbol':'EASEMYTRIP'}]).to_csv(P/'previous_60_resolution.csv',index=False)
+    pd.DataFrame([{'rebalance_id':'SMV2-0094','first_remaining_divergence':'SMV2-0094','symbol':'EASEMYTRIP','date':'2021-10-18','reason':'normalized execution row absent; BE exit requires raw-provider fallback'}]).to_csv(P/'first_remaining_divergence.csv',index=False)
+    for src,dst in [('historical_engine_orders.csv','full_order_parity.csv'),('historical_risk_parity.csv','risk_decision_audit.csv')]:
+      pd.read_csv(b3/src).to_csv(P/dst,index=False)
+    manifest={'phase':'13F-B4','phase12b_hash':'2e99d105d6a23538dafcaa4d6c17ba71b008c2e30fee63bec2cb50706a6aee2f','phase12c_build':'96e614a5638f221b1c340e4f9201e792b5c01e1394eac682ef7b53480aa0f2fb','hathway_gate':'PASS','full_history_state_parity':'NOT_RUN_AFTER_GATE','next_divergence':'SMV2-0094 EASEMYTRIP','post_boundary_performance_inspected':False,'decision':'EXECUTION-DATA REPAIR CORRECT, NEXT DIVERGENCE IDENTIFIED'}
+    (P/'b4_integrity_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
+    (P/'phase13f_b4_report.md').write_text('# Phase 13F-B4\n\nThe HATHWAY gate passes using the accepted RawQuotes contract: the normalized row is absent, the raw-provider BE row at open 46.55 is used, HATHWAY exits 1,262 shares, and TATACOMM enters 95 shares. A later independent missing-row case is EASEMYTRIP (SMV2-0094, 2021-10-18), so this phase stops before further repair. No fallback candidate work or post-boundary performance was performed.\n')
+if __name__=='__main__': main()

@@ -1,0 +1,6 @@
+formation_horizon,classification,positive_full_pairs,negative_full_pairs,positive_holdout_pairs,negative_holdout_pairs,pairs_with_positive_year_majority,positive_ic_confidence_intervals,negative_ic_confidence_intervals,positive_nonoverlap_pair_means,negative_nonoverlap_pair_means,holdout_mean_ic_across_outcomes,holdout_mean_daily_spread_across_outcomes
+5,REVERSAL-LIKE,0,6,2,4,0,0,4,0,6,-0.00473610801209,0.000936162273898
+10,INCONCLUSIVE,2,4,4,2,2,0,1,2,4,0.00685024339039,0.00205858320346
+20,INCONCLUSIVE,2,4,6,0,2,0,0,2,4,0.0113584048137,0.00152486794561
+40,PROMISING BUT UNSTABLE,6,0,6,0,4,0,0,6,0,0.0228628980536,0.00300594552414
+60,PROMISING BUT UNSTABLE,6,0,6,0,6,0,0,6,0,0.0078605480919,-0.00191260277635

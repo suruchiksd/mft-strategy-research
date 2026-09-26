@@ -1,0 +1,2 @@
+rebalance_id,first_remaining_divergence,symbol,date,reason
+SMV2-0094,SMV2-0094,EASEMYTRIP,2021-10-18,normalized execution row absent; BE exit requires raw-provider fallback

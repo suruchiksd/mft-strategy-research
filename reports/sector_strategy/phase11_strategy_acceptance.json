@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "conditional_pass": false,
+    "development_benchmark_return": 1.6536763294298327,
+    "development_cost_grid": "0=264.21%, 10=167.17%, 25=68.10%, 50=-22.14%",
+    "development_gross_return": 2.6420642199999964,
+    "development_sector_share": 0.12933979913869664,
+    "development_stock_share": 0.026773495152637227,
+    "holdout_cost_drag": 0.020217717042959382,
+    "holdout_gross_return": -0.027562459999999955,
+    "holdout_max_sector_absolute_contribution_share": 0.3155919330551191,
+    "holdout_max_stock_absolute_contribution_share": 0.205782143828107,
+    "holdout_net_excess_vs_niftybees": -0.0031841267736594236,
+    "ready_pass": false,
+    "reject_pass": false
+  },
+  "decision": "REJECT STRATEGY V1",
+  "holdout_inspection_count": 1,
+  "holdout_strategy_pnl_inspected": true,
+  "operational_anomalies": {
+    "development": 534,
+    "holdout": 0
+  },
+  "strategy_preregistration_hash": "197fb9d9a6185076a70cbb7f92affe2d8dd4688c2e2c3d7791e3438bf7b2cada",
+  "strategy_version": "V1"
+}

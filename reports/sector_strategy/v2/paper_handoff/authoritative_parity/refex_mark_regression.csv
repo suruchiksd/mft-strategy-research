@@ -1,0 +1,2 @@
+rebalance_id,date,symbol,held_quantity,research_mark,paper_mark,research_market_value,paper_market_value,cash_unchanged,orders_unchanged,fills_unchanged,regression_pass
+SMV2-0249,2024-10-07,REFEX,368,516.5,516.5,190072.0,190072.0,True,True,True,True

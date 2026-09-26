@@ -1,0 +1,6 @@
+research_label,formation_horizon,classification,positive_primary_pairs,negative_primary_pairs,positive_holdout_pairs,negative_holdout_pairs,positive_nonoverlap_pairs,negative_nonoverlap_pairs,positive_95pct_ic_intervals,negative_95pct_ic_intervals,positive_bh_rejections,positive_holm_rejections,sensitivity_cells_positive_fraction
+STATIC-CURRENT-CLASSIFICATION HISTORICAL RESEARCH,5,ROBUST,6,0,6,0,6,0,6,0,6,6,1
+STATIC-CURRENT-CLASSIFICATION HISTORICAL RESEARCH,10,ROBUST,6,0,6,0,6,0,6,0,6,6,1
+STATIC-CURRENT-CLASSIFICATION HISTORICAL RESEARCH,20,ROBUST,6,0,6,0,6,0,6,0,6,6,1
+STATIC-CURRENT-CLASSIFICATION HISTORICAL RESEARCH,40,ROBUST,6,0,6,0,6,0,6,0,6,6,1
+STATIC-CURRENT-CLASSIFICATION HISTORICAL RESEARCH,60,ROBUST,6,0,6,0,6,0,6,0,6,6,1

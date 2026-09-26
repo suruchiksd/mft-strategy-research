@@ -1,0 +1,119 @@
+{
+  "accepted_inputs": {
+    "extension_build_id": "8ad77b280031a1f9d99f6ce85a2078e6f6457a3ffdc39a9a0c6e9857225abc13",
+    "extension_verified_outputs": 10,
+    "gated_phase10_build_id": "cda8c86bfa6b904d1f6a8975ca3eb3257f528658ee3dd9cb5719a811cb9cdc91",
+    "phase5_build_id": "ce7d1d27638b3c7e448b6e9bfc5b659e4e7bb77db1c6cf5c377edafce7262524",
+    "phase5_verified_outputs": 24,
+    "phase6_build_id": "e1c1a5c6ad6c7b2e521d00c4fcb97f4bbb21047575ca0de5a7a3f36cb573367b",
+    "phase6_verified_outputs": 15,
+    "phase7_build_id": "f41dbfd6019e517e3696076f7330b083622732c8a785f3bfa3f65e5573d335df",
+    "phase7_verified_outputs": 21,
+    "phase8_build_id": "422d5459c295f5d6fce9f3648487528c1b4f71e56956ef19c7e7809d3cb05e5e",
+    "phase8_verified_outputs": 14,
+    "phase9_build_id": "00a3e8a873d6488d7a97a642347ec0f59d53e94dcb7f32e4ea20841c54f1455b",
+    "phase9_verified_outputs": 22,
+    "preregistration_sha256": "fb0976eeea5dc524f4bb9a22dad98b6b0ec6fc42507dcc90f9d5f16d52da6995"
+  },
+  "analytical_build_id": "359d9317148bcde3376c2c9703f0836c12056ae634df5476c7ecb79b2e84ae68",
+  "build_id": "c973cafe45702be9ba70a0c398657ea857fc023bdb119f49375a35e2b4604ad0",
+  "build_timestamp_utc": "2026-09-16T15:19:47.888934+00:00",
+  "certified_end": "2026-09-11",
+  "code_sha256": "dd11f688284777942fbf6da7c586981cd08ab11df9a979aa33d34c15ecd8906d",
+  "config": {
+    "acceptance_rules": {
+      "confirmation_positive_horizons_required": 4,
+      "historical_positive_horizons_required": 6,
+      "moderate_positive_horizons_required": 4,
+      "nonoverlap_positive_horizons_required": 4,
+      "require_no_leave_one_date_sign_flip_for_supporting_horizons": true,
+      "require_positive_average_ic_in_both_universes": true
+    },
+    "candidate_formations": {
+      "REV05": 5,
+      "REV20": 20
+    },
+    "candidates": [
+      "REV05",
+      "REV20"
+    ],
+    "certified_end": "2026-09-11",
+    "confirmation_evaluability": {
+      "minimum_daily_ic_dates_per_horizon": 20,
+      "supported_minimum_daily_ic_dates_per_horizon": 60
+    },
+    "confirmation_signal_start_exclusive": "2026-07-17",
+    "discovery_end": "2026-07-17",
+    "extension_blocking_classes": [
+      "BLOCK_PRICE_RETURN_INTERVAL",
+      "REVIEW_REQUIRED_BLOCKED"
+    ],
+    "extension_build_id": "8ad77b280031a1f9d99f6ce85a2078e6f6457a3ffdc39a9a0c6e9857225abc13",
+    "future_horizons": [
+      1,
+      2,
+      3,
+      5,
+      10,
+      20
+    ],
+    "historical_blocking_impacts": [
+      "MATERIAL_UNRESOLVED_EVENT",
+      "UNKNOWN_OR_AMBIGUOUS",
+      "LIKELY_ALREADY_ADJUSTED_CONVENTIONAL_ACTION"
+    ],
+    "inputs": {
+      "extension_acceptance": "reports/reversal/corporate_action_extension/extension_acceptance.json",
+      "extension_actions": "data/derived/phase10_corporate_action_extension.parquet",
+      "extension_manifest": "reports/reversal/corporate_action_extension/phase10_ca_extension_manifest.json",
+      "gated_phase10_manifest": "reports/reversal/research/phase10_build_manifest.json",
+      "historical_actions": "data/derived/corporate_action_ledger.parquet",
+      "historical_daily": "data/derived/historical_nse_daily.parquet",
+      "historical_discovery": "reports/reversal/research/historical_discovery_summary.csv",
+      "historical_identity": "reports/csrs/point_in_time/historical_symbol_identity.csv",
+      "preregistration_manifest": "reports/reversal/preregistration/phase10_preregistration_manifest.json"
+    },
+    "minimum_cross_section": 20,
+    "outputs": {
+      "factor_panel": "data/derived/reversal_confirmation_panel.parquet",
+      "final_report": "reports/phase10b_reversal_confirmation.md",
+      "report_dir": "reports/reversal/confirmation"
+    },
+    "phase": "10C",
+    "preregistration_sha256": "fb0976eeea5dc524f4bb9a22dad98b6b0ec6fc42507dcc90f9d5f16d52da6995",
+    "primary_universe": "BASIC_LIQUID",
+    "research_label": "PREREGISTERED_CROSS_SECTIONAL_REVERSAL_CONFIRMATION",
+    "sensitivity_universe": "MODERATE_LIQUID",
+    "tails": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "uncertainty": {
+      "block_length": "max(10, 2 * future_horizon)",
+      "confidence_level": 0.95,
+      "method": "CIRCULAR_BLOCK_BOOTSTRAP",
+      "replications": 2000,
+      "seed": 104729
+    }
+  },
+  "confirmation_signal_start_exclusive": "2026-07-17",
+  "decision": "FAIL",
+  "output_sha256": {
+    "candidate_classification.csv": "b2c3d474729e1b73591912bf8da0a94b503cb99dac9c48360bf84017c99f0618",
+    "confirmation_coverage.csv": "b17c8d11b1fd4cc8eceb8bc33a622ded9069280ccae0e6b4b95abf68d1ccf80f",
+    "confirmation_decile_returns.csv": "26e42c363c33c0a289ebbf620173c6dd9a0562bff35e5cb3009858668862ba1b",
+    "confirmation_nonoverlap.csv": "39d0a6a2406cd5a5c427e7500b976334923bb2992628a1906e5609b1c97ee9d9",
+    "confirmation_rank_ic_daily.csv": "d7310f6100f46756f9ceb2a22ae44d234152c66759a580bab320cbae8c300114",
+    "confirmation_rank_ic_summary.csv": "b7996119c238b323d28febc4e44620f4e1efc724e08b1ebd4d9bb9543a54d873",
+    "confirmation_tail_analysis.csv": "4fe724fd6bd1146a809f3e2ff748eeff270798c3912895dacd30346be735d7ee",
+    "confirmation_uncertainty.csv": "d50b87d736d713be9d6d26b59900b736bd3f393ca733b10d7f2af9633d396d28",
+    "historical_discovery_summary.csv": "999ffd051a0d2bfae224bcb27c8d3d030c82f24a55f58f8d433a4106a947fcc6",
+    "leave_one_date_out.csv": "d24e65f0ddbb909f4cb23ed5f0ae333851ea84e33b62c207af9d83536445e93e",
+    "phase10_confirmation_acceptance.json": "4cec546f5e0deeed8fae5ed63d93df111a1edbc177e1a08545c69319a5617e7a",
+    "phase10b_reversal_confirmation.md": "eaad70d3e78b9c771f9f06a85ddb1fc54634d6d758df3611b2ade18d93554356",
+    "reversal_confirmation_panel.parquet": "2639cd2803e072b74bc61eb04645b07bff3679560ebf7b29e5d38d6b5af25f14",
+    "universe_sensitivity.csv": "b7996119c238b323d28febc4e44620f4e1efc724e08b1ebd4d9bb9543a54d873"
+  },
+  "post_cutoff_outcomes_inspected": true
+}

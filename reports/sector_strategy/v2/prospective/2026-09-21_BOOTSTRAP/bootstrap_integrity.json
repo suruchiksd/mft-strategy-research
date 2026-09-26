@@ -1,0 +1,19 @@
+{
+  "dry_run_artifact_sha256": {
+    "execution_quote_audit.csv": "55ec578de2738782676a1fb7ba6c9aac954973b02d2990d4c6adc6ccd0830187",
+    "intended_orders.csv": "9f3e6febf9dda75f1d0d3bbd22202362db75bb1591d7265eded2896ddc203b8d",
+    "risk_decisions.csv": "e08d5984621ed35898e227f8300aa38fef025982118fa42f9f14348a3bb9c3f1",
+    "state_integrity.json": "275b00c6f4cab6e2a942ffb910b6e90dea7f3ecb922b1aa140fc4e0920b49c0a",
+    "target_state.csv": "bb8e86ade6a4f2ecdbe04750e93c1e76af8d9b413f05ede4eeec7bafd8c9a417"
+  },
+  "fills": 9,
+  "historical_reference_dependency": false,
+  "live_orders": false,
+  "max_positions": 9,
+  "negative_cash": false,
+  "order_match": true,
+  "risk_gate": true,
+  "state_after_sha256": "8e50b801b1586840cd4c4cc4ba0e17a9ee995a2c818e0653294b5833f86b231f",
+  "state_before_sha256": "87f6e5e9af5d3c04418163ab19e4e99fb460f6a8d8b9eef7d267624646bdc26d",
+  "state_reload_exact": true
+}

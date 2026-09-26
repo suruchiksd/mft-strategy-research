@@ -1,0 +1,18 @@
+{
+  "ending_cash": 7800.780778700078,
+  "ending_position_count": 9,
+  "exact_dry_run_order_matches": "9/9",
+  "execution_date": "2026-09-21",
+  "fill_count": 9,
+  "generated_order_count": 9,
+  "historical_reference_dependency": false,
+  "label": "PROSPECTIVE PAPER STATE BOOTSTRAP",
+  "live_orders": false,
+  "performance_calculated": false,
+  "risk_approvals": 9,
+  "risk_decisions": 9,
+  "risk_rejections": 0,
+  "signal_date": "2026-09-18",
+  "starting_cash": 500000.0,
+  "state_reload_exact": true
+}

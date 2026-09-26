@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets / local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs / temporary files
+*.log
+tmp/
+temp/
+.cache/
+
+# Large/local research datasets
+data/derived/
+data/cache/
+data/tmp/
+
+# Large raw market data if ever linked/copied here
+*.parquet
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+
+# Large generated research outputs
+reports/sector_momentum/research/sector_daily_returns.csv
+
+# Optional generated runtime/temp artifacts
+*.tmp
+*.bak
+
+# Pytest temporary/runtime artifacts
+.pytest_tmp/
+reports/pytest-results.xml
+
+# Large generated research tables
+reports/sector_momentum/research/sector_daily_returns.csv

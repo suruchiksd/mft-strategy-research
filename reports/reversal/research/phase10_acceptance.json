@@ -1,0 +1,30 @@
+[
+  {
+    "check": "preregistration frozen before confirmation",
+    "passed": true
+  },
+  {
+    "check": "exact candidates",
+    "passed": true
+  },
+  {
+    "check": "exact horizons",
+    "passed": true
+  },
+  {
+    "check": "confirmation empty while uncertified",
+    "passed": true
+  },
+  {
+    "check": "coverage explicitly zero",
+    "passed": true
+  },
+  {
+    "check": "no volume or sector values",
+    "passed": true
+  },
+  {
+    "check": "no portfolio or pnl",
+    "passed": true
+  }
+]

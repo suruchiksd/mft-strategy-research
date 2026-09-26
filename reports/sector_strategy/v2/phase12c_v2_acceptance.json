@@ -1,0 +1,160 @@
+{
+  "cost_scenarios": [
+    {
+      "CAGR": 0.277472840638878,
+      "Calmar": 0.9682647717997541,
+      "Sharpe": 1.1891450505290126,
+      "Sortino": null,
+      "annualized_volatility": 0.2294212289844807,
+      "average_holding_sessions": 13.977406679764243,
+      "costs_rupees": 0.0,
+      "cumulative_return": 3.6476151199999958,
+      "end_date": "2026-09-17",
+      "maximum_drawdown": -0.28656711337656915,
+      "maximum_drawdown_duration_sessions": 490,
+      "mean_cash_utilization": 0.992416624254931,
+      "mean_positions": 9.0,
+      "mean_weekly_gross_turnover": 0.6352169242369924,
+      "negative_daily_periods": 714,
+      "observations": 1581,
+      "operational_anomalies": 0,
+      "positive_daily_periods": 867,
+      "rebalance_count": 350,
+      "start_date": "2020-05-04",
+      "total_bps_per_side": 0,
+      "total_turnover": 222.32592348294733,
+      "trade_count": 2086
+    },
+    {
+      "CAGR": 0.23367828449016148,
+      "Calmar": 0.7446201230454836,
+      "Sharpe": 1.0361430870260189,
+      "Sortino": null,
+      "annualized_volatility": 0.2298682169161194,
+      "average_holding_sessions": 13.977406679764243,
+      "costs_rupees": 241879.031865968,
+      "cumulative_return": 2.7340787760360765,
+      "end_date": "2026-09-17",
+      "maximum_drawdown": -0.31382214535704633,
+      "maximum_drawdown_duration_sessions": 490,
+      "mean_cash_utilization": 0.9927410843188534,
+      "mean_positions": 9.0,
+      "mean_weekly_gross_turnover": 0.6346697898718976,
+      "negative_daily_periods": 720,
+      "observations": 1581,
+      "operational_anomalies": 0,
+      "positive_daily_periods": 861,
+      "rebalance_count": 350,
+      "start_date": "2020-05-04",
+      "total_bps_per_side": 10,
+      "total_turnover": 222.13442645516415,
+      "trade_count": 2092
+    },
+    {
+      "CAGR": 0.17148734480963057,
+      "Calmar": 0.4709357110218595,
+      "Sharpe": 0.8112221524960515,
+      "Sortino": null,
+      "annualized_volatility": 0.23017845252824298,
+      "average_holding_sessions": 13.977406679764243,
+      "costs_rupees": 498370.22864293994,
+      "cumulative_return": 1.6992718055541487,
+      "end_date": "2026-09-17",
+      "maximum_drawdown": -0.364141730593182,
+      "maximum_drawdown_duration_sessions": 490,
+      "mean_cash_utilization": 0.992449636509489,
+      "mean_positions": 9.0,
+      "mean_weekly_gross_turnover": 0.6344750850101366,
+      "negative_daily_periods": 732,
+      "observations": 1581,
+      "operational_anomalies": 0,
+      "positive_daily_periods": 849,
+      "rebalance_count": 350,
+      "start_date": "2020-05-04",
+      "total_bps_per_side": 25,
+      "total_turnover": 222.06627975354783,
+      "trade_count": 2096
+    },
+    {
+      "CAGR": 0.06754789437339936,
+      "Calmar": 0.14938293399806765,
+      "Sharpe": 0.4083298754122616,
+      "Sortino": null,
+      "annualized_volatility": 0.23139691460738462,
+      "average_holding_sessions": 13.977406679764243,
+      "costs_rupees": 717011.679745,
+      "cumulative_return": 0.5069434025700197,
+      "end_date": "2026-09-17",
+      "maximum_drawdown": -0.45217945963140027,
+      "maximum_drawdown_duration_sessions": 631,
+      "mean_cash_utilization": 0.9906943443334624,
+      "mean_positions": 9.0,
+      "mean_weekly_gross_turnover": 0.6324025088952495,
+      "negative_daily_periods": 747,
+      "observations": 1581,
+      "operational_anomalies": 0,
+      "positive_daily_periods": 834,
+      "rebalance_count": 350,
+      "start_date": "2020-05-04",
+      "total_bps_per_side": 50,
+      "total_turnover": 221.34087811333734,
+      "trade_count": 2097
+    }
+  ],
+  "decision": "CONDITIONAL PROSPECTIVE CANDIDATE",
+  "development_data_end": "2026-09-17",
+  "gates": {
+    "cost_retention_ratio": {
+      "pass": true,
+      "threshold": 0.4,
+      "value": 0.4658583073189341
+    },
+    "maximum_drawdown": {
+      "pass": true,
+      "threshold": ">-0.40",
+      "value": -0.364141730593182
+    },
+    "mean_weekly_gross_turnover": {
+      "pass": true,
+      "threshold": 0.65,
+      "value": 0.6344750850101366
+    },
+    "operational_invariants": {
+      "pass": true,
+      "threshold": true,
+      "value": true
+    },
+    "primary_25bps_CAGR": {
+      "pass": true,
+      "threshold": ">0",
+      "value": 0.17148734480963057
+    },
+    "primary_25bps_Sharpe": {
+      "pass": true,
+      "threshold": ">0",
+      "value": 0.8112221524960515
+    },
+    "primary_25bps_cumulative_return": {
+      "pass": true,
+      "threshold": ">0",
+      "value": 1.6992718055541487
+    },
+    "single_sector_contribution_share": {
+      "pass": true,
+      "threshold": 0.6,
+      "value": 0.13810504814677635
+    },
+    "single_stock_contribution_share": {
+      "pass": true,
+      "threshold": 0.5,
+      "value": 0.03403144955022603
+    }
+  },
+  "post_boundary_performance_inspected": false,
+  "preregistration_hash": "2e99d105d6a23538dafcaa4d6c17ba71b008c2e30fee63bec2cb50706a6aee2f",
+  "state": {
+    "pnl_inspected_after_gate": true,
+    "post_2026_09_17_performance_inspected": false
+  },
+  "strategy_version": "V2"
+}

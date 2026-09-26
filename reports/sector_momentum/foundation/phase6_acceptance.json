@@ -1,0 +1,46 @@
+[
+  {
+    "check": "40 curated sector files",
+    "passed": true
+  },
+  {
+    "check": "all 3381 historical symbols represented",
+    "passed": true
+  },
+  {
+    "check": "all four universes represented",
+    "passed": true
+  },
+  {
+    "check": "all viability thresholds represented",
+    "passed": true
+  },
+  {
+    "check": "conflicts unresolved",
+    "passed": true
+  },
+  {
+    "check": "unmapped sectors remain null",
+    "passed": true
+  },
+  {
+    "check": "conflict sectors remain null",
+    "passed": true
+  },
+  {
+    "check": "no historically verified mappings claimed",
+    "passed": true
+  },
+  {
+    "check": "no effective-dated source claimed",
+    "passed": true
+  },
+  {
+    "check": "no fuzzy identity key assigned",
+    "passed": true
+  },
+  {
+    "check": "no factor or trading columns",
+    "passed": true
+  }
+]

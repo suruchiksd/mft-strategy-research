@@ -1,0 +1,8 @@
+candidate_id,role,classification,positive_primary_pairs,negative_primary_pairs,positive_holdout_pairs,negative_holdout_pairs,positive_nonoverlap_pairs,negative_nonoverlap_pairs,positive_ic_intervals,negative_ic_intervals,positive_bh_rejections,negative_bh_rejections,positive_year_cell_fraction,negative_year_cell_fraction,moderate_positive_pairs,moderate_negative_pairs,incremental_positive_pairs,incremental_positive_holdout_pairs,incremental_positive_intervals
+VM01,CONTROL_PRICE,REVERSAL-LIKE,0,6,0,6,0,6,0,6,0,6,0,1,0,6,0,0,0
+VM02,CONTROL_PRICE,REVERSAL-LIKE,0,6,0,6,0,6,0,5,0,5,0.095238095238,0.904761904762,0,6,0,0,0
+VM03,CONTROL_VOLUME,REVERSAL-LIKE,1,5,2,4,1,5,0,5,0,5,0.166666666667,0.833333333333,1,5,0,0,0
+VM04,CONTROL_VOLUME,REVERSAL-LIKE,0,6,2,4,0,6,0,5,0,5,0.142857142857,0.857142857143,0,6,0,0,0
+VM05,INTERACTION,REVERSAL-LIKE,0,6,0,6,0,6,0,6,0,6,0,1,0,6,0,0,0
+VM06,INTERACTION,REVERSAL-LIKE,0,6,0,6,0,6,0,6,0,6,0,1,0,6,0,0,0
+VM07,INTERACTION,REVERSAL-LIKE,0,6,0,6,0,6,0,6,0,6,0,1,0,6,0,0,0

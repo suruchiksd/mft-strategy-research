@@ -1,0 +1,2 @@
+audit,finding,affected_requests,classification
+fallback_requests,"Phase13B target replay did not consume a true per-sector frozen fallback artifact; repeated requests were target-name retries, not sequential fallback handling",3656,REPLAY BUG

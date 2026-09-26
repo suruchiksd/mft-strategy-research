@@ -1,0 +1,9 @@
+{
+  "after_sha256": "87f6e5e9af5d3c04418163ab19e4e99fb460f6a8d8b9eef7d267624646bdc26d",
+  "before_sha256": "87f6e5e9af5d3c04418163ab19e4e99fb460f6a8d8b9eef7d267624646bdc26d",
+  "ending_persisted_cash": 500000.0,
+  "ending_persisted_positions": 0,
+  "equal": true,
+  "starting_cash": 500000.0,
+  "starting_positions": 0
+}

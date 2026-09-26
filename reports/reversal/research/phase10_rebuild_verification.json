@@ -1,0 +1,6 @@
+{
+  "build_id": "cda8c86bfa6b904d1f6a8975ca3eb3257f528658ee3dd9cb5719a811cb9cdc91",
+  "byte_identical": true,
+  "command": ".venv/bin/python scripts/build_phase10_reversal.py --verify-rebuild",
+  "output_count": 14
+}

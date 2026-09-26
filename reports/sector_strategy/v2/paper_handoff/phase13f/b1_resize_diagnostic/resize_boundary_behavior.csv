@@ -1,0 +1,4 @@
+deviation,expected_behavior,actual_side,actual_quantity,status
+0.0199,NO ORDER,NONE,0,PASS
+0.02,RESIZE,BUY,1,PASS
+0.0201,RESIZE,BUY,1,PASS

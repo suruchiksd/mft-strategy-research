@@ -1,0 +1,11 @@
+precedence,purpose_pattern,official_action_type,safety_classification,research_reason
+1,FACE VALUE|SPLIT|SUB-DIVISION|CONSOLIDATION|REVERSE SPLIT,SPLIT_OR_FACE_VALUE_CHANGE,BLOCK_PRICE_RETURN_INTERVAL,Mechanical unit/price discontinuity risk
+2,BONUS,BONUS,BLOCK_PRICE_RETURN_INTERVAL,Mechanical unit/price discontinuity risk
+3,RIGHTS,RIGHTS,BLOCK_PRICE_RETURN_INTERVAL,Entitlement value is absent from source price return
+4,DEMERGER|SPIN-OFF|SPIN OFF,DEMERGER_OR_SPINOFF,BLOCK_PRICE_RETURN_INTERVAL,Entitlement basket is unavailable
+5,MERGER|AMALGAMATION,MERGER_OR_AMALGAMATION,BLOCK_PRICE_RETURN_INTERVAL,Identity and consideration ambiguity
+6,CAPITAL REDUCTION,CAPITAL_REDUCTION,BLOCK_PRICE_RETURN_INTERVAL,Capital/price discontinuity risk
+7,SCHEME|ARRANGEMENT|NCRPS|DISTRIBUTION|ENTITLEMENT,SCHEME_OR_SPECIAL_DISTRIBUTION,BLOCK_PRICE_RETURN_INTERVAL,Special entitlement ambiguity
+8,BUY BACK|BUYBACK,BUYBACK,NONBLOCKING_INFORMATIONAL,Accepted overlap treated 21/21 buybacks as nonblocking
+9,DIVIDEND,DIVIDEND,NONBLOCKING_INFORMATIONAL,Accepted overlap treated 565/565 dividends as price-momentum nonblocking
+10,OTHER,OTHER_OR_UNKNOWN,REVIEW_REQUIRED_BLOCKED,Unknown purpose is never silently safe

@@ -1,0 +1,67 @@
+{
+  "build_id": "aeabe4a61aa23901e85a76102a80bfc73c5d09c090b7fc0dc145a2db51539fbf",
+  "build_timestamp_utc": "2026-09-14T09:50:26.113900+00:00",
+  "code_sha256": "dec6525d77f25620ff660cc46b2a42c225905067c9eb32544e06f05b8059eac4",
+  "config": {
+    "blocking_action_classes": [
+      "MATERIAL_UNRESOLVED_EVENT",
+      "UNKNOWN_OR_AMBIGUOUS"
+    ],
+    "corporate_action_coverage_end": "2026-07-17",
+    "corporate_action_ledger_path": "data/derived/corporate_action_ledger.parquet",
+    "daily_bars_path": "data/derived/daily_bars.parquet",
+    "decile_formula": "floor((ordinal_rank_minus_1)*10/cross_section_count)+1",
+    "factor_panel_path": "data/derived/csrs_factor_panel.parquet",
+    "formation_horizons": [
+      5,
+      10,
+      20,
+      40,
+      60
+    ],
+    "future_horizons": [
+      1,
+      2,
+      3,
+      5,
+      10,
+      20
+    ],
+    "inference_note": "descriptive_naive_statistics_only_overlapping_forward_returns_and_serial_dependence",
+    "interval_policy": "all_observed_market_dates_between_endpoints_must_have_research_eligible_symbol_rows",
+    "minimum_cross_section_for_deciles": 10,
+    "minimum_cross_section_for_rank_ic": 2,
+    "percentile_formula": "(ordinal_rank_minus_1)/(cross_section_count_minus_1)",
+    "phase2_acceptance_path": "reports/phase2_validation.json",
+    "phase2_build_id": "049f5a61be599b277f775105fe8935128c2015d98867bcf76dfbd98f07c80988",
+    "phase2_manifest_path": "data/derived/source_manifest.json",
+    "rank_tie_policy": "momentum_ascending_then_symbol_ascending_unique_ordinal",
+    "report_dir": "reports/csrs",
+    "research_scope": "conditional current-universe research",
+    "schema_version": 1,
+    "session_calendar_path": "data/derived/session_calendar.parquet",
+    "side_group_rule": "ceil(fraction*cross_section_count)_weakest_or_strongest_by_deterministic_ordinal",
+    "trading_session_index": "phase2_observed_session_calendar"
+  },
+  "panel_rows": 188451,
+  "panel_sha256": "9a57c8467ef15827eec8a49ac75af386e80c305f3bbfccf407ac7e45ed8fd347",
+  "phase2_artifact_sha256": {
+    "corporate_action_ledger.parquet": "1b242cc4016978783d4b1f8039a667842b8819a90de92cacb8e386650dd588f4",
+    "daily_bars.parquet": "d77c8ee9511121c995b998cf3e2837f3b74e7575253d67439618595e3feeae97",
+    "session_calendar.parquet": "10926d7d555975ae1158c7141f421a0b45c0b71b16b1fa7cfab93b55c5e16611"
+  },
+  "phase2_build_id": "049f5a61be599b277f775105fe8935128c2015d98867bcf76dfbd98f07c80988",
+  "report_sha256": {
+    "coverage_analysis.csv": "44907c0987ca5bb248e8317128acbc74ff3d248a1f9cb091e4a6e5263c83c67d",
+    "cross_section_size.csv": "a29d638a66f66a069d4810f9418c0113ceec26a173706650c44d611bcad5a42a",
+    "horizon_summary.csv": "d9b860a59fbd1b54d6be4ed6603b04c8f602634d1dc405788bf8b876d53bd42c",
+    "interval_eligibility_summary.csv": "6968c0b63c5829bfc5ab789be39521058c3e1b88819cf7598ff059d5f31e61e0",
+    "quantile_returns.csv": "35d74296878e16566ec6303427a3e18aaf40ce40cf97e731af29d2c7c07e7008",
+    "rank_ic_daily.csv": "e75e15fc5fb86adce06451d2c58df6582eb8f50ae15f2b1d6643518882322330",
+    "rank_ic_summary.csv": "23e65707c1bd5c6ce955e40c97b778f18ed5a7e6eb84caaa16e675b6e26a0cdd",
+    "side_analysis.csv": "b3d8407c7abdf068959a675f036f16d8a9fbd4ebdb1004cfc886e38fc37e7b0e",
+    "signal_decay.csv": "ba17a5d07bdc34b4f5381dccb542cd5193535cfdbb382eab544d52582b897684",
+    "yearly_analysis.csv": "a1b22ac1a3d8277246076e8bd00566ec546fb4ce87e818328abe339681744bed"
+  },
+  "research_scope": "conditional current-universe research"
+}

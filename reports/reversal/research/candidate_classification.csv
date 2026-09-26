@@ -1,0 +1,3 @@
+candidate_id,classification,historical_positive_horizons,confirmation_positive_horizons,certified_confirmation_dates_minimum,acceptance_rule_passed,reason
+REV05,INSUFFICIENT SAMPLE,6,0,0,False,CORPORATE_ACTION_EXTENSION_NOT_ACCEPTED
+REV20,INSUFFICIENT SAMPLE,6,0,0,False,CORPORATE_ACTION_EXTENSION_NOT_ACCEPTED

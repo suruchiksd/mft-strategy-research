@@ -1,0 +1,21 @@
+{
+  "accepted_manifest_sha256": {
+    "reports/csrs/point_in_time/phase5_build_manifest.json": "3ed12bff2853b063273ca51c31d8ddaa6d473805ce77b9ce1e9e2287bc6be87e",
+    "reports/sector_momentum/foundation/phase6_build_manifest.json": "1485ae31833ccf1e64ba57b9b44613a523aae874921c3af12409ceaeb5478bac",
+    "reports/sector_momentum/research/phase7_build_manifest.json": "562de96ef775851827e5cbfe8714c687cb3571159e4adf0fc5bacf9181b71087",
+    "reports/volume_momentum/foundation/phase8_build_manifest.json": "084a49a835dfafb7af606d0ecb5ca5956a1e18c21e499cb9edb7ddd4f70fb24b",
+    "reports/volume_momentum/research/phase9_build_manifest.json": "255d7dada8c8ce698cf2cac79e0044ceecdbabfd99ea0e920cd8c159dd17b19c"
+  },
+  "confirmation_signal_start_exclusive": "2026-07-17",
+  "discovery_end": "2026-07-17",
+  "frozen_at_utc": "2026-09-16T14:43:41.269512+00:00",
+  "frozen_file_sha256": {
+    "config/phase10_reversal.yaml": "df20acd81c5ac8a94030d380a17a675f9c542afdce6cd79eb4e5a6081afae531",
+    "reports/reversal/preregistration/phase10_reversal_preregistration.md": "6f82d374f2c818eac18f991e3368a9056cd45e67a886bcb8e4cc80266a0802c2",
+    "reports/reversal/preregistration/reversal_candidate_registry.csv": "cf46e6d6566e86fde0f6c4958c4e7b24010f8af5c9004b34ebe20822925ca1b0"
+  },
+  "phase": 10,
+  "phase9_build_id": "00a3e8a873d6488d7a97a642347ec0f59d53e94dcb7f32e4ea20841c54f1455b",
+  "post_cutoff_outcomes_inspected": false,
+  "status": "FROZEN_BEFORE_CONFIRMATION_OUTCOME_INSPECTION"
+}

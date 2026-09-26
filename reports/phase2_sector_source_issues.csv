@@ -1,0 +1,4 @@
+source_file,source_row,issue,symbol
+chemicals_CM.csv,148,BLANK_RECORD,
+construction_supplies_CS.csv,68,DUPLICATE_RECORD,BOROLTD
+sugar_SU.csv,31,DUPLICATE_RECORD,DHAMPURSUG

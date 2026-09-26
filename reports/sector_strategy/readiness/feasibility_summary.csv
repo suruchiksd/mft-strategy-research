@@ -1,0 +1,2 @@
+development_signal_dates,usable_sector_min,usable_sector_median,usable_sector_max,selected_sector_dates_below_3_stocks,expected_positions_min,expected_positions_median,expected_positions_max,maximum_sector_weight,calendar_rule
+342,0,35,36,0,0,9,9,0.333333333333,FINAL_NSE_SESSION_OF_ISO_WEEK_SIGNAL_NEXT_SESSION_OPEN

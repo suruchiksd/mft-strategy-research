@@ -1,0 +1,4 @@
+rebalance_id,event_stage,note
+SMV2-0020,VALUATION,execution-open pretrade basis reconciled
+SMV2-0021,DIVERGENCE_CHECK,first post-A divergence
+SMV2-0087,STATE_CASCADE,first B2 mismatch cluster

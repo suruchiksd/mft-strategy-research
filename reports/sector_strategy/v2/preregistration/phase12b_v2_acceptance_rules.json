@@ -1,0 +1,54 @@
+{
+  "50bps_sensitivity": {
+    "reported_not_required_positive": true
+  },
+  "CONDITIONAL_PROSPECTIVE_CANDIDATE": {
+    "all_shared_required_gates_pass": true,
+    "maximum_drawdown_gt": -0.4,
+    "maximum_drawdown_lt": -0.35
+  },
+  "READY_FOR_PROSPECTIVE_VALIDATION": {
+    "all_shared_required_gates_pass": true,
+    "maximum_drawdown_gte": -0.35
+  },
+  "REJECT_STRATEGY_V2": {
+    "if_any_hard_safety_invariant_fails": true,
+    "or_maximum_drawdown_lte": -0.4,
+    "or_primary_25bps_net_cumulative_return_lte": 0
+  },
+  "RESEARCH_FURTHER": {
+    "non_reject_but_one_or_more_shared_required_gates_fail": true
+  },
+  "automatic_paper_trade_authorized": false,
+  "evaluation_order": [
+    "REJECT_STRATEGY_V2",
+    "RESEARCH_FURTHER",
+    "CONDITIONAL_PROSPECTIVE_CANDIDATE",
+    "READY_FOR_PROSPECTIVE_VALIDATION"
+  ],
+  "metric_definitions": {
+    "absolute_contribution_share": "absolute_single_contribution divided by sum_absolute_contributions",
+    "cost_retention_ratio": "(ending_NAV_25bps_minus_1)/(ending_NAV_0bps_minus_1); requires gross gain > 0",
+    "maximum_drawdown": "minimum_NAV_over_prior_peak_minus_1",
+    "mean_weekly_gross_turnover": "sum_absolute_executed_notional_divided_by_pretrade_equity_mean_across_rebalances"
+  },
+  "real_money_authorized": false,
+  "shared_required_gates": {
+    "cost_retention_ratio_min": 0.4,
+    "mean_weekly_gross_turnover_max": 0.65,
+    "no_fabricated_price": true,
+    "no_fabricated_trade": true,
+    "no_future_universe_leakage": true,
+    "no_leverage": true,
+    "no_negative_cash": true,
+    "no_same_close_execution": true,
+    "primary_25bps_CAGR_gt": 0,
+    "primary_25bps_Sharpe_gt": 0,
+    "primary_25bps_net_cumulative_return_gt": 0,
+    "single_sector_absolute_contribution_share_max": 0.6,
+    "single_stock_absolute_contribution_share_max": 0.5,
+    "trapped_positions_count_toward_cap": true,
+    "unavailable_exits_remain_positions": true
+  },
+  "version": "V2_FROZEN_BEFORE_PNL"
+}

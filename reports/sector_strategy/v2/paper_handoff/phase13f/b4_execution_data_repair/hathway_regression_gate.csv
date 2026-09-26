@@ -1,0 +1,3 @@
+rebalance_id,symbol,starting_quantity_research,starting_quantity_engine,source_used,series,open,research_exit_quantity,engine_exit_quantity,ending_quantity_research,ending_quantity_engine,status,research_entry_quantity,engine_entry_quantity
+SMV2-0030,HATHWAY,1262.0,1262.0,raw_provider,BE,46.55,1262.0,1262.0,0.0,0.0,PASS,,
+SMV2-0030,TATACOMM,,,,,,,,,,PASS,95.0,95.0

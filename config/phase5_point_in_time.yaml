@@ -1,0 +1,70 @@
+schema_version: 1
+research_scope: historical point-in-time NSE EQ research; archive and corporate-action coverage limitations apply
+bhavcopy_root: /home/suruchi-pandey/Projects/Bhavcopy-download-and-mail-code
+sector_root: /home/suruchi-pandey/Projects/bhavcopy-universe/Sectors
+corporate_action_ledger: data/derived/corporate_action_ledger.parquet
+current_universe: data/derived/universe.parquet
+phase3_panel: data/derived/csrs_factor_panel.parquet
+phase3_manifest: reports/csrs/csrs_build_manifest.json
+phase3_acceptance: reports/csrs/factor_panel_acceptance.json
+phase4_manifest: reports/csrs/validation/phase4_build_manifest.json
+phase4_uncertainty: reports/csrs/validation/uncertainty_intervals.csv
+phase4_year_stability: reports/csrs/validation/year_stability.csv
+historical_daily_output: data/derived/historical_nse_daily.parquet
+report_dir: reports/csrs/point_in_time
+final_report: reports/phase5_point_in_time_csrs.md
+series: EQ
+formation_horizons: [5, 10, 20, 40, 60]
+future_horizons: [1, 2, 3, 5, 10, 20]
+corporate_action_coverage_start: "2020-01-09"
+corporate_action_coverage_end: "2026-07-17"
+corporate_action_policy:
+  primary_blocking_impacts: [MATERIAL_UNRESOLVED_EVENT, UNKNOWN_OR_AMBIGUOUS, LIKELY_ALREADY_ADJUSTED_CONVENTIONAL_ACTION]
+  broad_blocking_impacts: [MATERIAL_UNRESOLVED_EVENT, UNKNOWN_OR_AMBIGUOUS, LIKELY_ALREADY_ADJUSTED_CONVENTIONAL_ACTION]
+  ledger_silence_status: NO_RECORDED_EVENT_NOT_COMPLETENESS_PROOF
+  event_date_semantics: source_date_not_globally_verified_ex_date
+universe_specs:
+  BROAD_EQ:
+    minimum_prior_sessions: 0
+    minimum_close: 0
+    minimum_avg_turnover_20: 0
+    minimum_avg_volume_20: 0
+  BASIC_LIQUID:
+    minimum_prior_sessions: 60
+    minimum_close: 20
+    minimum_avg_turnover_20: 10000000
+    minimum_avg_volume_20: 0
+  MODERATE_LIQUID:
+    minimum_prior_sessions: 120
+    minimum_close: 50
+    minimum_avg_turnover_20: 50000000
+    minimum_avg_volume_20: 25000
+  STRICT_SENSITIVITY:
+    minimum_prior_sessions: 350
+    minimum_close: 100
+    minimum_avg_turnover_20: 200000000
+    minimum_avg_volume_20: 50000
+rolling_liquidity_sessions: 20
+rolling_turnover_long_sessions: 60
+minimum_cross_section_ic: 2
+minimum_cross_section_deciles: 10
+fixed_periods:
+  - {name: RESEARCH_DEVELOPMENT, start: "2020-01-01", end: "2022-12-31"}
+  - {name: VALIDATION, start: "2023-01-01", end: "2024-12-31"}
+  - {name: OUT_OF_SAMPLE_HOLDOUT, start: "2025-01-01", end: "2026-07-17"}
+evaluation_years: [2021, 2022, 2023, 2024, 2025, 2026]
+uncertainty:
+  method: circular_moving_block_bootstrap_daily_statistics
+  replications: 1000
+  confidence_level: 0.95
+  seed: 20260914
+  block_length_rule: max_10_or_twice_future_horizon
+multiple_testing:
+  family: 30_horizon_pairs_within_universe_tier_and_statistic
+  methods: [BENJAMINI_HOCHBERG, HOLM]
+  alpha: 0.05
+identity_policy:
+  stitch_aliases: false
+  fuzzy_matching: false
+  literal_eq_includes_exchange_traded_products: true
+asm_gsm_policy: omitted_no_historical_effective_dated_source

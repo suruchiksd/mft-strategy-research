@@ -1,0 +1,10 @@
+close,day,open,purpose,reason,series,source,status,symbol
+,2026-09-21,432.0,entry,supported execution row,EQ,normalized_daily,USED,JKPAPER
+,2026-09-21,587.0,entry,supported execution row,EQ,normalized_daily,USED,KALYANKJIL
+,2026-09-21,1234.1,entry,supported execution row,EQ,normalized_daily,USED,RELIANCE
+,2026-09-21,4816.5,entry,supported execution row,EQ,normalized_daily,USED,TITAN
+,2026-09-21,232.8,entry,supported execution row,EQ,normalized_daily,USED,ONGC
+,2026-09-21,600.0,entry,supported execution row,EQ,normalized_daily,USED,TBZ
+,2026-09-21,777.0,entry,supported execution row,EQ,normalized_daily,USED,WSTCSTPAPR
+,2026-09-21,3478.9,entry,supported execution row,EQ,normalized_daily,USED,KPL
+,2026-09-21,167.45,entry,supported execution row,EQ,normalized_daily,USED,MRPL

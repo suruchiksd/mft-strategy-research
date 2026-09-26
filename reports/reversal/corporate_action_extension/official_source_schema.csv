@@ -1,0 +1,15 @@
+field,observed_dtype,semantics
+bcEndDate,str,Book-closure end
+bcStartDate,str,Book-closure start
+caBroadcastDate,float64,Broadcast/announcement date if supplied
+comp,str,Company name
+exDate,str,Official ex-date
+faceVal,int64,Face value
+ind,str,Indicator
+isin,str,ISIN
+ndEndDate,str,No-delivery end
+ndStartDate,str,No-delivery start
+recDate,str,Record date
+series,str,Series
+subject,str,Official purpose text
+symbol,str,Exchange symbol

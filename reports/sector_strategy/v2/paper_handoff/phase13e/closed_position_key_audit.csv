@@ -1,0 +1,5 @@
+check,finding,source
+Portfolio.positions retains zero-quantity mapping,YES; process_fill sets quantity=0 and leaves mapping,paper_trading/portfolio/accounting.py
+Portfolio.open_positions counts zero quantity,NO; filters quantity != 0,paper_trading/portfolio/accounting.py
+RiskManager counts current open positions,YES; open_positions plus pending keys,paper_trading/risk/manager.py
+RiskManager distinguishes resize BUY from new position,Only by current instrument key; no explicit strategy resize concept,paper_trading/risk/manager.py

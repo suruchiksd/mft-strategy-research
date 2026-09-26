@@ -1,0 +1,33 @@
+{
+  "classifications": {
+    "EXTRA_ENGINE_ORDER": 11,
+    "POSITION_STATE_MISMATCH": 26,
+    "QUANTITY_MISMATCH": 21,
+    "RISK_REJECTED_ORDER": 42,
+    "SIDE_MISMATCH": 1
+  },
+  "decision": "PARITY ROOT CAUSE IDENTIFIED",
+  "first_divergence_date": "2020-05-11",
+  "first_divergence_rebalance": "SMV2-0019",
+  "mismatch_total": 101,
+  "phase12b_preregistration_hash": "2e99d105d6a23538dafcaa4d6c17ba71b008c2e30fee63bec2cb50706a6aee2f",
+  "phase12c_build": "96e614a5638f221b1c340e4f9201e792b5c01e1394eac682ef7b53480aa0f2fb",
+  "phase13b_evidence_sha256": {
+    "historical_risk_parity.csv": "1aa8a9af1148bf33df06c54705a9c86228c6bd17c39d0e49154396d7af82ff68",
+    "historical_target_to_order_parity.csv": "8b41348bb0baff1a8c39616c6a435ab7210abf7a44cd887ea1eb4c6f0e9f9e7e",
+    "phase13b_execution_parity_manifest.json": "3ffed4c8f0d6e0041bfafe5c700b61336fc1b32af161d778447a7aff2dcbcb9b"
+  },
+  "post_boundary_performance_inspected": false,
+  "rejection_reasons": {
+    "insufficient available cash": 3656,
+    "maximum open positions reached": 1
+  },
+  "risk_approved": 621,
+  "risk_decisions": 4278,
+  "risk_rejected": 3657,
+  "root_causes": {
+    "CASH / SIZING DIFFERENCE": 21,
+    "POSITION-STATE DIFFERENCE": 27,
+    "REPLAY BUG": 53
+  }
+}

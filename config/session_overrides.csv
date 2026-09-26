@@ -1,0 +1,17 @@
+date,session_type,intervals,force_ineligible,evidence_status,evidence,notes
+2020-02-01,SPECIAL_FULL_DAY,09:15-15:30,false,PHASE1_OBSERVED_AND_IDENTIFIED,reports/phase1_audit.md,Audited weekend full-day session; do not infer other weekend openings
+2020-03-13,HALT_OR_EXTENDED_UNRESOLVED,,true,UNRESOLVED_EXACT_MINUTE_SCHEDULE,reports/phase1_audit.md,All observed rows retained but session ineligible; exact expected grid undetermined
+2020-03-23,HALT_OR_EXTENDED_UNRESOLVED,,true,UNRESOLVED_EXACT_MINUTE_SCHEDULE,reports/phase1_audit.md,All observed rows retained but session ineligible; exact expected grid undetermined
+2020-04-27,EXTRA_BAR_UNRESOLVED,09:15-15:30,true,UNRESOLVED_EXTRA_1530_BAR,reports/phase1_audit.md,Exclude extra minute from aggregation; retain exception; date quarantined
+2020-11-14,SPECIAL_MUHURAT,18:15-19:15,false,PHASE1_OBSERVED_AND_IDENTIFIED,reports/phase1_audit.md,Audited annual 60-minute session; exact interval required
+2021-02-24,HALT_OR_EXTENDED_UNRESOLVED,,true,UNRESOLVED_EXACT_MINUTE_SCHEDULE,reports/phase1_audit.md,All observed rows retained but session ineligible; exact expected grid undetermined
+2021-11-04,SPECIAL_MUHURAT,18:15-19:15,false,PHASE1_OBSERVED_AND_IDENTIFIED,reports/phase1_audit.md,Audited annual 60-minute session; exact interval required
+2022-10-24,SPECIAL_MUHURAT,18:15-19:15,false,PHASE1_OBSERVED_AND_IDENTIFIED,reports/phase1_audit.md,Audited annual 60-minute session; exact interval required
+2023-11-12,SPECIAL_MUHURAT,18:15-19:15,false,PHASE1_OBSERVED_AND_IDENTIFIED,reports/phase1_audit.md,Audited annual 60-minute session; exact interval required
+2024-01-20,SPECIAL_FULL_DAY,09:15-15:30,false,PHASE1_OBSERVED_AND_IDENTIFIED,reports/phase1_audit.md,Audited weekend full-day session; do not infer other weekend openings
+2024-03-02,SPECIAL_DR,09:15-10:00|11:30-12:30,false,PHASE1_IDENTIFIED_SCHEDULE,reports/phase1_audit.md,Two continuous-market segments; scheduled break is not missing data
+2024-05-18,SPECIAL_DR,09:15-10:00|11:30-12:30,false,PHASE1_IDENTIFIED_SCHEDULE,reports/phase1_audit.md,Two continuous-market segments; scheduled break is not missing data
+2024-11-01,SPECIAL_MUHURAT,18:00-19:00,false,PHASE1_OBSERVED_AND_IDENTIFIED,reports/phase1_audit.md,Audited annual 60-minute session; exact interval required
+2025-02-01,SPECIAL_FULL_DAY,09:15-15:30,false,PHASE1_OBSERVED_AND_IDENTIFIED,reports/phase1_audit.md,Audited weekend full-day session; do not infer other weekend openings
+2025-10-21,SPECIAL_MUHURAT,13:45-14:45,false,PHASE1_OBSERVED_AND_IDENTIFIED,reports/phase1_audit.md,Audited annual 60-minute session; exact interval required
+2026-02-01,SPECIAL_FULL_DAY,09:15-15:30,false,PHASE1_OBSERVED_AND_IDENTIFIED,reports/phase1_audit.md,Audited weekend full-day session; do not infer other weekend openings

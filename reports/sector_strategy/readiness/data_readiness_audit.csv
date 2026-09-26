@@ -1,0 +1,6 @@
+item,latest_date,status
+accepted_historical_daily,2026-09-11,UNCHANGED
+local_bhavcopy_archive,2026-09-17,COMPLETE_THROUGH_TARGET_WITH_2026_09_14_HOLIDAY
+accepted_ca_extension,2026-09-11,UNCHANGED
+phase11_ca_extension,2026-09-17,ADDITIVE_CERTIFICATION_THROUGH_TARGET
+sector_mapping,STATIC_CURRENT_NO_EFFECTIVE_DATES,CONDITIONAL_LIMITATION

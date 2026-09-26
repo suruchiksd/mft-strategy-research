@@ -1,0 +1,3 @@
+# Accepted execution quote contract
+
+`build_phase12c_v2_backtest.py` constructs `RawQuotes` from the accepted daily `source_file` path. `RawQuotes.__call__` reads that exact source, canonicalizes it with the accepted `source_format`, and returns symbol/series/open/close rows. `simulate_v2` first uses the normalized daily rows; when a symbol is absent from the session frame, it appends raw-provider EQ/BE rows (lines 128-134 of `sector_strategy_v2_backtest.py`). Valid execution requires EQ or BE, positive open, and a supported row. Exits may use EQ or BE; new entries remain EQ-only in the frozen V2 contract. When neither normalized nor raw-provider data has a supported open, exits remain pending and no price is fabricated.

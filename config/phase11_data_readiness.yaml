@@ -1,0 +1,27 @@
+phase: 11
+retrieval_timestamp_utc: '2026-09-17T12:02:57Z'
+accepted_daily: data/derived/historical_nse_daily.parquet
+accepted_sector_panel: data/derived/sector_momentum_factor_panel.parquet
+sector_mapping: data/derived/sector_research_mapping.parquet
+historical_actions: data/derived/corporate_action_ledger.parquet
+phase10_actions: data/derived/phase10_corporate_action_extension.parquet
+phase5_config: config/phase5_point_in_time.yaml
+phase7_config: config/phase7_sector_momentum.yaml
+raw_bhavcopy_dir: data/external/phase11/bhavcopy
+raw_ca: data/external/phase11/corporate_actions/official_nse_corporate_actions_20260912_20260917.json
+daily_extension: data/derived/phase11_historical_daily_extension.parquet
+ca_extension: data/derived/phase11_corporate_action_extension.parquet
+extended_sector_panel: data/derived/phase11_sector_signal_panel.parquet
+report_dir: reports/sector_strategy/readiness
+price_extension_dates: ['2026-09-15', '2026-09-16', '2026-09-17']
+holiday_dates: ['2026-09-14']
+certified_end: '2026-09-17'
+development_end: '2026-07-17'
+factor_formation_sessions: 20
+primary_universe: BASIC_LIQUID
+minimum_sector_size: 5
+selected_sector_count: 3
+stocks_per_sector: 3
+liquidity_field: avg_turnover_20
+required_mapping_status: STATIC_CURRENT_UNIQUE
+require_stable_identity: true

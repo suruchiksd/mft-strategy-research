@@ -1,0 +1,28 @@
+{
+  "rebalances_compared": 350,
+  "last_exact_rebalance": "SMV2-0029",
+  "first_true_divergent_rebalance": "SMV2-0030",
+  "first_divergent_symbol": "HATHWAY",
+  "target_n_difference_count": 0,
+  "mismatch_rows": 60,
+  "unknown_material_root_causes": 0,
+  "phase12b_hash": "2e99d105d6a23538dafcaa4d6c17ba71b008c2e30fee63bec2cb50706a6aee2f",
+  "phase12c_build": "96e614a5638f221b1c340e4f9201e792b5c01e1394eac682ef7b53480aa0f2fb",
+  "post_boundary_performance_inspected": false,
+  "output_hashes": {
+    "full_research_state.csv": "68b4030fbf38d4175307603e81d5f241c88c284e359ef0d8ce2cd0615cd0f5f8",
+    "full_engine_state.csv": "e5496e35a13c6854d585109a64328bc97b7468d6347153556be809b2f9073c3e",
+    "full_state_parity.csv": "f39ff0c5d44feb30ec5b616b22ee1aa2e0f07ef0dd2d5f1b8a93a4c9df337645",
+    "first_true_divergence.csv": "1033132c368e7e68cdcf258129c60625923c11cf6cf82c9b83f0370e94b3ad4c",
+    "first_true_divergence_event_trace.csv": "05870cc8cc9c25d2db586bc079317ec4da31f8c293a105350b6bd937d5f2b5f2",
+    "desired_share_formula_audit.csv": "7b8facf12d99843c2cf11feb9d06567d5da75232ed524fedd920e2661c312b7e",
+    "target_n_audit.csv": "83b783da15ad86fd29df9c592ecdf896f326eee4ff0ce5bdfce919ea5c65dba0",
+    "pretrade_holding_set_audit.csv": "96e95eb6f0c816d8653a4e6a7474ce76f405503404ec5d16c90f15e746e9da58",
+    "cost_arithmetic_audit.csv": "dd5bbf170fcf63020894edaab7ffbddbdbc8dd13ade6ec161d6e6515233d58f5",
+    "cash_clipping_audit.csv": "237cc3c2685c370aaf8e4932700988dd3827e9c117f945361865a48538dadd5a",
+    "retained_resize_formula_audit.csv": "dab5a5b32b5d63209456586ce7140f81a051701c4e6590a57b9a3902cdcbfa53",
+    "new_entry_order_audit.csv": "52655ab66190052d739edc46042334c6297e289064d645e704032696b5acd8a5",
+    "smv2_0087_cascade_trace.csv": "556b9961ba6ad443313bf7ecb523d0cbfe770667f183535e758cc8599f8fbb3c",
+    "remaining_60_dependency_map.csv": "a1c0e76fcee2c61b5ffbeb150eb05e700ce83b6069aff538dd5bd0d4f58fa2e4"
+  }
+}

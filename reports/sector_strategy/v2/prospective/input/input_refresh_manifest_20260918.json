@@ -1,0 +1,17 @@
+{
+  "ca_ex_date_max": "2026-09-18",
+  "ca_normalized_rows": 65,
+  "ca_raw_rows": 65,
+  "ca_retrieval_timestamp": "2026-09-21T00:00:00+05:30",
+  "ca_sha256": "f205ce004023c45ac4bdc0f4a0bfcbd1445444ebad90fa326c0d5dbce1599faf",
+  "ca_source": "data/external/prospective/corporate_actions/official_nse_corporate_actions_20260918.json",
+  "canonical_eq_rows": 2647,
+  "canonical_unique_eq_symbols": 2647,
+  "date_max": "2026-09-18",
+  "date_min": "2026-09-18",
+  "information_date_available": false,
+  "source_file": "/home/suruchi-pandey/Projects/Bhavcopy-download-and-mail-code/2026/BhavCopy_NSE_CM_0_0_0_20260918_F_0000.csv",
+  "source_rows": 3660,
+  "source_sha256": "7cae275ca1013640be78b5607978830b92ff17f5412a303c514aaf9c3d8578a1",
+  "timing_rule": "accepted_phase10_11_ex_date_blocking_date; null broadcast dates retained; conflicts conservatively blocked"
+}

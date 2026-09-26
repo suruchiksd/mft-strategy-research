@@ -1,0 +1,17 @@
+date,symbol,purpose,source_used,series,open,resolution_status,fallback_used,reason,category,rebalance_id
+2020-07-27,HATHWAY,valuation,raw_provider,BE,46.55,USED,True,normalized row absent; raw provider row available,raw_provider_fallback_used,SMV2-0030
+2020-07-27,HATHWAY,exit,raw_provider,BE,46.55,USED,True,normalized row absent; raw provider row available,raw_provider_fallback_used,SMV2-0030
+2021-10-18,EASEMYTRIP,valuation,raw_provider,BE,590.0,USED,True,normalized row absent; raw provider row available,raw_provider_fallback_used,SMV2-0094
+2021-10-18,EASEMYTRIP,exit,raw_provider,BE,590.0,USED,True,normalized row absent; raw provider row available,raw_provider_fallback_used,SMV2-0094
+2021-12-13,TTML,valuation,raw_provider,BE,155.65,USED,True,normalized row absent; raw provider row available,raw_provider_fallback_used,SMV2-0102
+2021-12-13,TTML,exit,raw_provider,BE,155.65,USED,True,normalized row absent; raw provider row available,raw_provider_fallback_used,SMV2-0102
+2022-01-24,TRIDENT,valuation,raw_provider,BE,63.0,USED,True,normalized row absent; raw provider row available,raw_provider_fallback_used,SMV2-0108
+2022-01-24,TRIDENT,exit,raw_provider,BE,63.0,USED,True,normalized row absent; raw provider row available,raw_provider_fallback_used,SMV2-0108
+2022-09-19,NDTV,valuation,raw_provider,BE,448.1,USED,True,normalized row absent; raw provider row available,raw_provider_fallback_used,SMV2-0142
+2022-09-19,NDTV,exit,raw_provider,BE,448.1,USED,True,normalized row absent; raw provider row available,raw_provider_fallback_used,SMV2-0142
+2024-10-07,REFEX,valuation,raw_provider,BE,559.9,USED,True,normalized row absent; raw provider row available,raw_provider_fallback_used,SMV2-0249
+2024-10-07,REFEX,retained_resize,raw_provider,BE,559.9,USED,True,normalized row absent; raw provider row available,raw_provider_fallback_used,SMV2-0249
+2024-10-14,REFEX,valuation,raw_provider,BE,495.0,USED,True,normalized row absent; raw provider row available,raw_provider_fallback_used,SMV2-0250
+2024-10-14,REFEX,exit,raw_provider,BE,495.0,USED,True,normalized row absent; raw provider row available,raw_provider_fallback_used,SMV2-0250
+2024-12-09,KITEX,valuation,raw_provider,BE,730.0,USED,True,normalized row absent; raw provider row available,raw_provider_fallback_used,SMV2-0258
+2024-12-09,KITEX,exit,raw_provider,BE,730.0,USED,True,normalized row absent; raw provider row available,raw_provider_fallback_used,SMV2-0258

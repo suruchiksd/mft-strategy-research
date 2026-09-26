@@ -1,0 +1,14 @@
+{
+  "frozen_at_utc": "2026-09-17T12:22:52Z",
+  "frozen_file_sha256": {
+    "phase11_sector_strategy_config.yaml": "166418776828066d09af3944aeee49d4f739fadb68eef44bc057553ba7203928",
+    "phase11_sector_strategy_preregistration.md": "782c62b2fe447673fe4c739f9522192e82533b908e872ae8e88471d56fb0eda7"
+  },
+  "holdout_strategy_pnl_inspected": false,
+  "latest_certified_date": "2026-09-17",
+  "phase10_amendment_hash": "9752e169486101be217a9c9f96aa9cf22adfcbc563c2c544415db60e4f2e3b42",
+  "phase7_build_id": "f41dbfd6019e517e3696076f7330b083622732c8a785f3bfa3f65e5573d335df",
+  "readiness_build_id": "daff4b099ef7ec153cabc351b855ae1ee863c45c45c5de9a4cae8cdd8f9528fd",
+  "status": "FROZEN_BEFORE_HOLDOUT_STRATEGY_PNL",
+  "strategy_preregistration_hash": "197fb9d9a6185076a70cbb7f92affe2d8dd4688c2e2c3d7791e3438bf7b2cada"
+}

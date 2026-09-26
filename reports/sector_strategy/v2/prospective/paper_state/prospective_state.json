@@ -1,0 +1,62 @@
+{
+  "cash": 7800.780778700078,
+  "pending_exits": [],
+  "positions": [
+    {
+      "average_price": 432.21599999999995,
+      "last_price": 432.21599999999995,
+      "quantity": 128,
+      "symbol": "NSE:JKPAPER"
+    },
+    {
+      "average_price": 587.2935,
+      "last_price": 587.2935,
+      "quantity": 94,
+      "symbol": "NSE:KALYANKJIL"
+    },
+    {
+      "average_price": 1234.7170499999997,
+      "last_price": 1234.7170499999997,
+      "quantity": 44,
+      "symbol": "NSE:RELIANCE"
+    },
+    {
+      "average_price": 4818.9082499999995,
+      "last_price": 4818.9082499999995,
+      "quantity": 11,
+      "symbol": "NSE:TITAN"
+    },
+    {
+      "average_price": 232.9164,
+      "last_price": 232.9164,
+      "quantity": 238,
+      "symbol": "NSE:ONGC"
+    },
+    {
+      "average_price": 600.3,
+      "last_price": 600.3,
+      "quantity": 92,
+      "symbol": "NSE:TBZ"
+    },
+    {
+      "average_price": 777.3884999999999,
+      "last_price": 777.3884999999999,
+      "quantity": 71,
+      "symbol": "NSE:WSTCSTPAPR"
+    },
+    {
+      "average_price": 3480.63945,
+      "last_price": 3480.63945,
+      "quantity": 15,
+      "symbol": "NSE:KPL"
+    },
+    {
+      "average_price": 167.53372499999998,
+      "last_price": 167.53372499999998,
+      "quantity": 330,
+      "symbol": "NSE:MRPL"
+    }
+  ],
+  "session_date": "2026-09-21",
+  "strategy_hash": "2e99d105d6a23538dafcaa4d6c17ba71b008c2e30fee63bec2cb50706a6aee2f"
+}

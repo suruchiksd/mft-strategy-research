@@ -1,0 +1,3 @@
+rebalance_id,symbol,research_quantity,engine_quantity,research_cash,engine_cash,execution_open,first_event
+SMV2-0030,HATHWAY,0,1262,10468.914891950277,11612.164739350255,,deselection exit / unavailable engine open
+SMV2-0030,TATACOMM,95,0,10468.914891950277,11612.164739350255,,deselection exit / unavailable engine open

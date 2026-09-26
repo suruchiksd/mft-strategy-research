@@ -1,0 +1,54 @@
+[
+  {
+    "check": "exact seven candidates",
+    "passed": true
+  },
+  {
+    "check": "future horizons frozen",
+    "passed": true
+  },
+  {
+    "check": "all 42 primary cells",
+    "passed": true
+  },
+  {
+    "check": "primary test family 42",
+    "passed": true
+  },
+  {
+    "check": "incremental family 18",
+    "passed": true
+  },
+  {
+    "check": "interaction map frozen",
+    "passed": true
+  },
+  {
+    "check": "all nonoverlap offsets",
+    "passed": true
+  },
+  {
+    "check": "nonoverlap spacing",
+    "passed": true
+  },
+  {
+    "check": "primary universe frozen",
+    "passed": true
+  },
+  {
+    "check": "only moderate sensitivity",
+    "passed": true
+  },
+  {
+    "check": "certified cutoff enforced",
+    "passed": true
+  },
+  {
+    "check": "no combined strategy",
+    "passed": true
+  },
+  {
+    "check": "no portfolio or pnl",
+    "passed": true
+  }
+]

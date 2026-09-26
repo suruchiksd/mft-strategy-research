@@ -1,0 +1,22 @@
+{
+  "stage": "13F-B2",
+  "phase12b_hash": "2e99d105d6a23538dafcaa4d6c17ba71b008c2e30fee63bec2cb50706a6aee2f",
+  "phase12c_build": "96e614a5638f221b1c340e4f9201e792b5c01e1394eac682ef7b53480aa0f2fb",
+  "exact": 52,
+  "rows": 112,
+  "mismatches": 60,
+  "risk_decisions": 2090,
+  "risk_rejections": 64,
+  "insufficient_cash_rejections": 0,
+  "maximum_positive_positions": 9,
+  "negative_cash_events": 0,
+  "post_boundary_performance_inspected": false,
+  "outputs": {
+    "order_parity.csv": "32ed3ef90fa6185868c55d6bb6f1e7b0cb6ae1a27c20748042b47f578862b455",
+    "risk_audit.csv": "b50b498d04b8092743c6d655b6e036a1ae23c1d27704bd715b56acfc9f11ebb4",
+    "event_trace.csv": "ed203e2fb3856a1edd0b2beedb487a92e963ce702b3513b3be8cbd00e20469fd",
+    "state_parity.csv": "fefff78dbf2104c813a6258346681538079b218e03f0a4c9c5ac4909bbdcc195",
+    "first_divergence.csv": "884de6c6e54c9b101221fea4831a53fe07622dc898a431a4cf752c4ec12316cd",
+    "remaining_mismatch_attribution.csv": "88027c64a845941495530f1fd2d228748c22ebd85089f9bd5a9cbf30cc9a5ffc"
+  }
+}

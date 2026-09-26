@@ -1,0 +1,14 @@
+{
+  "strategy_preregistration_hash": "2e99d105d6a23538dafcaa4d6c17ba71b008c2e30fee63bec2cb50706a6aee2f",
+  "strategy_build_reference": "96e614a5638f221b1c340e4f9201e792b5c01e792b5c01e1394eac682ef7b53480aa0f2fb",
+  "repair_scope": ["V2 canonical position lookup", "sell-before-buy orchestration", "cash clipping before RiskManager"],
+  "original_failed_evidence_preserved": true,
+  "repaired_replay_observed_order_comparisons": 112,
+  "repaired_replay_observed_exact_matches": 30,
+  "repaired_replay_observed_mismatches": 82,
+  "repaired_replay_observed_risk_decisions": 2021,
+  "repaired_replay_observed_risk_rejections": 58,
+  "repaired_replay_outputs_published": false,
+  "decision": "PAPER ENGINE NOT READY",
+  "post_2026_09_17_performance_inspected": false
+}

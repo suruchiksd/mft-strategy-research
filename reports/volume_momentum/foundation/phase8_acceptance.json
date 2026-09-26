@@ -1,0 +1,50 @@
+[
+  {
+    "check": "volume baselines frozen",
+    "passed": true
+  },
+  {
+    "check": "price horizons frozen",
+    "passed": true
+  },
+  {
+    "check": "primary and sensitivity universes frozen",
+    "passed": true
+  },
+  {
+    "check": "today excluded from baseline",
+    "passed": true
+  },
+  {
+    "check": "compact candidate family",
+    "passed": true
+  },
+  {
+    "check": "candidate formulas unique",
+    "passed": true
+  },
+  {
+    "check": "candidate roles valid",
+    "passed": true
+  },
+  {
+    "check": "all universes audited",
+    "passed": true
+  },
+  {
+    "check": "negative volume explicit",
+    "passed": true
+  },
+  {
+    "check": "no outcome columns",
+    "passed": true
+  },
+  {
+    "check": "no other factors",
+    "passed": true
+  },
+  {
+    "check": "no trading columns",
+    "passed": true
+  }
+]

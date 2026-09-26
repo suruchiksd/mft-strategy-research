@@ -1,0 +1,70 @@
+schema_version: 1
+research_label: STATIC-CURRENT-CLASSIFICATION HISTORICAL RESEARCH
+historical_daily: data/derived/historical_nse_daily.parquet
+sector_mapping: data/derived/sector_research_mapping.parquet
+corporate_action_ledger: data/derived/corporate_action_ledger.parquet
+phase5_manifest: reports/csrs/point_in_time/phase5_build_manifest.json
+phase6_manifest: reports/sector_momentum/foundation/phase6_build_manifest.json
+phase5_config: config/phase5_point_in_time.yaml
+factor_panel_output: data/derived/sector_momentum_factor_panel.parquet
+report_dir: reports/sector_momentum/research
+final_report: reports/phase7_sector_relative_momentum.md
+formation_horizons: [5, 10, 20, 40, 60]
+future_horizons: [1, 2, 3, 5, 10, 20]
+primary_tier: STABLE_IDENTITY_BASIC_LIQUID
+primary_minimum_sector_size: 5
+sector_size_sensitivities: [3, 5, 10]
+mapping_universe_tiers:
+  STABLE_IDENTITY_BASIC_LIQUID:
+    universe_column: universe_basic_liquid
+    require_unique_mapping: true
+    require_stable_identity: true
+  STABLE_IDENTITY_MODERATE_LIQUID:
+    universe_column: universe_moderate_liquid
+    require_unique_mapping: true
+    require_stable_identity: true
+  STABLE_IDENTITY_BROAD:
+    universe_column: universe_broad_eq
+    require_unique_mapping: true
+    require_stable_identity: true
+  STATIC_UNIQUE_BROAD:
+    universe_column: universe_broad_eq
+    require_unique_mapping: true
+    require_stable_identity: false
+certified_start: "2020-01-09"
+certified_end: "2026-07-17"
+minimum_sector_cross_section_ic: 2
+quintile_minimum_sector_count: 15
+top_bottom_fraction: 0.20
+top_bottom_fixed_count: 3
+evaluation_years: [2020, 2021, 2022, 2023, 2024, 2025, 2026]
+expanding_evaluation_years: [2021, 2022, 2023, 2024, 2025, 2026]
+fixed_periods:
+  - {name: DEVELOPMENT, start: "2020-01-01", end: "2022-12-31"}
+  - {name: VALIDATION, start: "2023-01-01", end: "2024-12-31"}
+  - {name: HOLDOUT, start: "2025-01-01", end: "2026-07-17"}
+uncertainty:
+  method: circular_moving_block_bootstrap_daily_statistics
+  replications: 2000
+  confidence_level: 0.95
+  seed: 20260915
+  block_length_rule: max_10_or_twice_future_horizon
+multiple_testing:
+  family: 30_primary_rank_ic_hypotheses
+  alpha: 0.05
+  methods: [BENJAMINI_HOCHBERG, HOLM]
+classification_rules:
+  robust:
+    minimum_positive_primary_pairs: 5
+    minimum_positive_holdout_pairs: 4
+    minimum_positive_nonoverlap_pairs: 4
+    minimum_positive_confidence_intervals: 3
+    minimum_positive_bh_rejections: 2
+  promising:
+    minimum_positive_primary_pairs: 4
+    minimum_positive_holdout_pairs: 3
+    minimum_positive_nonoverlap_pairs: 3
+  reversal_like:
+    minimum_negative_primary_pairs: 5
+    minimum_negative_holdout_pairs: 4
+    minimum_negative_nonoverlap_pairs: 4

@@ -1,0 +1,6 @@
+{
+  "build_id": "a6143ab2dc46503ba412740c43a46cb2ac613d22042871bf81d29abfc1ea8727",
+  "byte_identical": true,
+  "command": ".venv/bin/python scripts/build_phase4_validation.py --verify-rebuild",
+  "output_count": 11
+}

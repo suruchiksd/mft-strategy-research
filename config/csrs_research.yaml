@@ -1,0 +1,23 @@
+schema_version: 1
+phase2_build_id: 049f5a61be599b277f775105fe8935128c2015d98867bcf76dfbd98f07c80988
+research_scope: conditional current-universe research
+daily_bars_path: data/derived/daily_bars.parquet
+corporate_action_ledger_path: data/derived/corporate_action_ledger.parquet
+session_calendar_path: data/derived/session_calendar.parquet
+phase2_manifest_path: data/derived/source_manifest.json
+phase2_acceptance_path: reports/phase2_validation.json
+factor_panel_path: data/derived/csrs_factor_panel.parquet
+report_dir: reports/csrs
+formation_horizons: [5, 10, 20, 40, 60]
+future_horizons: [1, 2, 3, 5, 10, 20]
+corporate_action_coverage_end: "2026-07-17"
+blocking_action_classes: [MATERIAL_UNRESOLVED_EVENT, UNKNOWN_OR_AMBIGUOUS]
+trading_session_index: phase2_observed_session_calendar
+interval_policy: all_observed_market_dates_between_endpoints_must_have_research_eligible_symbol_rows
+rank_tie_policy: momentum_ascending_then_symbol_ascending_unique_ordinal
+percentile_formula: (ordinal_rank_minus_1)/(cross_section_count_minus_1)
+minimum_cross_section_for_rank_ic: 2
+minimum_cross_section_for_deciles: 10
+decile_formula: floor((ordinal_rank_minus_1)*10/cross_section_count)+1
+side_group_rule: ceil(fraction*cross_section_count)_weakest_or_strongest_by_deterministic_ordinal
+inference_note: descriptive_naive_statistics_only_overlapping_forward_returns_and_serial_dependence

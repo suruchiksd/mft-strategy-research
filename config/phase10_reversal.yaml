@@ -1,0 +1,73 @@
+phase: 10
+research_label: PREREGISTERED_CROSS_SECTIONAL_REVERSAL_CONFIRMATION
+discovery_start: '2020-01-01'
+discovery_end: '2026-07-17'
+confirmation_signal_start_exclusive: '2026-07-17'
+corporate_action_certification_required: true
+accepted_phase9_build_id: 00a3e8a873d6488d7a97a642347ec0f59d53e94dcb7f32e4ea20841c54f1455b
+inputs:
+  foundation: data/derived/volume_momentum_foundation.parquet
+  phase9_rank_ic_summary: reports/volume_momentum/research/candidate_rank_ic_summary.csv
+  phase9_decile_returns: reports/volume_momentum/research/candidate_decile_returns.csv
+  phase9_tail_analysis: reports/volume_momentum/research/candidate_tail_analysis.csv
+  phase9_manifest: reports/volume_momentum/research/phase9_build_manifest.json
+  phase5_manifest: reports/csrs/point_in_time/phase5_build_manifest.json
+  phase6_manifest: reports/sector_momentum/foundation/phase6_build_manifest.json
+  phase7_manifest: reports/sector_momentum/research/phase7_build_manifest.json
+  phase8_manifest: reports/volume_momentum/foundation/phase8_build_manifest.json
+  accepted_corporate_action_ledger: data/derived/corporate_action_ledger.parquet
+  corporate_action_source_root: /home/suruchi-pandey/Projects/CM_corpAction
+  historical_identity: reports/csrs/point_in_time/historical_symbol_identity.csv
+preregistration:
+  registry: reports/reversal/preregistration/reversal_candidate_registry.csv
+  report: reports/reversal/preregistration/phase10_reversal_preregistration.md
+  manifest: reports/reversal/preregistration/phase10_preregistration_manifest.json
+outputs:
+  report_dir: reports/reversal/research
+  factor_panel: data/derived/reversal_confirmation_panel.parquet
+  final_report: reports/phase10_cross_sectional_reversal.md
+candidates: [REV05, REV20]
+source_candidates:
+  REV05: VM01
+  REV20: VM02
+candidate_formulas:
+  REV05: -1 * price_return_5
+  REV20: -1 * price_return_20
+future_horizons: [1, 2, 3, 5, 10, 20]
+primary_universe: BASIC_LIQUID
+sensitivity_universe: MODERATE_LIQUID
+corporate_action_blocking_impacts:
+  - MATERIAL_UNRESOLVED_EVENT
+  - UNKNOWN_OR_AMBIGUOUS
+  - LIKELY_ALREADY_ADJUSTED_CONVENTIONAL_ACTION
+nonoverlap_all_offsets: true
+uncertainty:
+  method: CIRCULAR_BLOCK_BOOTSTRAP
+  replications: 2000
+  seed: 104729
+  block_length: max(10, 2 * future_horizon)
+quantiles:
+  buckets: 10
+  minimum_cross_section: 20
+tails: [0.05, 0.10, 0.20]
+confirmation_evaluability:
+  minimum_daily_ic_dates_per_horizon: 20
+  supported_minimum_daily_ic_dates_per_horizon: 60
+acceptance_rules:
+  historical_positive_horizons_required: 6
+  confirmation_positive_horizons_required: 4
+  moderate_positive_horizons_required: 4
+  nonoverlap_positive_horizons_required: 4
+  require_positive_average_ic_in_both_universes: true
+  require_no_leave_one_date_sign_flip_for_supporting_horizons: true
+classification_rules:
+  SUPPORTED: all directional acceptance rules pass and every horizon has at least 60 daily IC dates
+  SUPPORTIVE BUT SHORT SAMPLE: all directional acceptance rules pass and every horizon has at least 20 but fewer than 60 daily IC dates
+  MIXED: evaluable sample with two or three positive primary horizons
+  CONTRADICTORY: evaluable sample with zero or one positive primary horizon
+  INSUFFICIENT SAMPLE: corporate-action extension is not accepted or any horizon has fewer than 20 daily IC dates
+overall_rules:
+  PASS FOR COMPLEMENTARITY RESEARCH: both candidates are SUPPORTED
+  CONDITIONAL PASS: at least one candidate is SUPPORTED or both are SUPPORTIVE BUT SHORT SAMPLE
+  RESEARCH FURTHER: at least one candidate is SUPPORTIVE BUT SHORT SAMPLE, MIXED, or INSUFFICIENT SAMPLE and PASS/CONDITIONAL/FAIL do not apply
+  FAIL: both candidates are CONTRADICTORY on evaluable certified samples

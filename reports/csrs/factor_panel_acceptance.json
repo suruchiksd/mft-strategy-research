@@ -1,0 +1,269 @@
+[
+  {
+    "check": "panel_row_count_matches_phase2",
+    "passed": true,
+    "detail": 188451
+  },
+  {
+    "check": "canonical_symbol_count",
+    "passed": true,
+    "detail": 120
+  },
+  {
+    "check": "unique_symbol_date",
+    "passed": true,
+    "detail": 0
+  },
+  {
+    "check": "deterministic_row_order",
+    "passed": true,
+    "detail": "date,symbol"
+  },
+  {
+    "check": "no_combined_or_weighted_csrs",
+    "passed": true,
+    "detail": []
+  },
+  {
+    "check": "formation_5_valid_has_values",
+    "passed": true,
+    "detail": 172235
+  },
+  {
+    "check": "formation_5_invalid_is_null",
+    "passed": true,
+    "detail": 16216
+  },
+  {
+    "check": "formation_5_rank_only_when_valid",
+    "passed": true,
+    "detail": 172235
+  },
+  {
+    "check": "formation_5_percentile_bounds",
+    "passed": true,
+    "detail": [
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "check": "formation_5_cross_section_counts",
+    "passed": true,
+    "detail": 1536
+  },
+  {
+    "check": "formation_5_coverage_cutoff",
+    "passed": true,
+    "detail": "2026-07-17"
+  },
+  {
+    "check": "formation_10_valid_has_values",
+    "passed": true,
+    "detail": 163874
+  },
+  {
+    "check": "formation_10_invalid_is_null",
+    "passed": true,
+    "detail": 24577
+  },
+  {
+    "check": "formation_10_rank_only_when_valid",
+    "passed": true,
+    "detail": 163874
+  },
+  {
+    "check": "formation_10_percentile_bounds",
+    "passed": true,
+    "detail": [
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "check": "formation_10_cross_section_counts",
+    "passed": true,
+    "detail": 1475
+  },
+  {
+    "check": "formation_10_coverage_cutoff",
+    "passed": true,
+    "detail": "2026-07-17"
+  },
+  {
+    "check": "formation_20_valid_has_values",
+    "passed": true,
+    "detail": 150310
+  },
+  {
+    "check": "formation_20_invalid_is_null",
+    "passed": true,
+    "detail": 38141
+  },
+  {
+    "check": "formation_20_rank_only_when_valid",
+    "passed": true,
+    "detail": 150310
+  },
+  {
+    "check": "formation_20_percentile_bounds",
+    "passed": true,
+    "detail": [
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "check": "formation_20_cross_section_counts",
+    "passed": true,
+    "detail": 1373
+  },
+  {
+    "check": "formation_20_coverage_cutoff",
+    "passed": true,
+    "detail": "2026-07-17"
+  },
+  {
+    "check": "formation_40_valid_has_values",
+    "passed": true,
+    "detail": 127743
+  },
+  {
+    "check": "formation_40_invalid_is_null",
+    "passed": true,
+    "detail": 60708
+  },
+  {
+    "check": "formation_40_rank_only_when_valid",
+    "passed": true,
+    "detail": 127743
+  },
+  {
+    "check": "formation_40_percentile_bounds",
+    "passed": true,
+    "detail": [
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "check": "formation_40_cross_section_counts",
+    "passed": true,
+    "detail": 1201
+  },
+  {
+    "check": "formation_40_coverage_cutoff",
+    "passed": true,
+    "detail": "2026-07-17"
+  },
+  {
+    "check": "formation_60_valid_has_values",
+    "passed": true,
+    "detail": 109696
+  },
+  {
+    "check": "formation_60_invalid_is_null",
+    "passed": true,
+    "detail": 78755
+  },
+  {
+    "check": "formation_60_rank_only_when_valid",
+    "passed": true,
+    "detail": 109696
+  },
+  {
+    "check": "formation_60_percentile_bounds",
+    "passed": true,
+    "detail": [
+      0.0,
+      1.0
+    ]
+  },
+  {
+    "check": "formation_60_cross_section_counts",
+    "passed": true,
+    "detail": 1064
+  },
+  {
+    "check": "formation_60_coverage_cutoff",
+    "passed": true,
+    "detail": "2026-07-17"
+  },
+  {
+    "check": "future_1_valid_has_values",
+    "passed": true,
+    "detail": 180916
+  },
+  {
+    "check": "future_1_invalid_is_null",
+    "passed": true,
+    "detail": 7535
+  },
+  {
+    "check": "future_2_valid_has_values",
+    "passed": true,
+    "detail": 178594
+  },
+  {
+    "check": "future_2_invalid_is_null",
+    "passed": true,
+    "detail": 9857
+  },
+  {
+    "check": "future_3_valid_has_values",
+    "passed": true,
+    "detail": 176399
+  },
+  {
+    "check": "future_3_invalid_is_null",
+    "passed": true,
+    "detail": 12052
+  },
+  {
+    "check": "future_5_valid_has_values",
+    "passed": true,
+    "detail": 172235
+  },
+  {
+    "check": "future_5_invalid_is_null",
+    "passed": true,
+    "detail": 16216
+  },
+  {
+    "check": "future_10_valid_has_values",
+    "passed": true,
+    "detail": 163874
+  },
+  {
+    "check": "future_10_invalid_is_null",
+    "passed": true,
+    "detail": 24577
+  },
+  {
+    "check": "future_20_valid_has_values",
+    "passed": true,
+    "detail": 150310
+  },
+  {
+    "check": "future_20_invalid_is_null",
+    "passed": true,
+    "detail": 38141
+  },
+  {
+    "check": "all_derived_returns_finite",
+    "passed": true,
+    "detail": [
+      "ret_5",
+      "ret_10",
+      "ret_20",
+      "ret_40",
+      "ret_60",
+      "future_ret_1",
+      "future_ret_2",
+      "future_ret_3",
+      "future_ret_5",
+      "future_ret_10",
+      "future_ret_20"
+    ]
+  }
+]

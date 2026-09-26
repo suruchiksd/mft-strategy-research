@@ -1,0 +1,61 @@
+{
+  "accepted_blocking_exact_matches": 60,
+  "accepted_blocking_false_negatives": 1,
+  "accepted_blocking_rows": 61,
+  "checks": [
+    {
+      "check": "official source retrieval reproducible",
+      "passed": true
+    },
+    {
+      "check": "raw response preserved and hashed",
+      "passed": true
+    },
+    {
+      "check": "coverage through price endpoint",
+      "passed": true
+    },
+    {
+      "check": "overlap reconciliation completed",
+      "passed": true
+    },
+    {
+      "check": "blocking date frozen to ex-date",
+      "passed": true
+    },
+    {
+      "check": "taxonomy frozen",
+      "passed": true
+    },
+    {
+      "check": "identity exact symbol only",
+      "passed": true
+    },
+    {
+      "check": "unknowns blocked",
+      "passed": true
+    },
+    {
+      "check": "historical artifacts unmodified",
+      "passed": true
+    },
+    {
+      "check": "blocking overlap recoverability conditional",
+      "passed": true
+    }
+  ],
+  "conditions": [
+    "Use only the frozen raw response hashes.",
+    "Admit no endpoint after 2026-09-11.",
+    "Block every interval crossing BLOCK_PRICE_RETURN_INTERVAL or REVIEW_REQUIRED_BLOCKED.",
+    "Escalate exact-symbol ISIN conflicts to REVIEW_REQUIRED_BLOCKED.",
+    "Require exact trading-session endpoints and accepted identity safety."
+  ],
+  "decision": "CONDITIONAL PASS FOR REVERSAL CONFIRMATION",
+  "false_negative_safety_mitigation": "GUJGASLTD has no observed price row on/after 2026-07-02; exact endpoint safety makes crossing outcomes inadmissible.",
+  "false_negative_symbols": [
+    "GUJGASLTD"
+  ],
+  "overlap_accepted_rows": 647,
+  "overlap_exact_rows": 646
+}

@@ -1,0 +1,4 @@
+date,symbol,purpose,source_used,series,open,resolution_status,fallback_used,reason
+2020-07-27,HATHWAY,valuation,raw_provider,BE,46.55,USED,True,normalized row absent; raw provider row available
+2020-07-27,HATHWAY,valuation,raw_provider,BE,46.55,USED,True,normalized row absent; raw provider row available
+2020-07-27,HATHWAY,exit,raw_provider,BE,46.55,USED,True,normalized row absent; raw provider row available

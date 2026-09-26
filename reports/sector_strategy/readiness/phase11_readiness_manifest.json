@@ -1,0 +1,86 @@
+{
+  "build_id": "daff4b099ef7ec153cabc351b855ae1ee863c45c45c5de9a4cae8cdd8f9528fd",
+  "config": {
+    "accepted_daily": "data/derived/historical_nse_daily.parquet",
+    "accepted_sector_panel": "data/derived/sector_momentum_factor_panel.parquet",
+    "ca_extension": "data/derived/phase11_corporate_action_extension.parquet",
+    "certified_end": "2026-09-17",
+    "daily_extension": "data/derived/phase11_historical_daily_extension.parquet",
+    "development_end": "2026-07-17",
+    "extended_sector_panel": "data/derived/phase11_sector_signal_panel.parquet",
+    "factor_formation_sessions": 20,
+    "historical_actions": "data/derived/corporate_action_ledger.parquet",
+    "holiday_dates": [
+      "2026-09-14"
+    ],
+    "liquidity_field": "avg_turnover_20",
+    "minimum_sector_size": 5,
+    "phase": 11,
+    "phase10_actions": "data/derived/phase10_corporate_action_extension.parquet",
+    "phase5_config": "config/phase5_point_in_time.yaml",
+    "phase7_config": "config/phase7_sector_momentum.yaml",
+    "price_extension_dates": [
+      "2026-09-15",
+      "2026-09-16",
+      "2026-09-17"
+    ],
+    "primary_universe": "BASIC_LIQUID",
+    "raw_bhavcopy_dir": "data/external/phase11/bhavcopy",
+    "raw_ca": "data/external/phase11/corporate_actions/official_nse_corporate_actions_20260912_20260917.json",
+    "report_dir": "reports/sector_strategy/readiness",
+    "require_stable_identity": true,
+    "required_mapping_status": "STATIC_CURRENT_UNIQUE",
+    "retrieval_timestamp_utc": "2026-09-17T12:02:57Z",
+    "sector_mapping": "data/derived/sector_research_mapping.parquet",
+    "selected_sector_count": 3,
+    "stocks_per_sector": 3
+  },
+  "holdout_strategy_pnl_inspected": false,
+  "latest_certified_date": "2026-09-17",
+  "output_sha256": {
+    "data_readiness_audit.csv": "254c8b9f28099a6b52d5f7f655272808e3670e7326fd812bb0e263c7ae56114c",
+    "feasibility_by_rebalance.csv": "953d37aba832941af305bd001e8803a61e1b282c48ed34f60923dd69fc5b8080",
+    "feasibility_selected_targets.csv": "03f4a67f8fa7ddbad7bd654f843e8730d67cb650c9b75c5b9b41b6030a9e0c3f",
+    "feasibility_summary.csv": "a94a74f6f5cb48959b0c57ded89f000be0b0d35e554727cbe6a31e10c0db435e",
+    "phase11_corporate_action_extension.parquet": "a5c2ed26d8a85efe85e927d136ee2c5e14d9a2ef57d72208d03fcb585dd047cf",
+    "phase11_historical_daily_extension.parquet": "2608711ff5a0848e3f3aed9699c015f46bafc2ca5b6744cb4fb051d6b401484a",
+    "phase11_sector_signal_panel.parquet": "23e666e09047cb33b8be108cd8f4884394cf28bc72f79d7ca8dbac3c182fc0aa",
+    "phase11_source_manifest.json": "9a9235943d11e1dd7822eb2e64f4ed770de7fda12b145ea5a7022d18f5231824"
+  },
+  "source_manifest": {
+    "corporate_action_request": {
+      "endpoint": "https://www.nseindia.com/api/corporates-corporateActions",
+      "parameters": {
+        "from_date": "12-09-2026",
+        "index": "equities",
+        "to_date": "17-09-2026"
+      },
+      "path": "data/external/phase11/corporate_actions/official_nse_corporate_actions_20260912_20260917.json",
+      "rows": 94,
+      "sha256": "0261d410d9a76cbaab075ed14a17cd60e080c207875c5de7d84cd093eb8fed47"
+    },
+    "holiday": {
+      "date": "2026-09-14",
+      "reason": "Ganesh Chaturthi",
+      "source": "https://www.nseindia.com/resources/exchange-communication-holidays"
+    },
+    "price_files": [
+      {
+        "path": "data/external/phase11/bhavcopy/BhavCopy_NSE_CM_0_0_0_20260915_F_0000.csv",
+        "rows": 3692,
+        "sha256": "8731e2b6f7394ad52884aa15d5ba0327c8082f3ea89bcb92227fad43e801c6a7"
+      },
+      {
+        "path": "data/external/phase11/bhavcopy/BhavCopy_NSE_CM_0_0_0_20260916_F_0000.csv",
+        "rows": 3669,
+        "sha256": "698168dbd2fd2cc536bb164da3462b06ab878450407ea7e49dada1c912da1c31"
+      },
+      {
+        "path": "data/external/phase11/bhavcopy/BhavCopy_NSE_CM_0_0_0_20260917_F_0000.csv",
+        "rows": 3658,
+        "sha256": "f9792c3f6b08e801c18b505a4702a4bf1a3c407b2e4e48284e7d98ad7718cc7e"
+      }
+    ],
+    "retrieval_timestamp_utc": "2026-09-17T12:02:57Z"
+  }
+}

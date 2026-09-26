@@ -1,0 +1,260 @@
+{
+  "accepted_input": {
+    "historical_daily_sha256": "7e26f8f8f5207b2cf3906eea942f735745a9a109aea66888647c23a2e7b65d37",
+    "phase5_build_id": "ce7d1d27638b3c7e448b6e9bfc5b659e4e7bb77db1c6cf5c377edafce7262524",
+    "verified_output_count": 24
+  },
+  "build_id": "e1c1a5c6ad6c7b2e521d00c4fcb97f4bbb21047575ca0de5a7a3f36cb573367b",
+  "build_timestamp_utc": "2026-09-15T13:11:23.408803+00:00",
+  "code_sha256": "695d46a8320e3bff1d262f45744c1c9ecb1b316b89975b71b980c676ba9d9a54",
+  "config": {
+    "bhavcopy_archive_root": "/home/suruchi-pandey/Projects/Bhavcopy-download-and-mail-code",
+    "bhavcopy_universe_root": "/home/suruchi-pandey/Projects/bhavcopy-universe",
+    "final_report": "reports/phase6_sector_foundation.md",
+    "historical_daily": "data/derived/historical_nse_daily.parquet",
+    "historical_mapping_policy": {
+      "current_conflict_label": "STATIC_CURRENT_CONFLICT",
+      "current_unique_label": "STATIC_CURRENT_UNIQUE",
+      "effective_dates_available": false,
+      "historically_verified_label": "HISTORICALLY_VERIFIED",
+      "unmapped_label": "UNMAPPED"
+    },
+    "identity_policy": {
+      "direct_observed_symbol_only": true,
+      "fuzzy_matching": false,
+      "stitch_aliases": false
+    },
+    "mapping_output": "data/derived/sector_research_mapping.parquet",
+    "market_data_platform_root": "/home/suruchi-pandey/market-data-platform-gpt",
+    "phase5_identity": "reports/csrs/point_in_time/historical_symbol_identity.csv",
+    "phase5_manifest": "reports/csrs/point_in_time/phase5_build_manifest.json",
+    "recommended_primary_tier": "STABLE_IDENTITY_BASIC_LIQUID",
+    "report_dir": "reports/sector_momentum/foundation",
+    "research_scope": "sector-classification foundation only; no Sector Relative Momentum or portfolio calculations",
+    "research_tiers": {
+      "STABLE_IDENTITY_BASIC_LIQUID": {
+        "require_stable_identity": true,
+        "require_unique_mapping": true,
+        "role": "PRIMARY",
+        "universe": "BASIC_LIQUID"
+      },
+      "STABLE_IDENTITY_BROAD": {
+        "require_stable_identity": true,
+        "require_unique_mapping": true,
+        "role": "SENSITIVITY",
+        "universe": "BROAD_EQ"
+      },
+      "STABLE_IDENTITY_MODERATE_LIQUID": {
+        "require_stable_identity": true,
+        "require_unique_mapping": true,
+        "role": "SENSITIVITY",
+        "universe": "MODERATE_LIQUID"
+      },
+      "STATIC_UNIQUE_BROAD": {
+        "require_stable_identity": false,
+        "require_unique_mapping": true,
+        "role": "SENSITIVITY",
+        "universe": "BROAD_EQ"
+      }
+    },
+    "schema_version": 1,
+    "sector_root": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors",
+    "universe_columns": {
+      "BASIC_LIQUID": "universe_basic_liquid",
+      "BROAD_EQ": "universe_broad_eq",
+      "MODERATE_LIQUID": "universe_moderate_liquid",
+      "STRICT_SENSITIVITY": "universe_strict_sensitivity"
+    },
+    "viability_thresholds": [
+      3,
+      5,
+      10
+    ],
+    "weak_year_symbol_retention_pct": 75
+  },
+  "conflict_symbols": 67,
+  "decision": "CONDITIONAL PASS",
+  "historical_sector_bias": "SEVERE",
+  "historical_symbols": 3381,
+  "output_sha256": {
+    "historical_sector_coverage.csv": "d7705943ba216adf42826ecae06089c1ba4be294ebcbcf8c649e0e53c55ff57b",
+    "historical_validity_summary.csv": "3e03a3602e54a76cd131b9e73c5fa6b7ce601f406e1ea46e031095db0ce8afb3",
+    "identity_sector_issues.csv": "8fffc9a740c568a680b6efc679b8c826aca6b7ae6f015afd062e50889876814f",
+    "phase6_acceptance.json": "01682e5a4d01374d2695cc976ba159c1b7ac81d12b60347a63e1a70e091613e3",
+    "phase6_sector_foundation.md": "513c94d90fea158c7b0e349a365213db101d202763b97a44cfc951c85729ae66",
+    "sector_concentration.csv": "bce5f01e978f450b628e6f275d760f123ab4991916e491c20b14f99b02059f9f",
+    "sector_mapping_conflicts.csv": "a3cbc7a02ab2295cb168d448205803160f92752ec1674c863f4978e61e894648",
+    "sector_mapping_summary.csv": "34fec13f244941d02bb9430602ef3a4ef8d788dd5a6565fb8d4cb2093d869944",
+    "sector_research_mapping.parquet": "5cc633a5b544bca72dfb7af295152416f8d5453285449df8bd9c8eaf3ea797c6",
+    "sector_research_tiers.csv": "0ee93c5f51e726af81616cb28912b7193003e0614265345cbe99c383402e27d5",
+    "sector_size_distribution.csv": "360c629026ac06c6b932899f95f04fbe3bdada6661b1294f795a0903dd51dae9",
+    "sector_source_inventory.csv": "1b3decaeae573d53a7cfc32e7d15634a7820a24a18557f25a244a90fa7271ef0",
+    "sector_source_issues.csv": "f2853cf7c4ea4dc5011c39bac9df1108245e642697846401ce9be17fceea9cba",
+    "sector_viability_by_year.csv": "662470cdc4d63ab17d4e342dfc5f9a8735e36ccc3553ab7f195bc58c8b6f1eb6",
+    "unmapped_historical_symbols.csv": "2f88a354b6d1a4a55aee7e64e786049b46a58d1e56edface8aba83b8b227f2fa"
+  },
+  "sector_file_count": 40,
+  "source_distinct_symbols": 2565,
+  "source_files": [
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/agriculture_AG.csv",
+      "sha256": "c99e94d975780f345c978302479530d0df742ac16db01d46209f877c7e347354"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/alcohol_AL.csv",
+      "sha256": "27fec22c7a287ab54203b556d0cdbfb9dd3559a2643522f742e5fc7abeb13a56"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/automobile_AT.csv",
+      "sha256": "73574623107acc88cbfc99baa329d207c8ef63ab75c358056266836a47ef395b"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/aviation_AV.csv",
+      "sha256": "0678764061449483bef301ab055ae56e4c3eaa447bf4d52b8d7cc56eed39cb90"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/banks_BN.csv",
+      "sha256": "2324ab3ca5e12540e32cd157e5d9bf9a50c44f9d7f7b310cae6df0ff9e1c1e03"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/capGoods_CG.csv",
+      "sha256": "840eaa9ea222a84a30c7a3a6d06b334633a33b9f61f651596a76b237c225d5b3"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/chemicals_CM.csv",
+      "sha256": "0664a609413c862de307961aef02f1f95e6c379e98f72732261a953b29c6969f"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/construction_supplies_CS.csv",
+      "sha256": "a8eade68eb720693503e43a1b0edcf407c24b54f70c9265e9fd333fa6dea898f"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/containers_packaging_CP.csv",
+      "sha256": "c512d8a91f92a214a189733a271ff81ed2fc7e2392a5f32cb0b8bb1514e395ac"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/diamond_jewellery_DJ.csv",
+      "sha256": "615707077249e678076e5d10b248b8a4d54c61d8fd944e79e44cdd357cca713a"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/diversified_DV.csv",
+      "sha256": "bd0d4fa7c58d763849e7fe50150b150c1a201fb86dbbfb45b64d3204b83d8821"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/durables_DR.csv",
+      "sha256": "120716e5b78bc514eddb7bce99a935ef65a1f090c12b34b30911414390cf9fed"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/electricals_EL.csv",
+      "sha256": "980b8b90cce8c74d5c3926b29f0464e46ea685f87799fa2866b34d6d3e706261"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/etf_ET.csv",
+      "sha256": "0548a51e66905662b4c08aac7c4ee69bb3e448c6a99268cf9a2c13f3bfbb4bd8"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/fertilisers_FR.csv",
+      "sha256": "d47c7d7371f44f9dea72897238b50290aa0ea5efc693e27c7f4222762dc62cdf"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/finance_FN.csv",
+      "sha256": "be3dd8fae64199b3cca443d5af18d7f832b2936beb62f5e89fcd7c8d587778b5"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/fmcg_FG.csv",
+      "sha256": "5ac926d9ef89862e55c2ff6210a2e871cfe3f7063bb5ae3a5d707589e5f417f2"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/footwear_FW.csv",
+      "sha256": "2b8e5b3b13ef1ca066bffd712b19c0e30b6bd63360b52ce649f54dceb72bb41b"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/gases_fuels_GF.csv",
+      "sha256": "d3b95b4dabf9a4e6d2f1f8fc9923f1da1264bbc99d80bc45884ecccf88f80352"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/healthcare_HC.csv",
+      "sha256": "93d65a1d8f3eadbc77373de62e9070c66b3148b8ebd56141ae8fce55be36b70c"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/hospitality_HP.csv",
+      "sha256": "a9cb4ae277784fc43468d2259c4035fafe68aaacdfae4804f3dbe6bbbea05d8e"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/infrastructure_IF.csv",
+      "sha256": "9e06754f7719e9a43819c079a72cf97875e4284653a8c1bdcc2aef881f92b5d9"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/insurance_IN.csv",
+      "sha256": "f6376b32ae3a8e83a455dbe63b97cc2bc3f1ca2566b55e937dc4997b580ca6a5"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/logistics_LG.csv",
+      "sha256": "c93fbaa43819d37f3b85008a72e2114e47cbd54d4c9654160e1b08f3469246dd"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/manufacturing_MF.csv",
+      "sha256": "4841df40cc85302411b6c026f6aa56b7dc1ba15ffd3b187a1da128b7af0aca43"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/media_entertainment_ME.csv",
+      "sha256": "eee2cea3dc23503e443340c39c96318c0da7167890da6cd24998706bc8504b91"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/metals_Mining_MM.csv",
+      "sha256": "d4dee1be2b057c5914e3f7e502e78b8998a566a6521b3e390aeece298e3a7a69"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/miscellaneous_MS.csv",
+      "sha256": "a3c9128ec455edc46286813470ff83186968fa0bffc746be4f781cf3a2af6c33"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/oil_gas_OG.csv",
+      "sha256": "a91d5bafa624f3d192addf717295e6b310eff02c9bf4bb3409654df5d4f56e6c"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/paper_PA.csv",
+      "sha256": "624333fd93ac1b9481b4edb5c438e3e654f020060d1b252d43ae2862fb63200b"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/plastic_products_PP.csv",
+      "sha256": "92494f736ad00e0cab674f0e955bc759284c7a1d602548778044e7b7d7d97159"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/power_PW.csv",
+      "sha256": "4169a85791b1288a35ee9d25e086c932c788c89972590f2081b6c2ad15602196"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/real_estate_RE.csv",
+      "sha256": "346f37f1ed0c582cb66a0734390eaee2d63d1e16e8f1c5a14460800e6e43b8e6"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/retailing_RT.csv",
+      "sha256": "17d8736bb9b1a04684e8e23b03c5c526bfb650265403eb687b90d981780ff04c"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/ship_building_SB.csv",
+      "sha256": "3b6a05150443171b0f567478512545d31a9142b600f61135b18e3d05bf63dd88"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/software_SW.csv",
+      "sha256": "cc50c1526a01eaebfefdccb28d05b36b1ddb6a058a07eefdacc273f68ba018e9"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/sugar_SU.csv",
+      "sha256": "39a946836f5dfca9ec4e8b2af22263805a1c0a2d99e61fefe31b4beba692dbb1"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/telecom_TC.csv",
+      "sha256": "f51b851423443ac2ee81d5c249036ea1be836deb4a75eff9ae3a714b06b934f7"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/textiles_TX.csv",
+      "sha256": "10aefce7018294f37c7c357ab5cae763de55b74f99dc7a3daa5d4203f56ee274"
+    },
+    {
+      "path": "/home/suruchi-pandey/Projects/bhavcopy-universe/Sectors/trading_TR.csv",
+      "sha256": "0a3c4824ee273dbe7ba25359139ae97aabba881433eeb22d03a354d7c582e255"
+    }
+  ]
+}

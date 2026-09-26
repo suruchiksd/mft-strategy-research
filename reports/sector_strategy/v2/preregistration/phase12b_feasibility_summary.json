@@ -1,0 +1,27 @@
+{
+  "be_semantics": {
+    "absent_rows": 2,
+    "missing_row_policy": "FAIL_CLOSED_RETAIN_AND_RETRY",
+    "new_BE_entries": 0,
+    "observed_rows": 376,
+    "positive_open_rows": 376
+  },
+  "post_2026_09_17_v2_performance_inspected": false,
+  "status": "PASS_STATE_ONLY_FEASIBILITY",
+  "summary": {
+    "be_exit_events": 7,
+    "deterministic_state_contract": true,
+    "distinct_replacement_list_hashes": 335,
+    "entry_skips": 0,
+    "fully_resolved_sector_signals": 334,
+    "maximum_intended_stocks": 9,
+    "maximum_positions_observed": 9,
+    "performance_data_after_2026_09_17_read": false,
+    "pnl_columns_created": 0,
+    "replacement_lists_frozen": 339,
+    "signal_dates": 339,
+    "signals_with_three_sectors": 334,
+    "trapped_retry_events": 0
+  },
+  "v2_pnl_inspected": false
+}

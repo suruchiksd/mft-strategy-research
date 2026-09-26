@@ -1,0 +1,18 @@
+phase: 12A
+analysis: READ_ONLY_SECTOR_MOMENTUM_V1_FAILURE_ATTRIBUTION
+accepted_phase11_build_id: 17ee67218388859ee7211e7a4deea60227f2c5cd4ef6a72e8d62583bee6ae2b3
+accepted_phase11_preregistration_hash: 197fb9d9a6185076a70cbb7f92affe2d8dd4688c2e2c3d7791e3438bf7b2cada
+strategy_performance_data_end: '2026-09-17'
+development_start: '2020-05-04'
+development_end: '2026-07-17'
+holdout_start: '2026-08-03'
+holdout_end: '2026-09-17'
+initial_capital: 500000
+turnover_categories:
+  - SECTOR_ENTRY_EXIT
+  - WITHIN_SECTOR_STOCK_REPLACEMENT
+  - WEIGHT_REBALANCING
+  - FORCED_OPERATIONAL
+output_dir: reports/sector_strategy/v1_diagnostics
+final_report: reports/phase12a_sector_strategy_v1_diagnostics.md
+v2_fresh_validation_start_exclusive: '2026-09-17'

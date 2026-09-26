@@ -1,0 +1,51 @@
+phase: 10C
+research_label: PREREGISTERED_CROSS_SECTIONAL_REVERSAL_CONFIRMATION
+discovery_end: '2026-07-17'
+confirmation_signal_start_exclusive: '2026-07-17'
+certified_end: '2026-09-11'
+preregistration_sha256: fb0976eeea5dc524f4bb9a22dad98b6b0ec6fc42507dcc90f9d5f16d52da6995
+extension_build_id: 8ad77b280031a1f9d99f6ce85a2078e6f6457a3ffdc39a9a0c6e9857225abc13
+inputs:
+  historical_daily: data/derived/historical_nse_daily.parquet
+  historical_identity: reports/csrs/point_in_time/historical_symbol_identity.csv
+  historical_actions: data/derived/corporate_action_ledger.parquet
+  extension_actions: data/derived/phase10_corporate_action_extension.parquet
+  preregistration_manifest: reports/reversal/preregistration/phase10_preregistration_manifest.json
+  gated_phase10_manifest: reports/reversal/research/phase10_build_manifest.json
+  extension_manifest: reports/reversal/corporate_action_extension/phase10_ca_extension_manifest.json
+  extension_acceptance: reports/reversal/corporate_action_extension/extension_acceptance.json
+  historical_discovery: reports/reversal/research/historical_discovery_summary.csv
+outputs:
+  report_dir: reports/reversal/confirmation
+  factor_panel: data/derived/reversal_confirmation_panel.parquet
+  final_report: reports/phase10b_reversal_confirmation.md
+candidates: [REV05, REV20]
+candidate_formations: {REV05: 5, REV20: 20}
+future_horizons: [1, 2, 3, 5, 10, 20]
+primary_universe: BASIC_LIQUID
+sensitivity_universe: MODERATE_LIQUID
+minimum_cross_section: 20
+tails: [0.05, 0.10, 0.20]
+historical_blocking_impacts:
+  - MATERIAL_UNRESOLVED_EVENT
+  - UNKNOWN_OR_AMBIGUOUS
+  - LIKELY_ALREADY_ADJUSTED_CONVENTIONAL_ACTION
+extension_blocking_classes:
+  - BLOCK_PRICE_RETURN_INTERVAL
+  - REVIEW_REQUIRED_BLOCKED
+uncertainty:
+  method: CIRCULAR_BLOCK_BOOTSTRAP
+  replications: 2000
+  seed: 104729
+  confidence_level: 0.95
+  block_length: max(10, 2 * future_horizon)
+confirmation_evaluability:
+  minimum_daily_ic_dates_per_horizon: 20
+  supported_minimum_daily_ic_dates_per_horizon: 60
+acceptance_rules:
+  historical_positive_horizons_required: 6
+  confirmation_positive_horizons_required: 4
+  moderate_positive_horizons_required: 4
+  nonoverlap_positive_horizons_required: 4
+  require_positive_average_ic_in_both_universes: true
+  require_no_leave_one_date_sign_flip_for_supporting_horizons: true

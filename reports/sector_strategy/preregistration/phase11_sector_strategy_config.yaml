@@ -1,0 +1,119 @@
+phase: 11
+strategy_id: SECTOR_MOMENTUM
+strategy_version: V1
+research_label: STATIC_CURRENT_CLASSIFICATION_SECTOR_MOMENTUM_STRATEGY_RESEARCH
+frozen_at_utc: '2026-09-17T12:22:52Z'
+holdout_strategy_pnl_inspected: false
+alpha:
+  sole_factor: SECTOR_RELATIVE_MOMENTUM
+  formation_sessions: 20
+  sector_daily_return: equal_weight_mean_valid_constituent_close_to_close_returns
+  formation_return: compound_sector_daily_returns_through_signal_close
+  minimum_sector_size: 5
+  mapping_tier: STABLE_IDENTITY_BASIC_LIQUID
+selection:
+  sectors: 3
+  stocks_per_sector: 3
+  maximum_positions: 9
+  stock_ranking_field: avg_turnover_20
+  stock_ranking_order: descending
+  tie_break: symbol_ascending
+  insufficient_sector_stocks: select_all_available_no_cross_sector_substitution
+  corporate_action_rule: exclude_candidate_if_recorded_blocking_event_crosses_intended_weekly_holding_interval
+  corporate_action_replacement: next_liquidity_ranked_eligible_stock_same_sector
+universe:
+  primary: BASIC_LIQUID
+  sensitivity: MODERATE_LIQUID
+  mapping_status: STATIC_CURRENT_UNIQUE
+  identity_ambiguous_allowed: false
+rebalance:
+  frequency: WEEKLY
+  signal_date: final_NSE_trading_session_of_ISO_week
+  signal_timestamp: after_EOD_close
+  execution_date: next_NSE_trading_session
+  execution_price: next_session_open_with_adverse_slippage
+  same_close_execution: false
+portfolio:
+  direction: LONG_ONLY
+  leverage: false
+  weighting: equal_weight_across_actual_selected_positions
+  shares: positive_integer_floor
+  initial_capital_rupees: 500000
+  cash_residual: retained_uninvested
+  rebalance_order: sell_reductions_first_then_buy_increases_symbol_ascending
+  unaffordable_buy: reduce_to_maximum_whole_shares_without_negative_cash
+  terminal_positions: marked_to_final_close_not_forcibly_liquidated
+costs:
+  primary_net_scenario_bps_per_side: 25
+  sensitivity_bps_per_side: [0, 10, 25, 50]
+  components:
+    0: {transaction_cost_bps: 0, adverse_slippage_bps: 0}
+    10: {transaction_cost_bps: 8, adverse_slippage_bps: 2}
+    25: {transaction_cost_bps: 20, adverse_slippage_bps: 5}
+    50: {transaction_cost_bps: 40, adverse_slippage_bps: 10}
+periods:
+  development: {start: '2020-01-01', end: '2026-07-17', label: DEVELOPMENT_HISTORICAL_STRATEGY_SIMULATION}
+  holdout: {start: '2026-08-01', end: '2026-09-17', seed_signal_earliest: '2026-07-20', label: SEALED_STRATEGY_HOLDOUT}
+  prospective_start_exclusive: '2026-09-17'
+benchmarks:
+  primary: NIFTYBEES_EQ_CLOSE_TO_CLOSE_PRICE_RETURN
+  development_secondary: NIFTY_50_INDEX_CLOSE_TO_CLOSE
+  holdout_nifty50_status: unavailable_no_certified_official_response
+metrics:
+  - cumulative_return
+  - CAGR
+  - annualized_volatility
+  - Sharpe_zero_risk_free
+  - Sortino_zero_target
+  - maximum_drawdown
+  - Calmar
+  - maximum_drawdown_duration_sessions
+  - monthly_returns
+  - yearly_returns
+  - turnover
+  - cost_drag
+  - trade_count
+  - rebalance_count
+  - average_holding_sessions
+  - positions
+  - cash_utilization
+  - sector_contribution
+  - stock_contribution
+  - concentration
+acceptance_hierarchy:
+  REJECT_STRATEGY_V1:
+    any_operational_anomaly: true
+    negative_cash_or_leverage: true
+    position_limit_breach: true
+    holdout_max_drawdown_greater_than: 0.20
+    holdout_net_underperformance_vs_primary_benchmark_less_than: -0.10
+  READY_FOR_PAPER_TRADING:
+    development_net_CAGR_greater_than: 0
+    development_net_Sharpe_at_least: 0.50
+    development_max_drawdown_at_most: 0.30
+    holdout_net_excess_vs_primary_benchmark_at_least: -0.02
+    holdout_max_drawdown_at_most: 0.08
+    holdout_cost_drag_at_most: 0.02
+    holdout_mean_weekly_gross_turnover_at_most: 2.0
+    holdout_max_stock_absolute_contribution_share_at_most: 0.50
+    holdout_max_sector_absolute_contribution_share_at_most: 0.60
+  CONDITIONAL_PAPER_TRADE_CANDIDATE:
+    development_net_CAGR_greater_than: 0
+    development_net_Sharpe_greater_than: 0
+    development_max_drawdown_at_most: 0.40
+    holdout_net_excess_vs_primary_benchmark_at_least: -0.05
+    holdout_max_drawdown_at_most: 0.12
+    holdout_cost_drag_at_most: 0.04
+    holdout_mean_weekly_gross_turnover_at_most: 2.0
+    holdout_max_stock_absolute_contribution_share_at_most: 0.70
+    holdout_max_sector_absolute_contribution_share_at_most: 0.75
+  RESEARCH_FURTHER: all_other_non_reject_states
+robustness:
+  allowed: [cost_grid, MODERATE_LIQUID, yearly, rolling_drawdown, contribution_concentration, leave_one_sector_out]
+  forbidden: [sector_count_search, stock_count_search, rebalance_frequency_search, holding_period_search]
+risk:
+  no_negative_cash: true
+  no_duplicate_symbols: true
+  no_invalid_open: true
+  no_uncertified_interval: true
+  abort_on_unhandled_blocking_corporate_action: true

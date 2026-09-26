@@ -1,0 +1,22 @@
+{
+  "first_divergent_sample": "SMV2-0020",
+  "insufficient_cash_rejections": 0,
+  "last_exact_sample": "SMV2-0019",
+  "max_position_rejections": 58,
+  "mismatch_classifications": {
+    "MISSING_ORDER": 1,
+    "QUANTITY_DIFFERENCE": 81
+  },
+  "mismatch_root_causes": {
+    "EQUITY_MARK_BASIS_DIFFERENCE": 2,
+    "POSITION_STATE_CASCADE": 80
+  },
+  "phase12b_hash": "2e99d105d6a23538dafcaa4d6c17ba71b008c2e30fee63bec2cb50706a6aee2f",
+  "phase12c_build": "96e614a5638f221b1c340e4f9201e792b5c01e1394eac682ef7b53480aa0f2fb",
+  "post_boundary_performance_inspected": false,
+  "repaired_exact_matches": 30,
+  "repaired_mismatches": 82,
+  "repaired_order_rows": 112,
+  "risk_decisions": 2021,
+  "risk_rejections": 58
+}

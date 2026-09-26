@@ -1,0 +1,3 @@
+feature,status,code_evidence
+2pp retained-position resizing,NOT_IMPLEMENTED,adapter continues when canonical held position exists; no abs(weight-target)>=0.02 branch
+complete frozen fallback sequence,PARTIALLY_IMPLEMENTED,runner iterates selected_stocks only; no full per-sector frozen fallback candidates

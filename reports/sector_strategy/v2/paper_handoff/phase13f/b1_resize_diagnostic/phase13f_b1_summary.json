@@ -1,0 +1,22 @@
+{
+  "a_rejections": 62,
+  "b_rejections": 66,
+  "a_exact": 47,
+  "b_exact": 52,
+  "a_to_b_new_rejections": 60,
+  "a_to_b_resolved_rejections": 56,
+  "d_to_a_new_rejections": 11,
+  "d_to_a_resolved_rejections": 7,
+  "b_cap_rows": 66,
+  "b_mismatch_rows": 60,
+  "b_mismatch_classes": {
+    "RESIZE_QUANTITY_DIFFERENCE": 30,
+    "NEW_ENTRY_QUANTITY_DIFFERENCE": 30
+  },
+  "first_b_divergence": "SMV2-0087",
+  "retained_buy_at_nine": "RiskManager accepts when instrument key matches existing positive position",
+  "adapter_identity_match": true,
+  "phase12b_hash": "2e99d105d6a23538dafcaa4d6c17ba71b008c2e30fee63bec2cb50706a6aee2f",
+  "phase12c_build": "96e614a5638f221b1c340e4f9201e792b5c01e1394eac682ef7b53480aa0f2fb",
+  "post_boundary_performance_inspected": false
+}

@@ -1,0 +1,65 @@
+phase: 12B
+strategy_id: SECTOR_MOMENTUM
+strategy_version: V2
+purpose: IMPLEMENTATION_REPAIR_PREREGISTRATION_ONLY
+created_at_utc: '2026-09-18T09:00:00Z'
+v2_pnl_inspected: false
+post_2026_09_17_v2_performance_inspected: false
+alpha:
+  sole_factor: SECTOR_RELATIVE_MOMENTUM
+  accepted_definition: PHASE7_EQUAL_WEIGHT_SECTOR_DAILY_RETURNS_COMPOUNDED_20_SESSIONS
+  formation_sessions: 20
+  minimum_sector_size: 5
+  mapping_tier: STABLE_IDENTITY_BASIC_LIQUID
+selection:
+  sector_slots: 3
+  sector_new_entry_rank_max: 3
+  sector_retention_rank_max: 5
+  stocks_per_sector: 3
+  stock_new_entry_liquidity_rank_max: 3
+  stock_retention_liquidity_rank_max: 5
+  liquidity_field: avg_turnover_20
+  tie_breaks: {sector: sector_code_ascending, stock: symbol_ascending}
+  maximum_positions: 9
+tradability:
+  new_entry_series: [EQ]
+  be_new_entry_allowed: false
+  be_held_position_policy: retain_until_observed_valid_EQ_or_BE_open_then_exit
+  missing_exit_open_policy: retain_last_observable_mark_and_retry_each_session
+  missing_entry_open_policy: skip_and_hold_cash_then_walk_signal_frozen_top3_list
+  replacement_list_frozen_at: signal_close
+  replacement_list_scope: complete_ranked_list_recorded_but_execution_candidates_limited_to_signal_time_top3
+  required_new_entry_fields: [stable_identity, static_current_unique_mapping, universe_basic_liquid, valid_reported_EQ_row, positive_close, positive_avg_turnover_20, recent_presence_20, no_blocked_corporate_action_interval, EQ_at_signal]
+  fuzzy_identity_matching: false
+  future_tradability_inference: false
+portfolio:
+  direction: LONG_ONLY
+  intended_weighting: equal_weight_available_intended_slots
+  trapped_capital_available_for_reallocation: false
+  trapped_position_counts_toward_cap: true
+  trapped_position_retains_actual_exposure: true
+  shares: positive_whole_numbers
+  leverage: false
+  negative_cash_allowed: false
+  weight_restoration_absolute_band: 0.02
+  weight_band_unit: portfolio_weight_fraction_2_percentage_points
+rebalance:
+  frequency: WEEKLY
+  signal_date: final_NSE_trading_session_of_ISO_week
+  signal_time: after_close
+  execution: next_valid_tradable_session_open
+  same_close_execution: false
+costs:
+  primary_total_bps_per_side: 25
+  primary_components: {transaction_cost_bps: 20, adverse_slippage_bps: 5}
+  sensitivity_total_bps_per_side: [0, 10, 25, 50]
+  sensitivity_components:
+    0: {transaction_cost_bps: 0, adverse_slippage_bps: 0}
+    10: {transaction_cost_bps: 8, adverse_slippage_bps: 2}
+    25: {transaction_cost_bps: 20, adverse_slippage_bps: 5}
+    50: {transaction_cost_bps: 40, adverse_slippage_bps: 10}
+periods:
+  development_end: '2026-09-17'
+  fresh_validation_start_exclusive: '2026-09-17'
+  post_boundary_performance_read_in_phase12b: false
+forbidden: [REV05, REV20, VOLUME_MOMENTUM, STOCK_MOMENTUM_ALPHA, MARKET_REGIME, VOLATILITY_ALPHA, STOP_LOSS, PROFIT_TARGET, ATR_RULE, MACHINE_LEARNING, COMBINED_SCORE]

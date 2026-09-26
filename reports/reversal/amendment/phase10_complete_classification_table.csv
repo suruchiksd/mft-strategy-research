@@ -1,0 +1,7 @@
+evaluation_order,classification,sample_condition,primary_horizon_condition,directional_condition,notes
+1,INSUFFICIENT SAMPLE,Any required horizon has fewer than 20 daily IC dates,Any,Not evaluated,Evaluation stops at first matching row
+2,CONTRADICTORY,Every required horizon has at least 20 dates,0 or 1 positive BASIC horizons,Not required,Adequate sample; primary sign count controls
+3,MIXED,Every required horizon has at least 20 dates,2 or 3 positive BASIC horizons,Not required,Adequate sample; primary sign count controls
+4,DIRECTIONALLY POSITIVE BUT UNSTABLE,Every required horizon has at least 20 dates,"4, 5, or 6 positive BASIC horizons",At least one complete directional-retention requirement fails,"Includes MODERATE, non-overlap, average-IC, or leave-one-date failure"
+5,SUPPORTIVE BUT SHORT SAMPLE,Every required horizon has at least 20 dates and at least one has fewer than 60,"4, 5, or 6 positive BASIC horizons",Every directional-retention requirement passes,Short evaluable sample
+6,SUPPORTED,Every required horizon has at least 60 dates,"4, 5, or 6 positive BASIC horizons",Every directional-retention requirement passes,Full amended support threshold

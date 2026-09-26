@@ -1,0 +1,18 @@
+{
+  "stage": "13F-B",
+  "phase12b_hash": "2e99d105d6a23538dafcaa4d6c17ba71b008c2e30fee63bec2cb50706a6aee2f",
+  "phase12c_build": "96e614a5638f221b1c340e4f9201e792b5c01e1394eac682ef7b53480aa0f2fb",
+  "rows": 112,
+  "exact": 52,
+  "mismatches": 60,
+  "risk_decisions": 2094,
+  "risk_rejections": 66,
+  "rejection_reasons": {
+    "maximum open positions reached": 66
+  },
+  "post_boundary_performance_inspected": false,
+  "output_hashes": {
+    "historical_target_to_order_parity.csv": "1e5b3a346e333ea8983ff002c1f670593282a415631f5ff886e6128ad15264f9",
+    "historical_risk_parity.csv": "1ae55fdfb36318486fc1f51b2dfbe0c07ff2a87f270ce542f9e96f3c9998f9bc"
+  }
+}

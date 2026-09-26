@@ -1,0 +1,138 @@
+{
+  "accepted_inputs": {
+    "phase5_build_id": "ce7d1d27638b3c7e448b6e9bfc5b659e4e7bb77db1c6cf5c377edafce7262524",
+    "phase5_verified_outputs": 24,
+    "phase6_build_id": "e1c1a5c6ad6c7b2e521d00c4fcb97f4bbb21047575ca0de5a7a3f36cb573367b",
+    "phase6_verified_outputs": 15,
+    "phase7_build_id": "f41dbfd6019e517e3696076f7330b083622732c8a785f3bfa3f65e5573d335df",
+    "phase7_verified_outputs": 21,
+    "phase8_build_id": "422d5459c295f5d6fce9f3648487528c1b4f71e56956ef19c7e7809d3cb05e5e",
+    "phase8_verified_outputs": 14,
+    "phase9_build_id": "00a3e8a873d6488d7a97a642347ec0f59d53e94dcb7f32e4ea20841c54f1455b",
+    "phase9_verified_outputs": 22
+  },
+  "build_id": "cda8c86bfa6b904d1f6a8975ca3eb3257f528658ee3dd9cb5719a811cb9cdc91",
+  "build_timestamp_utc": "2026-09-16T14:47:33.191688+00:00",
+  "code_sha256": "2c65c1d0c3ecaa4b2e2eb786dab9a893439ee4647c184e17af44e6367984bc9b",
+  "config": {
+    "acceptance_rules": {
+      "confirmation_positive_horizons_required": 4,
+      "historical_positive_horizons_required": 6,
+      "moderate_positive_horizons_required": 4,
+      "nonoverlap_positive_horizons_required": 4,
+      "require_no_leave_one_date_sign_flip_for_supporting_horizons": true,
+      "require_positive_average_ic_in_both_universes": true
+    },
+    "accepted_phase9_build_id": "00a3e8a873d6488d7a97a642347ec0f59d53e94dcb7f32e4ea20841c54f1455b",
+    "candidate_formulas": {
+      "REV05": "-1 * price_return_5",
+      "REV20": "-1 * price_return_20"
+    },
+    "candidates": [
+      "REV05",
+      "REV20"
+    ],
+    "classification_rules": {
+      "CONTRADICTORY": "evaluable sample with zero or one positive primary horizon",
+      "INSUFFICIENT SAMPLE": "corporate-action extension is not accepted or any horizon has fewer than 20 daily IC dates",
+      "MIXED": "evaluable sample with two or three positive primary horizons",
+      "SUPPORTED": "all directional acceptance rules pass and every horizon has at least 60 daily IC dates",
+      "SUPPORTIVE BUT SHORT SAMPLE": "all directional acceptance rules pass and every horizon has at least 20 but fewer than 60 daily IC dates"
+    },
+    "confirmation_evaluability": {
+      "minimum_daily_ic_dates_per_horizon": 20,
+      "supported_minimum_daily_ic_dates_per_horizon": 60
+    },
+    "confirmation_signal_start_exclusive": "2026-07-17",
+    "corporate_action_blocking_impacts": [
+      "MATERIAL_UNRESOLVED_EVENT",
+      "UNKNOWN_OR_AMBIGUOUS",
+      "LIKELY_ALREADY_ADJUSTED_CONVENTIONAL_ACTION"
+    ],
+    "corporate_action_certification_required": true,
+    "discovery_end": "2026-07-17",
+    "discovery_start": "2020-01-01",
+    "future_horizons": [
+      1,
+      2,
+      3,
+      5,
+      10,
+      20
+    ],
+    "inputs": {
+      "accepted_corporate_action_ledger": "data/derived/corporate_action_ledger.parquet",
+      "corporate_action_source_root": "/home/suruchi-pandey/Projects/CM_corpAction",
+      "foundation": "data/derived/volume_momentum_foundation.parquet",
+      "historical_identity": "reports/csrs/point_in_time/historical_symbol_identity.csv",
+      "phase5_manifest": "reports/csrs/point_in_time/phase5_build_manifest.json",
+      "phase6_manifest": "reports/sector_momentum/foundation/phase6_build_manifest.json",
+      "phase7_manifest": "reports/sector_momentum/research/phase7_build_manifest.json",
+      "phase8_manifest": "reports/volume_momentum/foundation/phase8_build_manifest.json",
+      "phase9_decile_returns": "reports/volume_momentum/research/candidate_decile_returns.csv",
+      "phase9_manifest": "reports/volume_momentum/research/phase9_build_manifest.json",
+      "phase9_rank_ic_summary": "reports/volume_momentum/research/candidate_rank_ic_summary.csv",
+      "phase9_tail_analysis": "reports/volume_momentum/research/candidate_tail_analysis.csv"
+    },
+    "nonoverlap_all_offsets": true,
+    "outputs": {
+      "factor_panel": "data/derived/reversal_confirmation_panel.parquet",
+      "final_report": "reports/phase10_cross_sectional_reversal.md",
+      "report_dir": "reports/reversal/research"
+    },
+    "overall_rules": {
+      "CONDITIONAL PASS": "at least one candidate is SUPPORTED or both are SUPPORTIVE BUT SHORT SAMPLE",
+      "FAIL": "both candidates are CONTRADICTORY on evaluable certified samples",
+      "PASS FOR COMPLEMENTARITY RESEARCH": "both candidates are SUPPORTED",
+      "RESEARCH FURTHER": "at least one candidate is SUPPORTIVE BUT SHORT SAMPLE, MIXED, or INSUFFICIENT SAMPLE and PASS/CONDITIONAL/FAIL do not apply"
+    },
+    "phase": 10,
+    "preregistration": {
+      "manifest": "reports/reversal/preregistration/phase10_preregistration_manifest.json",
+      "registry": "reports/reversal/preregistration/reversal_candidate_registry.csv",
+      "report": "reports/reversal/preregistration/phase10_reversal_preregistration.md"
+    },
+    "primary_universe": "BASIC_LIQUID",
+    "quantiles": {
+      "buckets": 10,
+      "minimum_cross_section": 20
+    },
+    "research_label": "PREREGISTERED_CROSS_SECTIONAL_REVERSAL_CONFIRMATION",
+    "sensitivity_universe": "MODERATE_LIQUID",
+    "source_candidates": {
+      "REV05": "VM01",
+      "REV20": "VM02"
+    },
+    "tails": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "uncertainty": {
+      "block_length": "max(10, 2 * future_horizon)",
+      "method": "CIRCULAR_BLOCK_BOOTSTRAP",
+      "replications": 2000,
+      "seed": 104729
+    }
+  },
+  "corporate_action_extension_accepted": false,
+  "decision": "RESEARCH FURTHER",
+  "output_sha256": {
+    "candidate_classification.csv": "f1872e85d9f79fa2dfa14717a79dab7b7d53557ae85a6b78c8d077d99a1b309f",
+    "confirmation_coverage.csv": "49ff6c8169cef40c09f89fe78286cadf6b85b2d1de7ee576e4e8d0df21ab8d20",
+    "confirmation_decile_returns.csv": "7b2909200a9f64377418e06534ab3e35496ac51c8c38ce13259529168cc9a5ce",
+    "confirmation_nonoverlap.csv": "cb1b37568f8598786bf58bbf80c3a28075524396a3ea2abddabc17a1a9a36b8e",
+    "confirmation_rank_ic_daily.csv": "3dc0e9a829b4d9cab5a930f6bdfc0529ad78f542e0c48cbd6d7d6b78742a21f5",
+    "confirmation_rank_ic_summary.csv": "359f8837c6de36da16111dcfb7621db363ff26024009105b620085fb5aa61ed3",
+    "confirmation_tail_analysis.csv": "6e1ca8639650c4a326af8f321742f8486fd03dad8d2a672c2ce5b8d96b5f581c",
+    "confirmation_uncertainty.csv": "8aba33a96bf4ec47abc378894db5f7ed608fb41b95458163d735caa519cea4c2",
+    "corporate_action_extension_audit.csv": "6ca6fe290f550f0da7e34d9600f9b9e5987ecf3b5f896345fce82c0ad913188c",
+    "historical_discovery_summary.csv": "999ffd051a0d2bfae224bcb27c8d3d030c82f24a55f58f8d433a4106a947fcc6",
+    "leave_one_date_out.csv": "d00613df3c32f2f06fe11510200f421edda47bc62b3b97b8a1b64a97060d17cc",
+    "phase10_acceptance.json": "933dd92a97919f1f3ee2ec1ffc02116070d0ef7966f44ab90cab079e7e29898c",
+    "phase10_cross_sectional_reversal.md": "5f603a986ee2f8d0ef06d09f191fc4947b85268302969cc8c6927568cbb39ada",
+    "universe_sensitivity.csv": "a71c90fb2b69be8e792bc30a3868a28ec9b40520e122d3f4c6831a7ec7c85c31"
+  },
+  "post_cutoff_outcomes_inspected": false,
+  "preregistration_manifest_sha256": "fb0976eeea5dc524f4bb9a22dad98b6b0ec6fc42507dcc90f9d5f16d52da6995"
+}

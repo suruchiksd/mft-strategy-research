@@ -1,0 +1,5 @@
+item,research,b2,same
+pretrade_equity,"cash + sum(quantity * current open, else previous_mark/previous_close)","cash + sum(quantity * current open, else Portfolio last/average mark)",SEMANTICALLY_DIFFERENT_ON_MISSING_OPEN
+target_n,"max(len(intended),1)","max(len(selected_stocks),1)",YES_FOR_CURRENT_TARGET_ARTIFACTS
+desired_shares,floor(target_value/(open*(1+slippage/10000)*(1+cost/10000))),same,YES
+cash_clip,"floor(max(cash,0)/(open*(1+slippage/10000)*(1+cost/10000)))",same,YES

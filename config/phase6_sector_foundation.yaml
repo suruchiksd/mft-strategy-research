@@ -1,0 +1,51 @@
+schema_version: 1
+research_scope: sector-classification foundation only; no Sector Relative Momentum or portfolio calculations
+sector_root: /home/suruchi-pandey/Projects/bhavcopy-universe/Sectors
+bhavcopy_universe_root: /home/suruchi-pandey/Projects/bhavcopy-universe
+bhavcopy_archive_root: /home/suruchi-pandey/Projects/Bhavcopy-download-and-mail-code
+market_data_platform_root: /home/suruchi-pandey/market-data-platform-gpt
+historical_daily: data/derived/historical_nse_daily.parquet
+phase5_manifest: reports/csrs/point_in_time/phase5_build_manifest.json
+phase5_identity: reports/csrs/point_in_time/historical_symbol_identity.csv
+mapping_output: data/derived/sector_research_mapping.parquet
+report_dir: reports/sector_momentum/foundation
+final_report: reports/phase6_sector_foundation.md
+universe_columns:
+  BROAD_EQ: universe_broad_eq
+  BASIC_LIQUID: universe_basic_liquid
+  MODERATE_LIQUID: universe_moderate_liquid
+  STRICT_SENSITIVITY: universe_strict_sensitivity
+viability_thresholds: [3, 5, 10]
+weak_year_symbol_retention_pct: 75
+identity_policy:
+  fuzzy_matching: false
+  stitch_aliases: false
+  direct_observed_symbol_only: true
+historical_mapping_policy:
+  effective_dates_available: false
+  current_unique_label: STATIC_CURRENT_UNIQUE
+  current_conflict_label: STATIC_CURRENT_CONFLICT
+  unmapped_label: UNMAPPED
+  historically_verified_label: HISTORICALLY_VERIFIED
+recommended_primary_tier: STABLE_IDENTITY_BASIC_LIQUID
+research_tiers:
+  STATIC_UNIQUE_BROAD:
+    universe: BROAD_EQ
+    require_unique_mapping: true
+    require_stable_identity: false
+    role: SENSITIVITY
+  STABLE_IDENTITY_BROAD:
+    universe: BROAD_EQ
+    require_unique_mapping: true
+    require_stable_identity: true
+    role: SENSITIVITY
+  STABLE_IDENTITY_BASIC_LIQUID:
+    universe: BASIC_LIQUID
+    require_unique_mapping: true
+    require_stable_identity: true
+    role: PRIMARY
+  STABLE_IDENTITY_MODERATE_LIQUID:
+    universe: MODERATE_LIQUID
+    require_unique_mapping: true
+    require_stable_identity: true
+    role: SENSITIVITY

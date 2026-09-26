@@ -1,0 +1,30 @@
+[
+  {
+    "check": "preregistration immutable",
+    "passed": true
+  },
+  {
+    "check": "exact candidates",
+    "passed": true
+  },
+  {
+    "check": "exact futures",
+    "passed": true
+  },
+  {
+    "check": "signals strictly post cutoff",
+    "passed": true
+  },
+  {
+    "check": "no uncertified valid endpoint",
+    "passed": true
+  },
+  {
+    "check": "all offsets",
+    "passed": true
+  },
+  {
+    "check": "no forbidden columns",
+    "passed": true
+  }
+]

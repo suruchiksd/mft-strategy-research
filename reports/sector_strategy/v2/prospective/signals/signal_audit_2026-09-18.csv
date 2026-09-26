@@ -1,0 +1,42 @@
+signal_date,sector_code,symbol,sector_strength_rank,liquidity_rank,new_entry_eligible,replacement_priority,selected,selection_status,reason
+2026-09-18,DJ,KALYANKJIL,1,1,True,1,True,KEEP,Selected target
+2026-09-18,DJ,TITAN,1,2,True,2,True,KEEP,Selected target
+2026-09-18,DJ,TBZ,1,3,True,3,True,KEEP,Selected target
+2026-09-18,DJ,SKYGOLD,1,4,False,4,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,DJ,SHANTIGOLD,1,5,False,5,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,DJ,THANGAMAYL,1,6,False,6,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,DJ,RGL,1,7,False,7,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,DJ,SENCO,1,8,False,8,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,DJ,PNGJL,1,9,False,9,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,DJ,IGIL,1,10,False,10,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,DJ,GOLDIAM,1,11,False,11,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,DJ,VAIBHAVGBL,1,12,False,12,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,DJ,DPABHUSHAN,1,13,False,13,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,DJ,VGL,1,14,False,14,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,PA,JKPAPER,2,1,True,1,True,KEEP,Selected target
+2026-09-18,PA,ANDHRAPAP,2,2,True,2,False,EXCLUDED,sector slots already filled
+2026-09-18,PA,WSTCSTPAPR,2,3,True,3,True,KEEP,Selected target
+2026-09-18,PA,KPL,2,4,False,4,True,KEEP,Selected target
+2026-09-18,PA,TNPL,2,5,False,5,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,PA,PDMJEPAPER,2,6,False,6,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,PA,NRAIL,2,7,False,7,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,PA,SESHAPAPER,2,8,False,8,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,PA,SATIA,2,9,False,9,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,PA,PAKKA,2,10,False,10,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,OG,RELIANCE,5,1,True,1,True,KEEP,Selected target
+2026-09-18,OG,CHENNPETRO,5,2,True,2,False,EXCLUDED,sector slots already filled
+2026-09-18,OG,ONGC,5,3,True,3,True,KEEP,Selected target
+2026-09-18,OG,MRPL,5,4,False,4,True,KEEP,Selected target
+2026-09-18,OG,BPCL,5,5,False,5,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,OG,HINDPETRO,5,6,False,6,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,OG,OIL,5,7,False,7,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,OG,IOC,5,8,False,8,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,OG,HINDOILEXP,5,9,False,9,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,OG,PETRONET,5,10,False,10,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,OG,DEEPINDS,5,11,False,11,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,OG,JINDRILL,5,12,False,12,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,OG,ASIANENE,5,13,False,13,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,OG,GANDHAR,5,14,False,14,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,OG,PRABHA,5,15,False,15,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,OG,DOLPHIN,5,16,False,16,False,EXCLUDED,rank > 3 after slots filled
+2026-09-18,OG,VEEDOL,5,17,False,17,False,EXCLUDED,rank > 3 after slots filled

@@ -1,0 +1,8 @@
+file,rows,first_date,last_date,dividend,factor_label,rights,demerger,buyback,malformed_width,duplicate_rows
+CM_corpActions_2020.csv,1074,20200109,20201231,1013,23,20,11,7,0,0
+CM_corpActions_2021.csv,1328,20210105,20211231,1229,58,26,3,12,0,0
+CM_corpActions_2022.csv,1521,20220106,20221230,1361,104,22,13,21,0,0
+CM_corpActions_2023.csv,1622,20230103,20231229,1460,87,32,13,30,0,0
+CM_corpActions_2024.csv,1751,20240102,20241230,1524,122,56,11,38,0,0
+CM_corpActions_2025.csv,1809,20250101,20251226,1620,104,54,18,13,0,0
+CM_corpActions_2026.csv,647,20260102,20260717,565,39,18,4,21,0,0

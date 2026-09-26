@@ -1,0 +1,10 @@
+approved,approved_quantity,reason,requested_quantity,side,symbol
+True,128,approved,128,BUY,JKPAPER
+True,94,approved,94,BUY,KALYANKJIL
+True,44,approved,44,BUY,RELIANCE
+True,11,approved,11,BUY,TITAN
+True,238,approved,238,BUY,ONGC
+True,92,approved,92,BUY,TBZ
+True,71,approved,71,BUY,WSTCSTPAPR
+True,15,approved,15,BUY,KPL
+True,330,approved,330,BUY,MRPL

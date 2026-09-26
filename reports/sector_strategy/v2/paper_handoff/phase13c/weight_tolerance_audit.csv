@@ -1,0 +1,2 @@
+date,rebalance_id,symbol,side,quantity,reference_open,fill_price,notional,transaction_cost,slippage_bps,trade_class,series,paper_behavior,classification
+2020-05-26,SMV2-0021,AUROPHARMA,SELL,15,725.0,724.6375,10869.5625,21.739125,5,WEIGHT_REBALANCING,EQ,not independently implemented in Phase13B replay,WEIGHT_TOLERANCE_MISMATCH

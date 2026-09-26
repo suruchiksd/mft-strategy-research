@@ -1,0 +1,25 @@
+{
+  "counts": {
+    "exact_matches": 30,
+    "mismatches": 82,
+    "order_rows": 112,
+    "risk_decisions": 2021,
+    "risk_rejections": 58
+  },
+  "outputs": {
+    "engine_orders_repaired.csv": "1ea1344e23f0da350b9a1f59a6edda99f896ef0a146d20389daca7e3a7235730",
+    "engine_snapshots_repaired.csv": "72156926da2f4ddbf9ca6bbf156c02345b4c43356de1b4128963af357314eea6",
+    "risk_decisions_repaired.csv": "455aaa728a9c993b9ca4a9358539139d5a4e35ab7cb1ed7ec3e7e15f79c559aa",
+    "state_parity_repaired.csv": "f47825f3aa5481b31c03b1dcd7fe684bcb0ae4b39a07efbd35a29e7f5039105f",
+    "target_to_order_parity_repaired.csv": "01ef0eb6d3311fc6dbb274ca13c24beb58d14367a022c56714f0c2d3f4e215ad"
+  },
+  "phase": "13D-R1",
+  "phase12b_hash": "2e99d105d6a23538dafcaa4d6c17ba71b008c2e30fee63bec2cb50706a6aee2f",
+  "phase12c_build": "96e614a5638f221b1c340e4f9201e792b5c01e1394eac682ef7b53480aa0f2fb",
+  "phase13b_evidence_hashes": {
+    "manifest": "3ffed4c8f0d6e0041bfafe5c700b61336fc1b32af161d778447a7aff2dcbcb9b",
+    "risk": "1aa8a9af1148bf33df06c54705a9c86228c6bd17c39d0e49154396d7af82ff68",
+    "target": "8b41348bb0baff1a8c39616c6a435ab7210abf7a44cd887ea1eb4c6f0e9f9e7e"
+  },
+  "post_boundary_performance_inspected": false
+}

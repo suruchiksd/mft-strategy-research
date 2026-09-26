@@ -1,0 +1,13 @@
+{
+  "all_artifacts_byte_identical": true,
+  "artifact_sha256": {
+    "corporate_action_ledger.parquet": "1b242cc4016978783d4b1f8039a667842b8819a90de92cacb8e386650dd588f4",
+    "daily_bars.parquet": "d77c8ee9511121c995b998cf3e2837f3b74e7575253d67439618595e3feeae97",
+    "minute_exclusions.parquet": "531acedf19a104d9791b50eff4ab1d34595c765143bfa7d5f853de5369b42d37",
+    "session_calendar.parquet": "10926d7d555975ae1158c7141f421a0b45c0b71b16b1fa7cfab93b55c5e16611",
+    "universe.parquet": "bd5c3a30bd1d3d673d55f4d403296f4a315cc152590ea10e0b00579123edbebb"
+  },
+  "build_id": "049f5a61be599b277f775105fe8935128c2015d98867bcf76dfbd98f07c80988",
+  "command": ".venv/bin/python scripts/build_research_dataset.py --verify-rebuild",
+  "source_hashes_sizes_mtimes_unchanged": true
+}

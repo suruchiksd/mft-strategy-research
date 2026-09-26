@@ -1,0 +1,37 @@
+schema_version: 1
+research_scope: volume and momentum data/methodology foundation only; no future outcomes or performance research
+historical_daily: data/derived/historical_nse_daily.parquet
+corporate_action_ledger: data/derived/corporate_action_ledger.parquet
+phase5_manifest: reports/csrs/point_in_time/phase5_build_manifest.json
+phase6_manifest: reports/sector_momentum/foundation/phase6_build_manifest.json
+phase7_manifest: reports/sector_momentum/research/phase7_build_manifest.json
+foundation_output: data/derived/volume_momentum_foundation.parquet
+report_dir: reports/volume_momentum/foundation
+final_report: reports/phase8_volume_momentum_foundation.md
+primary_universe: BASIC_LIQUID
+sensitivity_universe: MODERATE_LIQUID
+audit_universes: [BROAD_EQ, BASIC_LIQUID, MODERATE_LIQUID, STRICT_SENSITIVITY]
+volume_baseline_horizons: [20, 60]
+price_return_horizons: [5, 20]
+corporate_action_coverage_start: "2020-01-09"
+corporate_action_coverage_end: "2026-07-17"
+corporate_action_blocking_impacts: [MATERIAL_UNRESOLVED_EVENT, UNKNOWN_OR_AMBIGUOUS, LIKELY_ALREADY_ADJUSTED_CONVENTIONAL_ACTION]
+baseline_current_day_policy: exclude_current_day
+session_policy: exact_contiguous_exchange_sessions
+cross_sectional_winsorization: [0.01, 0.99]
+rank_tie_policy: value_then_symbol_ordinal
+outlier_rows_per_feature: 100
+action_proximity_sessions: 5
+redundancy_spearman_threshold: 0.90
+candidate_count_limits: [4, 8]
+source_contract:
+  OLD:
+    raw_volume_field: TTL_TRD_QNTY
+    volume_unit: shares
+    raw_turnover_field: TURNOVER_LACS
+    turnover_conversion: multiply_by_100000_to_rupees
+  NEW:
+    raw_volume_field: TtlTradgVol
+    volume_unit: shares
+    raw_turnover_field: TtlTrfVal
+    turnover_conversion: already_rupees

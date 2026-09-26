@@ -1,0 +1,36 @@
+{
+  "corporate_action_request": {
+    "endpoint": "https://www.nseindia.com/api/corporates-corporateActions",
+    "parameters": {
+      "from_date": "12-09-2026",
+      "index": "equities",
+      "to_date": "17-09-2026"
+    },
+    "path": "data/external/phase11/corporate_actions/official_nse_corporate_actions_20260912_20260917.json",
+    "rows": 94,
+    "sha256": "0261d410d9a76cbaab075ed14a17cd60e080c207875c5de7d84cd093eb8fed47"
+  },
+  "holiday": {
+    "date": "2026-09-14",
+    "reason": "Ganesh Chaturthi",
+    "source": "https://www.nseindia.com/resources/exchange-communication-holidays"
+  },
+  "price_files": [
+    {
+      "path": "data/external/phase11/bhavcopy/BhavCopy_NSE_CM_0_0_0_20260915_F_0000.csv",
+      "rows": 3692,
+      "sha256": "8731e2b6f7394ad52884aa15d5ba0327c8082f3ea89bcb92227fad43e801c6a7"
+    },
+    {
+      "path": "data/external/phase11/bhavcopy/BhavCopy_NSE_CM_0_0_0_20260916_F_0000.csv",
+      "rows": 3669,
+      "sha256": "698168dbd2fd2cc536bb164da3462b06ab878450407ea7e49dada1c912da1c31"
+    },
+    {
+      "path": "data/external/phase11/bhavcopy/BhavCopy_NSE_CM_0_0_0_20260917_F_0000.csv",
+      "rows": 3658,
+      "sha256": "f9792c3f6b08e801c18b505a4702a4bf1a3c407b2e4e48284e7d98ad7718cc7e"
+    }
+  ],
+  "retrieval_timestamp_utc": "2026-09-17T12:02:57Z"
+}

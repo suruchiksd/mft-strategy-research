@@ -1,0 +1,42 @@
+{
+  "endpoint": "https://www.nseindia.com/api/corporates-corporateActions",
+  "index": "equities",
+  "query_template": "index=equities&from_date=DD-MM-YYYY&to_date=DD-MM-YYYY",
+  "raw_schema": [
+    "bcEndDate",
+    "bcStartDate",
+    "caBroadcastDate",
+    "comp",
+    "exDate",
+    "faceVal",
+    "ind",
+    "isin",
+    "ndEndDate",
+    "ndStartDate",
+    "recDate",
+    "series",
+    "subject",
+    "symbol"
+  ],
+  "requests": [
+    {
+      "body": "data/external/corporate_actions/phase10_extension/official_nse_corporate_actions_20260101_20260717.json",
+      "body_sha256": "2673d2db2dbc07e67ffb135e04961e08bf30b33645d6897230e7c77a6c16e294",
+      "from": "01-01-2026",
+      "headers": "data/external/corporate_actions/phase10_extension/overlap_response_headers.txt",
+      "headers_sha256": "cd57d323d93c8ade7df71afa8d1679c863603bc89a9ada2ae6989118fefb82ed",
+      "to": "17-07-2026"
+    },
+    {
+      "body": "data/external/corporate_actions/phase10_extension/official_nse_corporate_actions_20260718_20260911.json",
+      "body_sha256": "585da41d784646aed0d53e4e5b677ce23fb0f44854ac7984a523d7a79b88c035",
+      "from": "18-07-2026",
+      "headers": "data/external/corporate_actions/phase10_extension/extension_response_headers.txt",
+      "headers_sha256": "80f76399315db2608fbf9b76af9609de488f498a0ae0c0e168051623e1e5dc10",
+      "to": "11-09-2026"
+    }
+  ],
+  "response_format": "JSON_ARRAY",
+  "retrieval_timestamp_utc": "2026-09-16T15:05:03Z",
+  "source": "NATIONAL_STOCK_EXCHANGE_OF_INDIA"
+}

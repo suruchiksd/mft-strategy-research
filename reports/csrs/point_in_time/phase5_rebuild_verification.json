@@ -1,0 +1,6 @@
+{
+  "build_id": "ce7d1d27638b3c7e448b6e9bfc5b659e4e7bb77db1c6cf5c377edafce7262524",
+  "byte_identical": true,
+  "command": ".venv/bin/python scripts/build_phase5_point_in_time.py --verify-rebuild",
+  "output_count": 24
+}

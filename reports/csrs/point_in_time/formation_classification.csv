@@ -1,0 +1,6 @@
+formation_horizon,classification,positive_pairs_broad_eq,positive_pairs_basic_liquid,positive_pairs_moderate_liquid,positive_pairs_strict_sensitivity,positive_holdout_pairs_total,fraction_year_cells_positive,bh_fdr_rejections_across_universes,classification_rule
+5,REVERSAL-LIKE,0,0,0,0,0,0,23,frozen_cross_universe_chronology_uncertainty_rule
+10,REVERSAL-LIKE,0,0,0,0,0,0.0694444444444,21,frozen_cross_universe_chronology_uncertainty_rule
+20,REVERSAL-LIKE,0,0,0,0,0,0.125,17,frozen_cross_universe_chronology_uncertainty_rule
+40,FAIL,0,0,1,1,9,0.270833333333,13,frozen_cross_universe_chronology_uncertainty_rule
+60,INCONCLUSIVE,1,2,2,2,11,0.423611111111,8,frozen_cross_universe_chronology_uncertainty_rule

@@ -1,0 +1,55 @@
+{
+  "execution_earliest_date": "2026-09-21",
+  "exit_count": 0,
+  "new_count": 0,
+  "no_lookahead": {
+    "ca_cutoff": "2026-09-18",
+    "execution_close_used": false,
+    "execution_earliest_date": "2026-09-21",
+    "execution_open_used": false,
+    "liquidity_max_date": "2026-09-18",
+    "market_data_max_date": "2026-09-18",
+    "post_boundary_pnl_inspected": false,
+    "post_signal_returns_inspected": false,
+    "previous_portfolio_state_used": false,
+    "previous_target_state_source": "reports/sector_strategy/v2/development/v2_selection_stability.csv:SMV2-0350",
+    "sector_panel_max_date": "2026-09-18",
+    "signal_date": "2026-09-18",
+    "strategy_build_reference": "96e614a5638f221b1c340e4f9201e792b5c01e1394eac682ef7b53480aa0f2fb",
+    "strategy_preregistration_hash": "2e99d105d6a23538dafcaa4d6c17ba71b008c2e30fee63bec2cb50706a6aee2f"
+  },
+  "paper_engine_run": false,
+  "rebalance_id": "SMV2-PROSPECTIVE-20260918",
+  "replacement_candidate_count": 41,
+  "retained_count": 9,
+  "schema_version": "SECTOR_MOMENTUM_V2_SIGNAL_V1",
+  "selected_sectors": [
+    {
+      "sector": "diamond_jewellery",
+      "sector_code": "DJ",
+      "strength_rank": 1
+    },
+    {
+      "sector": "paper",
+      "sector_code": "PA",
+      "strength_rank": 2
+    },
+    {
+      "sector": "oil_gas",
+      "sector_code": "OG",
+      "strength_rank": 5
+    }
+  ],
+  "signal_date": "2026-09-18",
+  "signal_file_sha256": "230a6d2110a9f0b95eb93327da787b88486c2d57ca3f89339e1fa97fd6cc9296",
+  "source_files": {
+    "ca": "data/derived/prospective/corporate_action_extension_20260918.parquet",
+    "daily": "data/derived/prospective/daily_features_extension_20260918.parquet",
+    "sector_panel": "data/derived/prospective/sector_signal_panel_extension_20260918.parquet"
+  },
+  "strategy_build_reference": "96e614a5638f221b1c340e4f9201e792b5c01e1394eac682ef7b53480aa0f2fb",
+  "strategy_id": "SECTOR_MOMENTUM",
+  "strategy_preregistration_hash": "2e99d105d6a23538dafcaa4d6c17ba71b008c2e30fee63bec2cb50706a6aee2f",
+  "strategy_version": "V2",
+  "target_count": 9
+}

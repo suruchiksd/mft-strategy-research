@@ -1,0 +1,10 @@
+{
+  "mode": "DRY_RUN",
+  "target_loaded": 2,
+  "orders_intended": 2,
+  "risk_decisions": 2,
+  "fills": 0,
+  "state_mutated": false,
+  "prospective_returns_inspected": false,
+  "fixture": "synthetic target state with normalized EQ quotes"
+}

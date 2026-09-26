@@ -1,0 +1,173 @@
+{
+  "accepted_inputs": {
+    "historical_daily_sha256": "7e26f8f8f5207b2cf3906eea942f735745a9a109aea66888647c23a2e7b65d37",
+    "phase5_build_id": "ce7d1d27638b3c7e448b6e9bfc5b659e4e7bb77db1c6cf5c377edafce7262524",
+    "phase5_verified_outputs": 24,
+    "phase6_build_id": "e1c1a5c6ad6c7b2e521d00c4fcb97f4bbb21047575ca0de5a7a3f36cb573367b",
+    "phase6_verified_outputs": 15,
+    "sector_mapping_sha256": "5cc633a5b544bca72dfb7af295152416f8d5453285449df8bd9c8eaf3ea797c6"
+  },
+  "build_id": "f41dbfd6019e517e3696076f7330b083622732c8a785f3bfa3f65e5573d335df",
+  "build_timestamp_utc": "2026-09-15T14:31:49.254490+00:00",
+  "code_sha256": "76398781802a3ebcce0721bc42581304da5f0f0718f57491308e41093fc25579",
+  "config": {
+    "certified_end": "2026-07-17",
+    "certified_start": "2020-01-09",
+    "classification_rules": {
+      "promising": {
+        "minimum_positive_holdout_pairs": 3,
+        "minimum_positive_nonoverlap_pairs": 3,
+        "minimum_positive_primary_pairs": 4
+      },
+      "reversal_like": {
+        "minimum_negative_holdout_pairs": 4,
+        "minimum_negative_nonoverlap_pairs": 4,
+        "minimum_negative_primary_pairs": 5
+      },
+      "robust": {
+        "minimum_positive_bh_rejections": 2,
+        "minimum_positive_confidence_intervals": 3,
+        "minimum_positive_holdout_pairs": 4,
+        "minimum_positive_nonoverlap_pairs": 4,
+        "minimum_positive_primary_pairs": 5
+      }
+    },
+    "corporate_action_ledger": "data/derived/corporate_action_ledger.parquet",
+    "evaluation_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "expanding_evaluation_years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "factor_panel_output": "data/derived/sector_momentum_factor_panel.parquet",
+    "final_report": "reports/phase7_sector_relative_momentum.md",
+    "fixed_periods": [
+      {
+        "end": "2022-12-31",
+        "name": "DEVELOPMENT",
+        "start": "2020-01-01"
+      },
+      {
+        "end": "2024-12-31",
+        "name": "VALIDATION",
+        "start": "2023-01-01"
+      },
+      {
+        "end": "2026-07-17",
+        "name": "HOLDOUT",
+        "start": "2025-01-01"
+      }
+    ],
+    "formation_horizons": [
+      5,
+      10,
+      20,
+      40,
+      60
+    ],
+    "future_horizons": [
+      1,
+      2,
+      3,
+      5,
+      10,
+      20
+    ],
+    "historical_daily": "data/derived/historical_nse_daily.parquet",
+    "mapping_universe_tiers": {
+      "STABLE_IDENTITY_BASIC_LIQUID": {
+        "require_stable_identity": true,
+        "require_unique_mapping": true,
+        "universe_column": "universe_basic_liquid"
+      },
+      "STABLE_IDENTITY_BROAD": {
+        "require_stable_identity": true,
+        "require_unique_mapping": true,
+        "universe_column": "universe_broad_eq"
+      },
+      "STABLE_IDENTITY_MODERATE_LIQUID": {
+        "require_stable_identity": true,
+        "require_unique_mapping": true,
+        "universe_column": "universe_moderate_liquid"
+      },
+      "STATIC_UNIQUE_BROAD": {
+        "require_stable_identity": false,
+        "require_unique_mapping": true,
+        "universe_column": "universe_broad_eq"
+      }
+    },
+    "minimum_sector_cross_section_ic": 2,
+    "multiple_testing": {
+      "alpha": 0.05,
+      "family": "30_primary_rank_ic_hypotheses",
+      "methods": [
+        "BENJAMINI_HOCHBERG",
+        "HOLM"
+      ]
+    },
+    "phase5_config": "config/phase5_point_in_time.yaml",
+    "phase5_manifest": "reports/csrs/point_in_time/phase5_build_manifest.json",
+    "phase6_manifest": "reports/sector_momentum/foundation/phase6_build_manifest.json",
+    "primary_minimum_sector_size": 5,
+    "primary_tier": "STABLE_IDENTITY_BASIC_LIQUID",
+    "quintile_minimum_sector_count": 15,
+    "report_dir": "reports/sector_momentum/research",
+    "research_label": "STATIC-CURRENT-CLASSIFICATION HISTORICAL RESEARCH",
+    "schema_version": 1,
+    "sector_mapping": "data/derived/sector_research_mapping.parquet",
+    "sector_size_sensitivities": [
+      3,
+      5,
+      10
+    ],
+    "top_bottom_fixed_count": 3,
+    "top_bottom_fraction": 0.2,
+    "uncertainty": {
+      "block_length_rule": "max_10_or_twice_future_horizon",
+      "confidence_level": 0.95,
+      "method": "circular_moving_block_bootstrap_daily_statistics",
+      "replications": 2000,
+      "seed": 20260915
+    }
+  },
+  "decision": "CONDITIONAL PASS",
+  "output_sha256": {
+    "expanding_window_results.csv": "05a24b6311272ac51f6cd3d753994d44a00292a7b63cf4db1bdebd10775ef15b",
+    "fixed_period_results.csv": "a7fbb110bdcbaee982bc6e08f43a8aeddd06a08507bf1c94233f4ad5d3f4452a",
+    "formation_classification.csv": "07af994efecbef4dea01f05b8a48914cc40f8d97498173a56ceb34c8a69ef50e",
+    "leave_one_sector_out.csv": "535b741be9a4d02a493f27e7abb39c785a8d39e692b38dda5ee2270bb17b6ed3",
+    "multiple_testing.csv": "4e0389e024b8764a3235e9252331605df2fa571f7dd17fa0782f58267f92d632",
+    "nonoverlap_results.csv": "124f46de2208da43134f0b517ba3219fd7f6f434fccc1919f44f9b0ee1760355",
+    "phase7_acceptance.json": "882c3fe40cc980f89c4ec39f6cd5f9e0eb5584247193aac549871423bcbda2fa",
+    "phase7_sector_relative_momentum.md": "9b003870d3cf7f9c2d1ce614fddd00f1c94584704161f7292418e823c975d662",
+    "quintile_returns.csv": "58618d23f537e6cdf9c7df6fcc3dde9c0551d44901c71c9fc2ccf757076a706e",
+    "rank_ic_daily.csv": "7e9e4cdc8b97fec5a069a566109c56591a3e15580e64a752f228a15fa84199a4",
+    "rank_ic_summary.csv": "698bdf17c814a3ea96ca8f6502e2635c82a48c29b9069dde4bc239959f8c8231",
+    "sector_cross_section_size.csv": "5fc527a72b4a811955dbc48fea2167a40e23ee2799a761026c9e8391c954723f",
+    "sector_daily_returns.csv": "9f3341c181a9bf7f4b7fb4053741ebee39f1530a1dbbdfbc080a0e36f72f6075",
+    "sector_influence_summary.csv": "14359a694ebdf632c3a0054ccc1fca65de48623ec0e5d0b3852789b651f65c34",
+    "sector_momentum_factor_panel.parquet": "90a1ddb7446d605e20d431985156e1462789d4bbd0f6ce6bb105e38dc998b1b7",
+    "sector_size_sensitivity.csv": "a46cac9983b879f55fe10010b64461b141ffe05b0a40e690a6eccd76eb03c6c6",
+    "signal_decay.csv": "77d33a01e77fb6def4bdcd17149c76ca510bbfe136dac74f9dd2ffa1731fd59d",
+    "top_bottom_analysis.csv": "d27f400e158f53ef73b74604fa6716d0b53522be5af4ac20f3c0ebff10062ce5",
+    "uncertainty_intervals.csv": "9cc9df4320a0cece84948b330066e098bdb488bbe21d95ba0bfff76e3b3fe6a9",
+    "universe_mapping_sensitivity.csv": "0d597a5cb3c2685c86c2d5e2090bbd2304d4b6a9e23ad7b8a6d79a13115ff99e",
+    "yearly_analysis.csv": "7feec41f2fd31808806bf2a5a8a8f8ffd62a3e0f4cd58fdfea66b5674e96a609"
+  },
+  "panel_rows": 60312,
+  "primary_minimum_sector_size": 5,
+  "primary_tier": "STABLE_IDENTITY_BASIC_LIQUID",
+  "sector_count": 39,
+  "valid_daily_sector_returns": 53089
+}

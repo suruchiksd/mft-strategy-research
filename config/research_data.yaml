@@ -1,0 +1,33 @@
+schema_version: 1
+sources:
+  ohlcv: /home/suruchi-pandey/market-data-platform-gpt/data/equities
+  sectors: /home/suruchi-pandey/Projects/bhavcopy-universe/Sectors
+  corporate_actions: /home/suruchi-pandey/Projects/CM_corpAction
+output_dir: data/derived
+report_dir: reports
+universe_mode: fixed_current_120
+expected_symbols: 120
+research_scope: conditional current-universe research
+source_price_basis: source_as_stored_price_momentum
+timezone: Asia/Kolkata
+invalid_minute_policy: exclude_from_all_ohlcv_and_mark_day_ineligible
+partial_session_policy: retain_ineligible
+unexpected_minute_policy: exclude_outside_known_schedule_and_mark_day_ineligible
+zero_volume_policy: retain_and_flag
+calendar_scope: observed_dates_only_not_certified_exchange_calendar
+normal_intervals: [["09:15", "15:30"]]  # end exclusive; minute-start labels
+session_overrides_file: config/session_overrides.csv
+conventional_action_evidence_file: reports/adjustment_evidence.csv
+phase1_evidence_file: reports/phase1_audit.md
+corporate_actions:
+  apply_adjustments: false
+  before_sessions: 0
+  after_sessions: 0
+  window_policy_status: event_date_only_placeholder_phase3_interval_policy_required
+  event_date_policy: source_date_exact_no_ex_date_inference
+  coverage_status: incomplete_not_point_in_time
+identity_rules:
+  IRFC:
+    valid_from: "2021-01-29"
+    reason: PRELISTING_IDENTITY_CONTAMINATION
+    evidence: https://www.nseindia.com/static/event-details-listing-ceremony-indian-railway-finance-corporation-limited

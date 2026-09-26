@@ -1,0 +1,50 @@
+[
+  {
+    "check": "primary tier frozen",
+    "passed": true
+  },
+  {
+    "check": "all 30 rank IC pairs",
+    "passed": true
+  },
+  {
+    "check": "all 30 yearly grids per year",
+    "passed": true
+  },
+  {
+    "check": "all horizons frozen",
+    "passed": true
+  },
+  {
+    "check": "quintiles feasible only",
+    "passed": true
+  },
+  {
+    "check": "all nonoverlap offsets",
+    "passed": true
+  },
+  {
+    "check": "multiple testing family 30",
+    "passed": true
+  },
+  {
+    "check": "all size thresholds",
+    "passed": true
+  },
+  {
+    "check": "all mapping tiers",
+    "passed": true
+  },
+  {
+    "check": "future begins after signal",
+    "passed": true
+  },
+  {
+    "check": "static caveat retained",
+    "passed": true
+  },
+  {
+    "check": "no combined or trading columns",
+    "passed": true
+  }
+]

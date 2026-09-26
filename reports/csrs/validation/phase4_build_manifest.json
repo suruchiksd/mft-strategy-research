@@ -1,0 +1,104 @@
+{
+  "build_id": "a6143ab2dc46503ba412740c43a46cb2ac613d22042871bf81d29abfc1ea8727",
+  "build_timestamp_utc": "2026-09-14T10:17:35.143095+00:00",
+  "certified_end": "2026-07-17",
+  "code_sha256": "e474730a177e450d7e9391396fc1a28f4eb3ffafecf8bfe44621abaddb50f9a3",
+  "config": {
+    "certified_end": "2026-07-17",
+    "classification_policy": {
+      "no_evidence": "neither_direction_reaches_4_of_6_in_either_full_or_holdout",
+      "otherwise": "inconclusive",
+      "promising_but_unstable": "positive_full_and_holdout_at_least_4_of_6_but_not_robust",
+      "reversal_like": "negative_full_at_least_5_of_6_negative_holdout_at_least_4_of_6_and_negative_nonoverlap_at_least_5_of_6",
+      "robust": "positive_full_and_holdout_at_least_5_of_6_positive_year_majority_at_least_5_of_6_and_positive_ic_ci_at_least_4_of_6"
+    },
+    "cross_section_thresholds": [
+      0,
+      50,
+      80,
+      100
+    ],
+    "expanding_evaluation_years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "factor_panel_path": "data/derived/csrs_factor_panel.parquet",
+    "factor_panel_sha256": "9a57c8467ef15827eec8a49ac75af386e80c305f3bbfccf407ac7e45ed8fd347",
+    "fixed_periods": [
+      {
+        "end": "2022-12-31",
+        "name": "RESEARCH_DEVELOPMENT",
+        "start": "2020-01-01"
+      },
+      {
+        "end": "2024-12-31",
+        "name": "VALIDATION",
+        "start": "2023-01-01"
+      },
+      {
+        "end": "2026-07-17",
+        "name": "OUT_OF_SAMPLE_HOLDOUT",
+        "start": "2025-01-01"
+      }
+    ],
+    "formation_horizons": [
+      5,
+      10,
+      20,
+      40,
+      60
+    ],
+    "future_horizons": [
+      1,
+      2,
+      3,
+      5,
+      10,
+      20
+    ],
+    "phase3_acceptance_path": "reports/csrs/factor_panel_acceptance.json",
+    "phase3_build_id": "aeabe4a61aa23901e85a76102a80bfc73c5d09c090b7fc0dc145a2db51539fbf",
+    "phase3_manifest_path": "reports/csrs/csrs_build_manifest.json",
+    "report_dir": "reports/csrs/validation",
+    "research_scope": "conditional current-universe research",
+    "retained_history_bands": {
+      "high_quantile": 0.75,
+      "labels": [
+        "MATERIAL_REDUCED",
+        "MODERATE",
+        "HIGH"
+      ],
+      "low_quantile": 0.25,
+      "method": "within_formation_retained_ratio_quartiles"
+    },
+    "schema_version": 1,
+    "uncertainty": {
+      "block_length_rule": "max_10_or_twice_future_horizon",
+      "confidence_level": 0.95,
+      "method": "circular_moving_block_bootstrap_daily_statistics",
+      "replications": 2000,
+      "seed": 20260914
+    },
+    "universe_path": "data/derived/universe.parquet"
+  },
+  "factor_panel_sha256": "9a57c8467ef15827eec8a49ac75af386e80c305f3bbfccf407ac7e45ed8fd347",
+  "output_sha256": {
+    "coverage_quality_sensitivity.csv": "d5c97a904aa6e7493c0607142eaefb0afed42e986813e0dc5ce665b789097eca",
+    "cross_section_sensitivity.csv": "831dd80b4b3107d3c32b3bdf55c8672c01dd70e3252f8aaf00ab17cfdf8ae3d2",
+    "expanding_window_results.csv": "c7ba508fd283a97c01d922ef1074578fc8124e6119345e3671727b2f586c6736",
+    "fixed_period_results.csv": "41bf3f8931f0514bb53f56bf0a85bc3263ae259995a3fba71ac5034a49b5c1b9",
+    "formation_classification.csv": "55bbe4f001b5ee0b29e22391c3a309725193218bb4dc3d2454028359fcf76490",
+    "leave_one_symbol_out.csv": "876dea7335a5f7dfb82c1bcc6cb76d59d8e367fd1420894be5c39db5ec5d3035",
+    "leave_one_year_out.csv": "2484ab0f9054eec85828d0427c916ec4e8516989573cce144d284edf4c4eb572",
+    "nonoverlap_results.csv": "38700c95100dbe79460508b0ca59d453bb345fdeb5156d187d0c84f3f539b610",
+    "sector_influence.csv": "08084e80987d13552a4de8803723bfecdaa067c24aef93b673f0a44c304ec2d4",
+    "uncertainty_intervals.csv": "981e5f9f04cf3169a47175d6b5aefb30579bfd1ecc2d1eda174c16257e48ec7f",
+    "year_stability.csv": "2c462d35825f80dfe54cff90eaa06baafc16830b35c3faefd507ce9bda1f3e7c"
+  },
+  "phase3_build_id": "aeabe4a61aa23901e85a76102a80bfc73c5d09c090b7fc0dc145a2db51539fbf",
+  "research_scope": "conditional current-universe research"
+}

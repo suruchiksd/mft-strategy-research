@@ -1,0 +1,16 @@
+rebalance_id,signal_date,execution_date,selected_sectors_exact,selected_stocks_exact,replacement_order_exact,target_weight_exact,result
+SMV2-0018,2020-04-30,2020-05-04,True,True,True,True,PASS
+SMV2-0019,2020-05-08,2020-05-11,True,True,True,True,PASS
+SMV2-0020,2020-05-15,2020-05-18,True,True,True,True,PASS
+SMV2-0021,2020-05-22,2020-05-26,True,True,True,True,PASS
+SMV2-0022,2020-05-29,2020-06-01,True,True,True,True,PASS
+SMV2-0023,2020-06-05,2020-06-08,True,True,True,True,PASS
+SMV2-0087,2021-08-27,2021-08-30,True,True,True,True,PASS
+SMV2-0151,2022-11-18,2022-11-21,True,True,True,True,PASS
+SMV2-0215,2024-02-09,2024-02-12,True,True,True,True,PASS
+SMV2-0279,2025-05-02,2025-05-05,True,True,True,True,PASS
+SMV2-0346,2026-08-14,2026-08-17,True,True,True,True,PASS
+SMV2-0347,2026-08-21,2026-08-24,True,True,True,True,PASS
+SMV2-0348,2026-08-28,2026-08-31,True,True,True,True,PASS
+SMV2-0349,2026-09-04,2026-09-07,True,True,True,True,PASS
+SMV2-0350,2026-09-11,2026-09-15,True,True,True,True,PASS

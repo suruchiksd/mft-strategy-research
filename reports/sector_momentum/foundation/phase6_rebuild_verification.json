@@ -1,0 +1,6 @@
+{
+  "build_id": "e1c1a5c6ad6c7b2e521d00c4fcb97f4bbb21047575ca0de5a7a3f36cb573367b",
+  "byte_identical": true,
+  "command": ".venv/bin/python scripts/build_phase6_sector_foundation.py --verify-rebuild",
+  "output_count": 15
+}

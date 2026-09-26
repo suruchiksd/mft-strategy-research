@@ -1,0 +1,2 @@
+open_positions_before,request_side,existing_quantity,risk_result,position_count_after_partial_sell,finding
+9,SELL,100,approved,9,partial retained SELL does not reduce position count

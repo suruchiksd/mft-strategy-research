@@ -1,0 +1,3 @@
+segment,request_start,request_end,minimum_ex_date,maximum_ex_date,events,eq_events,symbols
+OVERLAP,2026-01-01,2026-07-17,2026-01-02,2026-07-17,786,703,662
+EXTENSION,2026-07-18,2026-09-11,2026-07-20,2026-09-11,749,718,723

@@ -1,0 +1,2 @@
+rebalance_id,signal_date,execution_date,paper_cash,research_cash,paper_equity,research_equity,selected_stocks,cause
+SMV2-0020,2020-05-15,2020-05-18,904.2726025501252,31.69573215011,474877.9726025501,474833.5957321501,HDFCLIFE|ICICIPRULI|SBILIFE|AUROPHARMA|SUNPHARMA|CIPLA|LT|ADANIPORTS|NCC,first sampled state divergence follows unimplemented retained resize/fallback parity

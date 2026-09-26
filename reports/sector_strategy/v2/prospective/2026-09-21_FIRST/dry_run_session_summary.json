@@ -1,0 +1,26 @@
+{
+  "close_used_for_decision": false,
+  "estimated_remaining_cash": 7800.78077870002,
+  "execution_date": "2026-09-21",
+  "intended_order_count": 9,
+  "max_intended_positions": 9,
+  "paper_orders_submitted": false,
+  "quote_source_counts": {
+    "missing": 0,
+    "non_eq": 0,
+    "normalized_daily": 9,
+    "raw_provider": 0
+  },
+  "reference_files_read": false,
+  "returns_or_pnl_calculated": false,
+  "risk_approvals": 9,
+  "risk_decisions": 9,
+  "risk_rejections": 0,
+  "signal_date": "2026-09-18",
+  "starting_cash": 500000.0,
+  "starting_position_count": 0,
+  "state_hash_after": "87f6e5e9af5d3c04418163ab19e4e99fb460f6a8d8b9eef7d267624646bdc26d",
+  "state_hash_before": "87f6e5e9af5d3c04418163ab19e4e99fb460f6a8d8b9eef7d267624646bdc26d",
+  "state_mutated": false,
+  "target_count": 9
+}

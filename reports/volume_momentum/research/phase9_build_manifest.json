@@ -1,0 +1,186 @@
+{
+  "accepted_inputs": {
+    "phase5_build_id": "ce7d1d27638b3c7e448b6e9bfc5b659e4e7bb77db1c6cf5c377edafce7262524",
+    "phase5_verified_outputs": 24,
+    "phase6_build_id": "e1c1a5c6ad6c7b2e521d00c4fcb97f4bbb21047575ca0de5a7a3f36cb573367b",
+    "phase6_verified_outputs": 15,
+    "phase7_build_id": "f41dbfd6019e517e3696076f7330b083622732c8a785f3bfa3f65e5573d335df",
+    "phase7_verified_outputs": 21,
+    "phase8_build_id": "422d5459c295f5d6fce9f3648487528c1b4f71e56956ef19c7e7809d3cb05e5e",
+    "phase8_verified_outputs": 14
+  },
+  "build_id": "00a3e8a873d6488d7a97a642347ec0f59d53e94dcb7f32e4ea20841c54f1455b",
+  "build_timestamp_utc": "2026-09-16T13:09:37.591792+00:00",
+  "candidate_count": 7,
+  "code_sha256": "9e0cf171e042b8158ba50f622234d8f6651012b7b37132a5d0794bd307bf71af",
+  "config": {
+    "candidate_ids": [
+      "VM01",
+      "VM02",
+      "VM03",
+      "VM04",
+      "VM05",
+      "VM06",
+      "VM07"
+    ],
+    "candidate_roles": {
+      "VM01": "CONTROL_PRICE",
+      "VM02": "CONTROL_PRICE",
+      "VM03": "CONTROL_VOLUME",
+      "VM04": "CONTROL_VOLUME",
+      "VM05": "INTERACTION",
+      "VM06": "INTERACTION",
+      "VM07": "INTERACTION"
+    },
+    "classification_rules": {
+      "interaction_incremental": {
+        "promising_minimum_positive_holdout_pairs": 3,
+        "promising_minimum_positive_pairs": 3,
+        "robust_minimum_positive_confidence_intervals": 3,
+        "robust_minimum_positive_holdout_pairs": 4,
+        "robust_minimum_positive_pairs": 4
+      },
+      "promising": {
+        "minimum_directional_holdout_pairs": 3,
+        "minimum_directional_nonoverlap_pairs": 4,
+        "minimum_directional_primary_pairs": 4,
+        "minimum_directional_year_fraction": 0.55
+      },
+      "robust": {
+        "minimum_directional_bh_rejections": 2,
+        "minimum_directional_confidence_intervals": 3,
+        "minimum_directional_holdout_pairs": 5,
+        "minimum_directional_nonoverlap_pairs": 5,
+        "minimum_directional_primary_pairs": 5,
+        "minimum_directional_sensitivity_pairs": 5,
+        "minimum_directional_year_fraction": 0.7
+      }
+    },
+    "corporate_action_blocking_impacts": [
+      "MATERIAL_UNRESOLVED_EVENT",
+      "UNKNOWN_OR_AMBIGUOUS",
+      "LIKELY_ALREADY_ADJUSTED_CONVENTIONAL_ACTION"
+    ],
+    "corporate_action_coverage_end": "2026-07-17",
+    "corporate_action_coverage_start": "2020-01-09",
+    "corporate_action_ledger": "data/derived/corporate_action_ledger.parquet",
+    "corporate_action_proximity_sessions": 5,
+    "evaluation_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "expanding_evaluation_years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "factor_panel_output": "data/derived/volume_momentum_factor_panel.parquet",
+    "final_report": "reports/phase9_volume_momentum_research.md",
+    "fixed_periods": [
+      {
+        "end": "2022-12-31",
+        "name": "DEVELOPMENT",
+        "start": "2020-01-01"
+      },
+      {
+        "end": "2024-12-31",
+        "name": "VALIDATION",
+        "start": "2023-01-01"
+      },
+      {
+        "end": "2026-07-17",
+        "name": "HOLDOUT",
+        "start": "2025-01-01"
+      }
+    ],
+    "future_horizons": [
+      1,
+      2,
+      3,
+      5,
+      10,
+      20
+    ],
+    "historical_identity": "reports/csrs/point_in_time/historical_symbol_identity.csv",
+    "interaction_controls": {
+      "VM05": [
+        "VM01",
+        "VM03"
+      ],
+      "VM06": [
+        "VM02",
+        "VM03"
+      ],
+      "VM07": [
+        "VM02",
+        "VM04"
+      ]
+    },
+    "minimum_decile_cross_section": 20,
+    "multiple_testing": {
+      "alpha": 0.05,
+      "incremental_family": "18_interaction_outcome_incremental_rank_ic_hypotheses",
+      "methods": [
+        "BENJAMINI_HOCHBERG",
+        "HOLM"
+      ],
+      "primary_family": "42_candidate_outcome_rank_ic_hypotheses"
+    },
+    "phase5_manifest": "reports/csrs/point_in_time/phase5_build_manifest.json",
+    "phase6_manifest": "reports/sector_momentum/foundation/phase6_build_manifest.json",
+    "phase7_manifest": "reports/sector_momentum/research/phase7_build_manifest.json",
+    "phase8_foundation": "data/derived/volume_momentum_foundation.parquet",
+    "phase8_manifest": "reports/volume_momentum/foundation/phase8_build_manifest.json",
+    "phase8_registry": "reports/volume_momentum/foundation/candidate_factor_registry.csv",
+    "phase8_required_build_id": "422d5459c295f5d6fce9f3648487528c1b4f71e56956ef19c7e7809d3cb05e5e",
+    "primary_universe": "BASIC_LIQUID",
+    "report_dir": "reports/volume_momentum/research",
+    "research_scope": "independent predictive Factor-3 research; no portfolio, trading rules, or factor combination",
+    "schema_version": 1,
+    "sensitivity_universe": "MODERATE_LIQUID",
+    "uncertainty": {
+      "block_length_rule": "max_10_or_twice_future_horizon",
+      "confidence_level": 0.95,
+      "method": "circular_moving_block_bootstrap_daily_statistics",
+      "replications": 2000,
+      "seed": 20260916
+    }
+  },
+  "decision": "FAIL",
+  "incremental_hypotheses": 18,
+  "output_sha256": {
+    "candidate_classification.csv": "33b2a0ca3645e4c59c59135c8e71b11dc8f7b32121082859a33c6d4f4969f22c",
+    "candidate_decile_returns.csv": "f9db9d69f1249f103b0f84428a9a11612085a4408acdc98f11201da80e7b9966",
+    "candidate_rank_ic_daily.csv": "fc1f6a44f8cdb79a457475eabcef59c74229aafcb8fefe8f0515fd9abc47bf20",
+    "candidate_rank_ic_summary.csv": "9807788a375a4996083c50ef38a8ca5f14bc27a8890bd7df2c05d97b1aa6bc37",
+    "candidate_tail_analysis.csv": "9dfe9b5567d6b04fbcaa34708b20f078406d7c9f7aea83e20506311cc3468737",
+    "corporate_action_proximity_sensitivity.csv": "b66b0f9353ccc795ffcf8c8e54959844d72145b6776f74a91b34a825668dd237",
+    "expanding_window_results.csv": "f3d305eb00f33c908de51b49425e4fdef4aae40c14674bf2ec6647aad500488d",
+    "fixed_period_results.csv": "406d4f9864dcc1c938424d8183bd14dd1fe9e0f745c376429c9865f84b1cef0f",
+    "interaction_double_sort.csv": "2386541c96eeb3f0542637df54a2245127c5d834c3eabe5af87417775da6202d",
+    "interaction_incremental_ic.csv": "11c1161baf6f346ea46e6eb0633d9569922ff08577a7d99ae338c8c8f1dca750",
+    "interaction_incremental_uncertainty.csv": "22349bf0102a2bd2fddc2a02838bb5f135e33f7c4efbcb8dbb4d02bca272e617",
+    "multiple_testing.csv": "dace83ad66682608735c1b5ae12b82b0e0078213e049c27be3ac8b55923bae1f",
+    "nonoverlap_results.csv": "ff795444cc72a53e063480781f942ca1aa0d67526ea1700814c9474ab6ef4182",
+    "phase9_acceptance.json": "54de7be7c138a9e6000c3e4594e21b701f4f3873b80d365da2ef764a86815f0a",
+    "phase9_volume_momentum_research.md": "3b07b0a8d1a6d4816b28ac2a89cf006bb913940319fb57321a7d7ee32f0c933b",
+    "predictive_redundancy.csv": "401393fad266a694bc29a1e4261bd1dc33a2299992c0c12024f0b97a28080581",
+    "signal_decay.csv": "ef210f108d3e8cf74e23e288f97ef07d22062f6c4fc334064dc3cfa3ba450341",
+    "source_era_sensitivity.csv": "903aa5ad49d1d4fc9523ea59179cbd6d01123fc9ba6e8301985c9ab2a2dc542f",
+    "uncertainty_intervals.csv": "fbc7b6426385ec036381ae0a6b480ed1b36434c7af11dacce5901a66bd1dea5f",
+    "universe_sensitivity.csv": "e30e931d3c3598364ce5b8cdcd60fdd57f2044b1dbbd3fd8e1b61f8c289f8805",
+    "volume_momentum_factor_panel.parquet": "ac0acfa8fd12ab21ad3a08d60923a91b6d6dbbbc8291f2f80696e1fc26306453",
+    "yearly_analysis.csv": "023dc19b13f0006c0345bc8a7168fd1e16e4993613891d31b63949fa5683fd17"
+  },
+  "panel_rows": 3062267,
+  "primary_hypotheses": 42,
+  "registry_sha256": "e7363372bfbef65211418236188fb13a518d7b612eded1a6d23388518ae16923"
+}

@@ -1,0 +1,31 @@
+phase: 10B
+official_endpoint: https://www.nseindia.com/api/corporates-corporateActions
+index_parameter: equities
+overlap_from: '2026-01-01'
+overlap_to: '2026-07-17'
+extension_from: '2026-07-18'
+extension_to: '2026-09-11'
+retrieval_timestamp_utc: '2026-09-16T15:05:03Z'
+raw_overlap: data/external/corporate_actions/phase10_extension/official_nse_corporate_actions_20260101_20260717.json
+raw_extension: data/external/corporate_actions/phase10_extension/official_nse_corporate_actions_20260718_20260911.json
+overlap_headers: data/external/corporate_actions/phase10_extension/overlap_response_headers.txt
+extension_headers: data/external/corporate_actions/phase10_extension/extension_response_headers.txt
+accepted_ledger: data/derived/corporate_action_ledger.parquet
+historical_daily: data/derived/historical_nse_daily.parquet
+preregistration_manifest: reports/reversal/preregistration/phase10_preregistration_manifest.json
+phase10_gated_manifest: reports/reversal/research/phase10_build_manifest.json
+extension_ledger: data/derived/phase10_corporate_action_extension.parquet
+report_dir: reports/reversal/corporate_action_extension
+final_report: reports/phase10_corporate_action_extension.md
+blocking_date_semantics: OFFICIAL_EX_DATE
+mapping_semantics: EXACT_SYMBOL_ONLY_NO_FUZZY_NAME_MATCH
+isin_conflict_policy: REVIEW_REQUIRED_BLOCKED
+unknown_policy: REVIEW_REQUIRED_BLOCKED
+price_coverage_end: '2026-09-11'
+decision: CONDITIONAL PASS FOR REVERSAL CONFIRMATION
+conditions:
+  - Use only the frozen raw response hashes.
+  - Admit no endpoint after 2026-09-11.
+  - Block every interval crossing BLOCK_PRICE_RETURN_INTERVAL or REVIEW_REQUIRED_BLOCKED.
+  - Escalate exact-symbol ISIN conflicts to REVIEW_REQUIRED_BLOCKED.
+  - Require exact trading-session endpoints and accepted identity safety.

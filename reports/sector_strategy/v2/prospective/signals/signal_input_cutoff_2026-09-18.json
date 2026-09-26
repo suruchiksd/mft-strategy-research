@@ -1,0 +1,16 @@
+{
+  "ca_cutoff": "2026-09-18",
+  "execution_close_used": false,
+  "execution_earliest_date": "2026-09-21",
+  "execution_open_used": false,
+  "liquidity_max_date": "2026-09-18",
+  "market_data_max_date": "2026-09-18",
+  "post_boundary_pnl_inspected": false,
+  "post_signal_returns_inspected": false,
+  "previous_portfolio_state_used": false,
+  "previous_target_state_source": "reports/sector_strategy/v2/development/v2_selection_stability.csv:SMV2-0350",
+  "sector_panel_max_date": "2026-09-18",
+  "signal_date": "2026-09-18",
+  "strategy_build_reference": "96e614a5638f221b1c340e4f9201e792b5c01e1394eac682ef7b53480aa0f2fb",
+  "strategy_preregistration_hash": "2e99d105d6a23538dafcaa4d6c17ba71b008c2e30fee63bec2cb50706a6aee2f"
+}

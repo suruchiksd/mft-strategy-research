@@ -1,0 +1,59 @@
+{
+  "build_id": "8ad77b280031a1f9d99f6ce85a2078e6f6457a3ffdc39a9a0c6e9857225abc13",
+  "build_timestamp_utc": "2026-09-16T15:14:03.374229+00:00",
+  "code_sha256": "7a2a3c6fd6900f72a65dd2918285744464799646683d5b5bfbcf32fa31eea7fd",
+  "config": {
+    "accepted_ledger": "data/derived/corporate_action_ledger.parquet",
+    "blocking_date_semantics": "OFFICIAL_EX_DATE",
+    "conditions": [
+      "Use only the frozen raw response hashes.",
+      "Admit no endpoint after 2026-09-11.",
+      "Block every interval crossing BLOCK_PRICE_RETURN_INTERVAL or REVIEW_REQUIRED_BLOCKED.",
+      "Escalate exact-symbol ISIN conflicts to REVIEW_REQUIRED_BLOCKED.",
+      "Require exact trading-session endpoints and accepted identity safety."
+    ],
+    "decision": "CONDITIONAL PASS FOR REVERSAL CONFIRMATION",
+    "extension_from": "2026-07-18",
+    "extension_headers": "data/external/corporate_actions/phase10_extension/extension_response_headers.txt",
+    "extension_ledger": "data/derived/phase10_corporate_action_extension.parquet",
+    "extension_to": "2026-09-11",
+    "final_report": "reports/phase10_corporate_action_extension.md",
+    "historical_daily": "data/derived/historical_nse_daily.parquet",
+    "index_parameter": "equities",
+    "isin_conflict_policy": "REVIEW_REQUIRED_BLOCKED",
+    "mapping_semantics": "EXACT_SYMBOL_ONLY_NO_FUZZY_NAME_MATCH",
+    "official_endpoint": "https://www.nseindia.com/api/corporates-corporateActions",
+    "overlap_from": "2026-01-01",
+    "overlap_headers": "data/external/corporate_actions/phase10_extension/overlap_response_headers.txt",
+    "overlap_to": "2026-07-17",
+    "phase": "10B",
+    "phase10_gated_manifest": "reports/reversal/research/phase10_build_manifest.json",
+    "preregistration_manifest": "reports/reversal/preregistration/phase10_preregistration_manifest.json",
+    "price_coverage_end": "2026-09-11",
+    "raw_extension": "data/external/corporate_actions/phase10_extension/official_nse_corporate_actions_20260718_20260911.json",
+    "raw_overlap": "data/external/corporate_actions/phase10_extension/official_nse_corporate_actions_20260101_20260717.json",
+    "report_dir": "reports/reversal/corporate_action_extension",
+    "retrieval_timestamp_utc": "2026-09-16T15:05:03Z",
+    "unknown_policy": "REVIEW_REQUIRED_BLOCKED"
+  },
+  "decision": "CONDITIONAL PASS FOR REVERSAL CONFIRMATION",
+  "extension_coverage_end": "2026-09-11",
+  "frozen_inputs": {
+    "phase10_gated_build_id": "cda8c86bfa6b904d1f6a8975ca3eb3257f528658ee3dd9cb5719a811cb9cdc91",
+    "phase10_gated_manifest_sha256": "d84090870784f1d49412bba86e2d681470455d203ff9ecc33f7acf6e6d297dd3",
+    "preregistration_sha256": "fb0976eeea5dc524f4bb9a22dad98b6b0ec6fc42507dcc90f9d5f16d52da6995"
+  },
+  "output_sha256": {
+    "action_type_mapping.csv": "f5153fdf8ff1df4b0bbc22fad477db30d9ea5885520458bb93d2cbd062db4c46",
+    "extension_acceptance.json": "7eb938d345c48c9d2ea1f9ed29324ab7ae26f4dc7b511695727da01168dc1313",
+    "extension_coverage.csv": "ef7b9740f2caa4edab937991ad8120d3135a0e223d3e9a643b0e32824ca4d569",
+    "identity_mapping_issues.csv": "6d5ae0c10fd22ed352bdb13bc1d0450a5720e320d380c9a6d781aa20e8fa4dc2",
+    "official_source_manifest.json": "0b65bb34f04e7c7c43b1f74971fbd5934669af510cd31f036779ca8c30fcb435",
+    "official_source_schema.csv": "135105f89ee78d3f2915e46cf8ee9b41e33870da727411f3404f391d3f1eef32",
+    "overlap_reconciliation.csv": "bf4ceb3fdc7b65c16232c5d806bd09c81b2f7f52b828aaa7adc69fa7bdd37068",
+    "phase10_corporate_action_extension.md": "7c67c6c5156587aaf3a76977b929f1604c44808d0dbb6540c259150add9fde35",
+    "phase10_corporate_action_extension.parquet": "c5ab80827dd378f6f3df25676ba0f0ef9db5c646be3ff397954757b54543e1e7",
+    "post_cutoff_event_inventory.csv": "93c10bca8538b999b86c85bb61870ea8e04ec09cb6ef0572cdf6dfed57875cb5"
+  },
+  "post_cutoff_reversal_outcomes_inspected": false
+}
